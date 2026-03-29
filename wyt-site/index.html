@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wiggle Your Tail — Premium Dog Walking &amp; Pet Care in Sarasota, FL</title>
+  <meta name="description" content="Sarasota's #1 Platinum Award-Winning pet care. Dog walking, in-home pet sitting, dog training &amp; wedding pet attendant. Bonded, insured &amp; Pet CPR certified. Free meet &amp; greet."/>
+  <link rel="canonical" href="https://wiggleyourtail.com/"/>
+  <meta property="og:title" content="Wiggle Your Tail — Premium Pet Care in Sarasota, FL"/>
+  <meta property="og:description" content="Sarasota's #1 Platinum Award-Winning pet care. Dog walking, pet sitting, training &amp; wedding services."/>
+  <meta property="og:url" content="https://wiggleyourtail.com/"/>
+  <meta property="og:type" content="website"/>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Wiggle Your Tail Pet Care","telephone":"(941) 280-5156","email":"contact@wiggleyourtail.com","url":"https://wiggleyourtail.com","address":{"@type":"PostalAddress","addressLocality":"Sarasota","addressRegion":"FL","addressCountry":"US"},"areaServed":["Sarasota","Siesta Key","Bradenton","Lakewood Ranch","Longboat Key","Osprey"],"priceRange":"$$","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"50"}}</script>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <style>
+    /* ── HOME-ONLY STYLES ── */
+    @keyframes goldShimmer{0%{background-position:200% center;}100%{background-position:-200% center;}}
+    @keyframes scaleIn{from{opacity:0;transform:scale(.94);}to{opacity:1;transform:scale(1);}}
+    @keyframes marquee2{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+    #hero{min-height:100vh;display:grid;grid-template-columns:1.1fr .9fr;padding-top:72px;position:relative;overflow:hidden;}
+    #hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(107,63,160,.06) 1.5px,transparent 1.5px);background-size:28px 28px;pointer-events:none;z-index:0;}
+    .hero-bg1{position:absolute;top:-100px;right:-100px;width:700px;height:700px;background:radial-gradient(ellipse at center,rgba(107,63,160,.12) 0%,transparent 70%);border-radius:50%;pointer-events:none;}
+    .hero-bg2{position:absolute;bottom:-80px;left:-80px;width:500px;height:500px;background:radial-gradient(ellipse at center,rgba(212,150,10,.08) 0%,transparent 70%);border-radius:50%;pointer-events:none;}
+    .hero-left{display:flex;flex-direction:column;justify-content:center;padding:5rem 3rem 5rem 4.5rem;position:relative;z-index:2;}
+    .hero-h1{font-family:var(--serif);font-size:clamp(3rem,5.5vw,5.8rem);font-weight:900;line-height:1.02;letter-spacing:-.04em;margin:1.4rem 0 1.8rem;}
+    .hero-h1 .l1{display:block;color:var(--dark);}
+    .hero-h1 .l2{display:block;font-style:italic;font-weight:300;background:linear-gradient(120deg,var(--purple) 0%,var(--purple-soft) 50%,var(--gold) 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:goldShimmer 5s linear infinite;}
+    .hero-h1 .l3{display:block;color:var(--dark);}
+    .hero-sub{font-size:1.08rem;line-height:1.78;font-weight:300;color:var(--muted);max-width:430px;margin-bottom:2.5rem;}
+    .hero-actions{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin-bottom:3rem;}
+    .hero-proof{display:flex;align-items:center;gap:1.2rem;}
+    .proof-avs{display:flex;}
+    .proof-avs span{width:38px;height:38px;border-radius:50%;border:3px solid var(--cream);margin-left:-10px;background:var(--purple-pale);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.75rem;color:var(--purple);}
+    .proof-avs span:first-child{margin-left:0;}
+    .proof-txt{font-size:.84rem;color:var(--muted);}
+    .proof-txt strong{color:var(--dark);}
+    .proof-stars{color:var(--gold);font-size:.78rem;display:block;}
+
+    /* Hero right collage */
+    .hero-right{position:relative;overflow:hidden;animation:fadeIn .8s .2s ease both;}
+    .col-main{position:absolute;top:4rem;left:1rem;right:5rem;bottom:4rem;border-radius:28px;overflow:hidden;box-shadow:var(--shadow-lg);}
+    .col-main img{transition:transform 8s ease;}
+    .col-main:hover img{transform:scale(1.04);}
+    .col-a1{position:absolute;top:1.5rem;right:0;width:46%;height:42%;border-radius:22px;overflow:hidden;box-shadow:var(--shadow-md);border:4px solid var(--cream);animation:scaleIn .7s .5s ease both;}
+    .col-a2{position:absolute;bottom:1.5rem;right:0;width:44%;height:36%;border-radius:22px;overflow:hidden;box-shadow:var(--shadow-md);border:4px solid var(--cream);animation:scaleIn .7s .65s ease both;}
+    .col-award{position:absolute;bottom:5rem;left:2rem;background:linear-gradient(135deg,var(--purple-deep),var(--purple));color:#fff;border-radius:14px;padding:.75rem 1.1rem;box-shadow:0 8px 28px rgba(107,63,160,.45);display:flex;align-items:center;gap:.6rem;z-index:5;animation:scaleIn .6s .9s ease both;}
+    .col-award .ca-num{font-family:var(--serif);font-size:1.5rem;font-weight:900;line-height:1;}
+    .col-award .ca-txt{font-size:.72rem;opacity:.85;line-height:1.4;}
+    .hero-fp{position:absolute;z-index:10;background:var(--white);border-radius:16px;padding:.75rem 1.1rem;box-shadow:0 8px 32px rgba(19,12,36,.15);display:flex;align-items:center;gap:.65rem;font-size:.82rem;font-weight:600;color:var(--dark);animation:drift 5s ease-in-out infinite;}
+    .hero-fp.fp1{top:42%;left:.5rem;animation-delay:0s;}
+    .hero-fp.fp2{bottom:28%;right:.2rem;animation-delay:1.8s;}
+    .fp-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;}
+    .fp-icon.pur{background:var(--purple-pale);}
+    .fp-icon.gld{background:var(--gold-pale);}
+
+    /* Services grid */
+    .svc-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:auto auto;gap:1.25rem;}
+    .svc{border-radius:var(--radius);overflow:hidden;position:relative;transition:transform .3s,box-shadow .3s;}
+    .svc:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);}
+    .svc-1{grid-column:span 5;}.svc-2{grid-column:span 4;}.svc-3{grid-column:span 3;}
+    .svc-4{grid-column:span 7;}.svc-5{grid-column:span 3;}.svc-6{grid-column:span 2;}
+    .svc-photo{height:320px;}
+    .svc-img{position:absolute;inset:0;transition:transform .5s ease;}
+    .svc:hover .svc-img{transform:scale(1.05);}
+    .svc-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(19,12,36,.78) 100%);}
+    .svc-over{position:absolute;bottom:0;left:0;right:0;padding:1.6rem;color:#fff;}
+    .svc-name{font-family:var(--serif);font-size:1.35rem;font-weight:700;line-height:1.2;margin-bottom:.4rem;}
+    .svc-blurb{font-size:.8rem;opacity:.8;line-height:1.6;margin-bottom:.9rem;}
+    .svc-cta{display:inline-flex;align-items:center;gap:.35rem;font-size:.74rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-warm);}
+    .svc-arr{transition:transform .2s;}.svc:hover .svc-arr{transform:translateX(4px);}
+    .svc-flat{background:var(--cream);border:1.5px solid var(--border);padding:1.8rem;height:320px;display:flex;flex-direction:column;justify-content:space-between;}
+    .svc-flat .svc-icon{width:52px;height:52px;border-radius:14px;background:var(--purple-pale);display:flex;align-items:center;justify-content:center;}
+    .svc-flat .svc-icon svg{width:24px;height:24px;stroke:var(--purple);fill:none;stroke-width:2;stroke-linecap:round;}
+    .svc-flat .svc-name{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--dark);margin-bottom:.5rem;}
+    .svc-flat .svc-blurb{font-size:.84rem;line-height:1.7;color:var(--muted);margin-bottom:1.4rem;}
+    .svc-flat .svc-cta{color:var(--purple);}
+    .svc-wedding{background:linear-gradient(135deg,var(--purple-deep),var(--purple));}
+    .svc-wedding .svc-icon{background:rgba(255,255,255,.12);}
+    .svc-wedding .svc-icon svg{stroke:#fff;}
+    .svc-wedding .svc-name{color:#fff;}.svc-wedding .svc-blurb{color:rgba(255,255,255,.72);}
+    .svc-wedding .svc-cta{color:var(--gold-warm);}
+    .svc-wide{grid-column:span 2 !important;display:grid;grid-template-columns:auto 1fr;gap:1.5rem;align-items:center;}
+
+    /* How */
+    .how-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:6rem;align-items:center;margin-top:4rem;}
+    .steps{display:flex;flex-direction:column;}
+    .how-step{display:flex;gap:1.4rem;padding:1.8rem 0;border-bottom:1px solid var(--border);}
+    .how-step:last-child{border-bottom:none;}
+    .step-num{font-family:var(--serif);font-size:3rem;font-weight:900;color:var(--purple-pale);line-height:1;flex-shrink:0;width:52px;transition:color .3s;}
+    .how-step:hover .step-num{color:var(--purple);}
+    .step-title{font-family:var(--serif);font-size:1.2rem;font-weight:700;color:var(--dark);margin-bottom:.45rem;}
+    .step-desc{font-size:.88rem;line-height:1.75;color:var(--muted);}
+    .how-vis{position:relative;}
+    .how-photo{border-radius:28px;overflow:hidden;aspect-ratio:4/5;box-shadow:var(--shadow-lg);}
+    .how-photo img{transition:transform 8s ease;}
+    .how-photo:hover img{transform:scale(1.04);}
+    .how-float{position:absolute;bottom:-24px;left:-28px;background:var(--white);border-radius:20px;padding:1.3rem 1.6rem;box-shadow:var(--shadow-lg);border:1.5px solid var(--border);min-width:230px;}
+    .hf-label{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;}
+    .hf-row{display:flex;align-items:center;gap:.6rem;margin-top:.5rem;}
+    .hf-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+    .hf-dot.g{background:#3FCB6D;}.hf-dot.o{background:var(--gold);}.hf-dot.p{background:var(--purple);}
+    .hf-text{font-size:.8rem;color:var(--muted);}
+    .hf-text strong{color:var(--dark);}
+
+    /* About */
+    .about-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:6rem;align-items:center;}
+    .about-photos{position:relative;}
+    .about-main{border-radius:28px;overflow:hidden;aspect-ratio:3/4;box-shadow:var(--shadow-lg);}
+    .about-main img{transition:transform 8s ease;}
+    .about-main:hover img{transform:scale(1.04);}
+    .about-accent{position:absolute;bottom:-2rem;right:-2rem;width:52%;aspect-ratio:1;border-radius:22px;overflow:hidden;box-shadow:var(--shadow-lg);border:5px solid var(--white);}
+    .about-chip{position:absolute;top:2rem;right:-1.5rem;background:var(--purple);color:#fff;border-radius:14px;padding:.8rem 1.1rem;box-shadow:0 8px 24px rgba(107,63,160,.45);font-size:.78rem;line-height:1.4;font-weight:600;}
+    .about-chip span{font-size:1.2rem;display:block;margin-bottom:.2rem;}
+    .av-row{display:flex;gap:1rem;align-items:flex-start;margin-top:1.4rem;}
+    .av-icon{width:42px;height:42px;border-radius:12px;flex-shrink:0;background:var(--purple-pale);display:flex;align-items:center;justify-content:center;}
+    .av-icon svg{width:20px;height:20px;stroke:var(--purple);fill:none;stroke-width:2;stroke-linecap:round;}
+    .av-body strong{font-size:.92rem;font-weight:700;color:var(--dark);display:block;margin-bottom:.25rem;}
+    .av-body p{font-size:.85rem;line-height:1.7;color:var(--muted);}
+
+    /* Area */
+    .area-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;margin-top:3.5rem;}
+    .area-map-card{background:var(--white);border:1.5px solid var(--border);border-radius:24px;padding:2.2rem;}
+    .area-map-ttl{font-family:var(--serif);font-size:1.2rem;font-weight:700;color:var(--dark);margin-bottom:1.4rem;display:flex;align-items:center;gap:.5rem;}
+    .area-right{display:flex;flex-direction:column;gap:1rem;}
+    .info-card{background:var(--white);border:1.5px solid var(--border);border-radius:16px;padding:1.3rem 1.5rem;display:flex;align-items:flex-start;gap:1rem;transition:border-color .2s;}
+    .info-card:hover{border-color:var(--purple-soft);}
+    .ic-icon{width:42px;height:42px;border-radius:11px;background:var(--purple-pale);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+    .ic-icon svg{width:19px;height:19px;stroke:var(--purple);fill:none;stroke-width:2;stroke-linecap:round;}
+    .ic-title{font-weight:700;font-size:.9rem;color:var(--dark);margin-bottom:.25rem;}
+    .ic-text{font-size:.82rem;color:var(--muted);line-height:1.65;}
+
+    /* Contact */
+    .contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:6rem;align-items:start;margin-top:3.5rem;}
+
+    @media(max-width:1100px){
+      #hero{grid-template-columns:1fr;min-height:auto;}
+      .hero-left{padding:4rem 2.5rem;}
+      .hero-right{display:none;}
+      .svc-grid{grid-template-columns:1fr 1fr;}
+      .svc-1,.svc-2,.svc-3,.svc-4,.svc-5,.svc-6{grid-column:span 1;}
+      .svc-wide{grid-column:span 1 !important;display:flex;flex-direction:column;}
+      .how-grid,.about-grid,.area-grid,.contact-grid{grid-template-columns:1fr;gap:2.5rem;}
+      .about-accent{right:-.5rem;}
+      .about-chip{right:-.5rem;}
+    }
+    @media(max-width:640px){
+      .hero-left{padding:3rem 1.4rem;}
+      .svc-grid{grid-template-columns:1fr;}
+      #hero::before{display:none;}
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="site-nav" id="nav">
+  <a href="/" class="logo">
+    <div class="logo-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,.2)"/><path d="M8 14s1.5 2 4 2 4-2 4-2" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/><circle cx="9" cy="10" r="1" fill="white"/><circle cx="15" cy="10" r="1" fill="white"/></svg></div>
+    <div class="logo-text"><span class="logo-name">Wiggle Your Tail</span><span class="logo-sub">Premium Pet Care · Sarasota, FL</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/" class="active">Home</a></li>
+    <li class="nav-dropdown"><a href="services-rates.html">Services ▾</a>
+      <div class="nav-dropdown-menu">
+        <a href="dog-walking.html">Dog Walking</a>
+        <a href="pet-sitting.html">Pet Sitting &amp; Overnights</a>
+        <a href="dog-training.html">Dog Training</a>
+        <a href="wedding-pet-attendant.html">Wedding Pet Attendant</a>
+        <a href="snowbird-services.html">Snowbird &amp; House Sitting</a>
+      </div>
+    </li>
+    <li><a href="how-it-works.html">How It Works</a></li>
+    <li><a href="https://wiggleyourtail.com/?page_id=171" target="_blank">Reviews</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="https://wiggleyourtail.com/doggybloggy/" target="_blank">Blog</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:1rem">
+    <a href="https://www.timetopet.com/portal/wiggleyourtail" target="_blank" class="btn btn-purple">Book Now →</a>
+    <div class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<nav class="mobile-nav">
+  <a href="/">Home</a>
+  <a href="services-rates.html">All Services</a>
+  <a href="dog-walking.html">Dog Walking</a>
+  <a href="pet-sitting.html">Pet Sitting &amp; Overnights</a>
+  <a href="dog-training.html">Dog Training</a>
+  <a href="wedding-pet-attendant.html">Wedding Pet Attendant</a>
+  <a href="snowbird-services.html">Snowbird &amp; House Sitting</a>
+  <a href="how-it-works.html">How It Works</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="https://wiggleyourtail.com/doggybloggy/" target="_blank">Blog</a>
+  <a href="https://www.timetopet.com/portal/wiggleyourtail" target="_blank" class="mobile-cta">Book Now →</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg1"></div><div class="hero-bg2"></div>
+  <div class="hero-left">
+    <div class="tag" style="animation:fadeUp .6s ease both">🏆 Sarasota's #1 Platinum Award-Winning Pet Care</div>
+    <h1 class="hero-h1" style="animation:fadeUp .6s .1s ease both">
+      <span class="l1">Your Dog's</span>
+      <span class="l2">Favourite People</span>
+      <span class="l3">in Sarasota</span>
+    </h1>
+    <p class="hero-sub" style="animation:fadeUp .6s .2s ease both">Premium dog walking, in-home pet sitting, expert training, and wedding day care — all with the personal touch your furry family member deserves.</p>
+    <div class="hero-actions" style="animation:fadeUp .6s .3s ease both">
+      <a href="contact.html" class="btn btn-purple" style="font-size:.95rem;padding:.95rem 2rem">Get a Free Meet &amp; Greet</a>
+      <a href="services-rates.html" class="btn btn-outline" style="font-size:.95rem;padding:.93rem 1.8rem">See Services</a>
+    </div>
+    <div class="hero-proof" style="animation:fadeUp .6s .4s ease both">
+      <div class="proof-avs"><span>DW</span><span>SA</span><span>LF</span><span>+</span></div>
+      <div class="proof-txt"><span class="proof-stars">★★★★★</span>Trusted by <strong>500+ pet parents</strong> across Sarasota</div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <!-- REPLACE src with actual client photos when available -->
+    <div class="col-main"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&auto=format&fit=crop&q=80" alt="Happy dog being walked in Sarasota" loading="eager"/></div>
+    <div class="col-a1"><img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&auto=format&fit=crop&q=80" alt="Dog sitting happily" loading="eager"/></div>
+    <div class="col-a2"><img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&auto=format&fit=crop&q=80" alt="Dogs running together" loading="eager"/></div>
+    <div class="col-award"><div class="ca-num">#1</div><div class="ca-txt">Platinum Winner<br>Sarasota Pet Care</div></div>
+    <div class="hero-fp fp1"><div class="fp-icon pur">✅</div><div><div style="font-size:.75rem;color:var(--muted);font-weight:400">Status</div><strong style="font-size:.82rem">Bonded &amp; Insured</strong></div></div>
+    <div class="hero-fp fp2"><div class="fp-icon gld">❤️</div><div><div style="font-size:.75rem;color:var(--muted);font-weight:400">Certified</div><strong style="font-size:.82rem">Pet CPR Trained</strong></div></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip" aria-hidden="true">
+  <div class="mq-track">
+    <span class="mq-item"><span class="mq-dot"></span>Bonded &amp; Insured</span><span class="mq-item"><span class="mq-dot"></span>#1 Platinum Award Winner</span><span class="mq-item"><span class="mq-dot"></span>Pet CPR Certified</span><span class="mq-item"><span class="mq-dot"></span>7 Days a Week · 365 Days a Year</span><span class="mq-item"><span class="mq-dot"></span>One Family at a Time</span><span class="mq-item"><span class="mq-dot"></span>Real-Time Photo Updates</span><span class="mq-item"><span class="mq-dot"></span>Free Meet &amp; Greet</span>
+    <span class="mq-item"><span class="mq-dot"></span>Bonded &amp; Insured</span><span class="mq-item"><span class="mq-dot"></span>#1 Platinum Award Winner</span><span class="mq-item"><span class="mq-dot"></span>Pet CPR Certified</span><span class="mq-item"><span class="mq-dot"></span>7 Days a Week · 365 Days a Year</span><span class="mq-item"><span class="mq-dot"></span>One Family at a Time</span><span class="mq-item"><span class="mq-dot"></span>Real-Time Photo Updates</span><span class="mq-item"><span class="mq-dot"></span>Free Meet &amp; Greet</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="section bg-white" id="services">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:end;margin-bottom:3.5rem">
+    <div><div class="section-eyebrow">What We Offer</div><h2 class="display">Premium care for<br><em>every occasion</em></h2></div>
+    <p class="lead">From daily walks to your wedding day — each service is tailored to your pet's personality and your family's needs.</p>
+  </div>
+  <div class="svc-grid">
+    <div class="svc svc-1 svc-photo"><img class="svc-img" src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=700&auto=format&fit=crop&q=80" alt="Dog walking Sarasota" loading="lazy"/><div class="svc-overlay"></div><div class="svc-over"><div class="svc-name">Dog Walking</div><div class="svc-blurb">Structured, engaging walks — 30, 45, or 60 min. From $32.</div><a href="dog-walking.html" class="svc-cta">Book a walk <span class="svc-arr">→</span></a></div></div>
+    <div class="svc svc-2 svc-photo"><img class="svc-img" src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=700&auto=format&fit=crop&q=80" alt="Pet sitting Sarasota" loading="lazy"/><div class="svc-overlay"></div><div class="svc-over"><div class="svc-name">In-Home Pet Sitting</div><div class="svc-blurb">Your pet stays home, comfortable and loved. Drop-ins from $35.</div><a href="pet-sitting.html" class="svc-cta">Learn more <span class="svc-arr">→</span></a></div></div>
+    <div class="svc svc-3 svc-flat"><div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></div><div><div class="svc-name">Overnight Care</div><div class="svc-blurb">We stay the night so your pet is never alone. 9:30pm–7am.</div></div><a href="pet-sitting.html" class="svc-cta">Learn more <span class="svc-arr">→</span></a></div>
+    <div class="svc svc-4 svc-flat svc-wedding svc-wide"><div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div><div><div class="svc-name">Wedding Pet Attendant</div><div class="svc-blurb">Your dog is family — they deserve to share your big day. Transport, comfort care, walking &amp; photo coordination.</div><a href="wedding-pet-attendant.html" class="svc-cta">Plan your wedding <span class="svc-arr">→</span></a></div></div>
+    <div class="svc svc-5 svc-photo"><img class="svc-img" src="https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=600&auto=format&fit=crop&q=80" alt="Dog training Sarasota" loading="lazy"/><div class="svc-overlay"></div><div class="svc-over"><div class="svc-name">Dog Training</div><div class="svc-blurb">AKC-certified, positive reinforcement. Puppy to adult.</div><a href="dog-training.html" class="svc-cta">Get started <span class="svc-arr">→</span></a></div></div>
+    <div class="svc svc-6 svc-flat"><div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg></div><div><div class="svc-name">Snowbird Services</div><div class="svc-blurb">Away for the season? Full home &amp; pet care. $40/hr.</div></div><a href="snowbird-services.html" class="svc-cta">Learn more <span class="svc-arr">→</span></a></div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section bg-cream" id="how">
+  <div><div class="section-eyebrow">The Process</div><h2 class="display">Getting started is<br><em>refreshingly simple</em></h2></div>
+  <div class="how-grid">
+    <div class="steps">
+      <div class="how-step"><div class="step-num">01</div><div><div class="step-title">Reach Out</div><div class="step-desc">Call (941) 280-5156, email, or fill out our contact form. We respond the same day.</div></div></div>
+      <div class="how-step"><div class="step-num">02</div><div><div class="step-title">Free Meet &amp; Greet</div><div class="step-desc">We visit your home at no charge to meet you and your pet, and learn their personality and routine.</div></div></div>
+      <div class="how-step"><div class="step-num">03</div><div><div class="step-title">Book via Our App</div><div class="step-desc">Schedule, pay, and manage everything through our Time to Pet client portal — 24/7 from any device.</div></div></div>
+      <div class="how-step"><div class="step-num">04</div><div><div class="step-title">Relax &amp; Get Updates</div><div class="step-desc">Receive photos and a full pet report card after every visit. You'll always know how they're doing.</div></div></div>
+    </div>
+    <div class="how-vis">
+      <div class="how-photo"><img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&auto=format&fit=crop&q=80" alt="Walker with dog in Sarasota" loading="lazy"/></div>
+      <div class="how-float">
+        <div class="hf-label">After every visit</div>
+        <div class="hf-row"><div class="hf-dot g"></div><div class="hf-text"><strong>Report card</strong> sent to you</div></div>
+        <div class="hf-row"><div class="hf-dot o"></div><div class="hf-text"><strong>Photos</strong> of your pet</div></div>
+        <div class="hf-row"><div class="hf-dot p"></div><div class="hf-text">Direct <strong>message</strong> your walker</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section bg-purple" id="reviews">
+  <div class="reviews-head" style="margin-bottom:3.5rem"><div class="section-eyebrow">Barkimonials</div><h2>What pet parents<br><em>are saying</em></h2></div>
+  <div class="reviews-grid">
+    <div class="rc"><div class="rc-stars"><svg viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg><svg viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg><svg viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg><svg viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg><svg viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg></div><p class="rc-text">"We needed someone to watch our dog while we attended a family event. Brianna arrived promptly, sent us numerous updates, provided peace of mind and kept Nova happy all evening. Highly recommended!"</p><div class="rc-author"><div class="rc-av">DW</div><div><div class="rc-name">Doug Wolff</div><div class="rc-meta">Pet Sitting Client · Bradenton, FL</div></div></div></div>
+    <div class="rc"><div class="rc-stars"><svg viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg><svg viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg><svg viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg><svg viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg><svg viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg></div><p class="rc-text">"Christa and the entire team were FANTASTIC! They took phenomenal care of our dog during our wedding — even helped get him into his Indian clothes! 12/10, would recommend to everybody!"</p><div class="rc-author"><div class="rc-av">SA</div><div><div class="rc-name">Serena Advani</div><div class="rc-meta">Wedding Pet Attendant · Sarasota, FL</div></div></div></div>
+    <div class="rc"><div class="rc-stars"><svg viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg><svg viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg><svg viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg><svg viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg><svg viewBox="0 0 20 20"><polygon points="10,1 12.9,7 19.5,7.6 14.5,12 16.2,18.5 10,15 3.8,18.5 5.5,12 0.5,7.6 7.1,7"/></svg></div><p class="rc-text">"I have a cranky 168lb Dane. Christa was so patient and calm — she didn't rush the process at all. Honest, kind, and considerate with your furbaby. 4 paws up!"</p><div class="rc-author"><div class="rc-av">LF</div><div><div class="rc-name">Lisa Fowler</div><div class="rc-meta">Dog Walking Client · Sarasota, FL</div></div></div></div>
+  </div>
+  <div style="text-align:center;margin-top:3rem"><a href="https://wiggleyourtail.com/?page_id=171" target="_blank" class="btn btn-white-outline">Read All Reviews →</a></div>
+</section>
+
+<!-- ABOUT -->
+<section class="section bg-white" id="about">
+  <div class="about-grid">
+    <div class="about-photos">
+      <div class="about-main"><img src="https://images.unsplash.com/photo-1544568100-847a948585b9?w=800&auto=format&fit=crop&q=80" alt="Wiggle Your Tail pet care Sarasota" loading="lazy"/></div>
+      <div class="about-accent"><img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=500&auto=format&fit=crop&q=80" alt="Happy dog" loading="lazy"/></div>
+      <div class="about-chip"><span>🏆</span>#1 Platinum Winner<br>Sarasota Pet Care</div>
+    </div>
+    <div>
+      <div class="section-eyebrow">Our Story</div>
+      <h2 class="display" style="margin:.8rem 0 1.4rem">Built on love,<br><em>rooted in care</em></h2>
+      <p class="lead">Founded by Christa Pecha — born in Los Angeles, now proudly serving Sarasota — Wiggle Your Tail was created because every pet deserves to be treated like family.</p>
+      <div class="av-row"><div class="av-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div><div class="av-body"><strong>Personalized, not mass-produced</strong><p>We take time to truly know your pet. Love and care can't be rushed or mass-produced.</p></div></div>
+      <div class="av-row"><div class="av-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg></div><div class="av-body"><strong>Home is always best</strong><p>In-home care reduces stress, anxiety, and exposure to illness compared to boarding facilities.</p></div></div>
+      <div class="av-row"><div class="av-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="av-body"><strong>Here 7 days a week, 365 days a year</strong><p>Including holidays. Life doesn't take days off — and neither do we.</p></div></div>
+      <div style="margin-top:2rem"><a href="about.html" class="btn btn-purple">Meet Christa →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- AREA & CONTACT -->
+<section class="section bg-cream" id="area">
+  <div><div class="section-eyebrow">Coverage &amp; Contact</div><h2 class="display">Serving Sarasota<br><em>and surrounding areas</em></h2></div>
+  <div class="area-grid">
+    <div>
+      <div class="area-map-card">
+        <div class="area-map-ttl">📍 Areas We Serve</div>
+        <div class="area-tags">
+          <span class="area-tag"><span class="area-tag-dot"></span>Sarasota</span><span class="area-tag"><span class="area-tag-dot"></span>Siesta Key</span><span class="area-tag"><span class="area-tag-dot"></span>Bradenton</span><span class="area-tag"><span class="area-tag-dot"></span>Lakewood Ranch</span><span class="area-tag"><span class="area-tag-dot"></span>Longboat Key</span><span class="area-tag"><span class="area-tag-dot"></span>Fruitville</span><span class="area-tag"><span class="area-tag-dot"></span>Gulf Gate Estates</span><span class="area-tag"><span class="area-tag-dot"></span>Bee Ridge</span><span class="area-tag"><span class="area-tag-dot"></span>Downtown Sarasota</span><span class="area-tag"><span class="area-tag-dot"></span>Osprey</span><span class="area-tag"><span class="area-tag-dot"></span>+ Surrounding Areas</span>
+        </div>
+      </div>
+      <div class="area-right" style="margin-top:1.2rem">
+        <a href="tel:9412805156" class="info-card"><div class="ic-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.57a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div><div class="ic-title">Call or Text</div><div class="ic-text">(941) 280-5156</div></div></a>
+        <a href="mailto:contact@wiggleyourtail.com" class="info-card"><div class="ic-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="ic-title">Email Us</div><div class="ic-text">contact@wiggleyourtail.com</div></div></a>
+        <a href="https://www.timetopet.com/portal/wiggleyourtail" target="_blank" class="info-card"><div class="ic-icon"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div><div><div class="ic-title">Client Portal</div><div class="ic-text">Book via Time to Pet →</div></div></a>
+      </div>
+    </div>
+    <div class="contact-form-wrap">
+      <div class="cf-title">Request Pet Care</div>
+      <div class="cf-sub">Free meet &amp; greet included. We'll respond within a few hours.</div>
+      <div class="cf-row"><div class="cf-group"><label>First Name *</label><input type="text" placeholder="Jane"/></div><div class="cf-group"><label>Last Name *</label><input type="text" placeholder="Smith"/></div></div>
+      <div class="cf-row"><div class="cf-group"><label>Phone</label><input type="tel" placeholder="(941) 000-0000"/></div><div class="cf-group"><label>Email *</label><input type="email" placeholder="jane@email.com"/></div></div>
+      <div class="cf-group"><label>City &amp; Zip *</label><input type="text" placeholder="Sarasota, 34233"/></div>
+      <div class="cf-group"><label>Service Needed</label><select><option value="">Select a service…</option><option>Dog Walking</option><option>Pet Sitting / Overnights</option><option>Dog Training</option><option>Wedding Pet Attendant</option><option>Snowbird / Away Services</option><option>Other</option></select></div>
+      <div class="cf-group"><label>Tell Us About Your Pet</label><textarea placeholder="Breed, age, any special needs or personality notes…"></textarea></div>
+      <button class="cf-submit">Send Request — It's Free!</button>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band" id="cta">
+  <div class="cta-inner">
+    <div class="cta-badge"><span class="cta-badge-dot"></span>Now accepting new clients in Sarasota</div>
+    <h2>Ready to give your dog<br>the care they <em>deserve?</em></h2>
+    <p>Join hundreds of happy pet parents across Sarasota who trust Wiggle Your Tail for reliable, loving, personalized pet care — 365 days a year.</p>
+    <div class="cta-btns"><a href="contact.html" class="btn btn-gold">Get a Free Meet &amp; Greet</a><a href="https://www.timetopet.com/portal/wiggleyourtail" target="_blank" class="btn btn-white-outline">Client Portal Login</a></div>
+    <div class="cta-meta"><div class="cta-meta-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>No commitment required</div><div class="cta-meta-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Free meet &amp; greet</div><div class="cta-meta-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Bonded &amp; insured</div></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand"><div class="logo"><div class="logo-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,.2)"/><path d="M8 14s1.5 2 4 2 4-2 4-2" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/><circle cx="9" cy="10" r="1" fill="white"/><circle cx="15" cy="10" r="1" fill="white"/></svg></div><div class="logo-text"><span class="logo-name">Wiggle Your Tail</span><span class="logo-sub">Premium Pet Care</span></div></div><p class="footer-desc">Sarasota's #1 Platinum Award-Winning provider of dog walking, pet sitting, and dog training. Bonded, insured &amp; Pet CPR certified.</p><div class="footer-socials"><a href="https://www.facebook.com/WiggleYourTailDogWalking/" target="_blank" class="f-social"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a href="https://www.instagram.com/wiggleyourtailpetcare/" target="_blank" class="f-social"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a></div></div>
+    <div><div class="f-col-title">Services</div><ul class="f-links"><li><a href="dog-walking.html">Dog Walking</a></li><li><a href="pet-sitting.html">Pet Sitting</a></li><li><a href="pet-sitting.html">Overnight Care</a></li><li><a href="dog-training.html">Dog Training</a></li><li><a href="wedding-pet-attendant.html">Wedding Pet Attendant</a></li><li><a href="snowbird-services.html">Snowbird Services</a></li></ul></div>
+    <div><div class="f-col-title">Company</div><ul class="f-links"><li><a href="about.html">About Christa</a></li><li><a href="https://wiggleyourtail.com/?page_id=171" target="_blank">Barkimonials</a></li><li><a href="how-it-works.html">How It Works</a></li><li><a href="https://wiggleyourtail.com/become-a-walker/" target="_blank">Become a Walker</a></li><li><a href="https://wiggleyourtail.com/doggybloggy/" target="_blank">Doggy Bloggy</a></li><li><a href="https://wiggleyourtail.com/home-shop/" target="_blank">Shop</a></li></ul></div>
+    <div><div class="f-col-title">Contact</div><ul class="f-links"><li><a href="tel:9412805156">(941) 280-5156</a></li><li><a href="mailto:contact@wiggleyourtail.com">contact@wiggleyourtail.com</a></li><li><a href="https://www.timetopet.com/portal/wiggleyourtail" target="_blank">Client Portal</a></li><li><a href="contact.html">Free Meet &amp; Greet</a></li><li><a href="https://wiggleyourtail.com/faqs/" target="_blank">FAQs</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2025 Wiggle Your Tail Pet Care, LLC · Sarasota, FL · All rights reserved.</span><div class="footer-bottom-links"><a href="https://wiggleyourtail.com/privacy-policy/" target="_blank">Privacy Policy</a><a href="https://wiggleyourtail.com/terms-and-conditions/" target="_blank">Terms &amp; Conditions</a></div></div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
