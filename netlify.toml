@@ -1,0 +1,148 @@
+# Netlify configuration for Wiggle Your Tail Pet Care
+
+[build]
+  publish = "wyt-site"
+
+# ── URL Redirects: preserve all existing WordPress URLs ──────────────────────
+
+[[redirects]]
+  from = "/wiggleyourtail-dog-walking"
+  to = "/dog-walking.html"
+  status = 301
+
+[[redirects]]
+  from = "/wiggleyourtail-dog-walking/"
+  to = "/dog-walking.html"
+  status = 301
+
+[[redirects]]
+  from = "/drop-in-visits-overnight-dog-sitting"
+  to = "/pet-sitting.html"
+  status = 301
+
+[[redirects]]
+  from = "/drop-in-visits-overnight-dog-sitting/"
+  to = "/pet-sitting.html"
+  status = 301
+
+[[redirects]]
+  from = "/services-rates/dog-training"
+  to = "/dog-training.html"
+  status = 301
+
+[[redirects]]
+  from = "/services-rates/dog-training/"
+  to = "/dog-training.html"
+  status = 301
+
+[[redirects]]
+  from = "/pet-taxi"
+  to = "/wedding-pet-attendant.html"
+  status = 301
+
+[[redirects]]
+  from = "/pet-taxi/"
+  to = "/wedding-pet-attendant.html"
+  status = 301
+
+[[redirects]]
+  from = "/away-from-home-snowbird-services"
+  to = "/snowbird-services.html"
+  status = 301
+
+[[redirects]]
+  from = "/away-from-home-snowbird-services/"
+  to = "/snowbird-services.html"
+  status = 301
+
+[[redirects]]
+  from = "/services-rates"
+  to = "/services-rates.html"
+  status = 301
+
+[[redirects]]
+  from = "/services-rates/"
+  to = "/services-rates.html"
+  status = 301
+
+[[redirects]]
+  from = "/how-it-works"
+  to = "/how-it-works.html"
+  status = 301
+
+[[redirects]]
+  from = "/how-it-works/"
+  to = "/how-it-works.html"
+  status = 301
+
+[[redirects]]
+  from = "/who-we-are"
+  to = "/about.html"
+  status = 301
+
+[[redirects]]
+  from = "/who-we-are/"
+  to = "/about.html"
+  status = 301
+
+[[redirects]]
+  from = "/contactus"
+  to = "/contact.html"
+  status = 301
+
+[[redirects]]
+  from = "/contactus/"
+  to = "/contact.html"
+  status = 301
+
+# ── WordPress pages: pass through to WP (don't 404 on Netlify) ───────────────
+
+[[redirects]]
+  from = "/doggybloggy/*"
+  to = "https://wiggleyourtail.com/doggybloggy/:splat"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/faqs/*"
+  to = "https://wiggleyourtail.com/faqs/:splat"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/home-shop/*"
+  to = "https://wiggleyourtail.com/home-shop/:splat"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/become-a-walker/*"
+  to = "https://wiggleyourtail.com/become-a-walker/:splat"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/pet-boarding/*"
+  to = "https://wiggleyourtail.com/pet-boarding/:splat"
+  status = 200
+  force = false
+
+# ── Security & performance headers ───────────────────────────────────────────
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
