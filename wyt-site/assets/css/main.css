@@ -163,6 +163,19 @@ nav.site-nav.scrolled { box-shadow:var(--shadow-md); }
 .section.bg-purple { background:var(--purple-deep); }
 .section.bg-pale   { background:var(--purple-pale); }
 
+/* ── SERVICE GRID & CARDS ── */
+.service-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; }
+.service-card { background:var(--white); border:1.5px solid var(--border); border-radius:24px; padding:2rem; display:flex; flex-direction:column; gap:1rem; transition:all .3s; }
+.service-card:hover { border-color:var(--purple-soft); box-shadow:var(--shadow-md); transform:translateY(-4px); }
+
+/* ── FEATURE GRID & CARDS ── */
+.feat-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem; margin-top:3rem; text-align:left; }
+.feat-card { padding:1.8rem; background:var(--cream); border-radius:20px; border:1.5px solid var(--border); transition:border-color .2s; }
+.feat-card:hover { border-color:var(--purple-soft); }
+
+/* ── SECTION HEADER 2-COL ── */
+.section-hdr { display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:end; margin-bottom:3.5rem; }
+
 /* ── PRICING CARDS ── */
 .pricing-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:3rem; }
 .price-card { background:var(--white); border:1.5px solid var(--border); border-radius:24px; padding:2.2rem; display:flex; flex-direction:column; gap:1.6rem; transition:all .3s; position:relative; overflow:hidden; }
@@ -286,7 +299,10 @@ nav.site-nav.scrolled { box-shadow:var(--shadow-md); }
   .breadcrumb { padding:5.5rem 2.5rem 0; }
   .section { padding:4rem 2.5rem; }
   .pricing-grid { grid-template-columns:1fr 1fr; }
-  .reviews-grid { grid-template-columns:1fr; }
+  .reviews-grid { grid-template-columns:repeat(2,1fr); }
+  .service-grid { grid-template-columns:repeat(2,1fr); }
+  .feat-grid { grid-template-columns:repeat(2,1fr); }
+  .section-hdr { grid-template-columns:1fr; }
   .footer-top { grid-template-columns:1fr 1fr; gap:2rem; }
   .cta-band { padding:5rem 2.5rem; }
 }
@@ -296,6 +312,9 @@ nav.site-nav.scrolled { box-shadow:var(--shadow-md); }
   .section { padding:3.5rem 1.4rem; }
   .page-hero { padding:1rem 1.4rem 3.5rem; }
   .pricing-grid { grid-template-columns:1fr; }
+  .reviews-grid { grid-template-columns:1fr; }
+  .service-grid { grid-template-columns:1fr; }
+  .feat-grid { grid-template-columns:1fr; }
   .cf-row { grid-template-columns:1fr; }
   .footer-top { grid-template-columns:1fr; }
   .footer-bottom { flex-direction:column; gap:1rem; text-align:center; }
