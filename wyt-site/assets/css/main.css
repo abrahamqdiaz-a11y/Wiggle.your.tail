@@ -71,8 +71,7 @@ nav.site-nav {
 }
 nav.site-nav.scrolled { box-shadow:var(--shadow-md); }
 .logo { display:flex; align-items:center; gap:.9rem; }
-.logo-icon { width:42px; height:42px; border-radius:12px; background:linear-gradient(135deg,var(--purple-deep),var(--purple)); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
-.logo-icon svg { width:22px; height:22px; }
+.nav-logo { height:52px; width:auto; flex-shrink:0; }
 .logo-text { display:flex; flex-direction:column; line-height:1.1; }
 .logo-name { font-family:var(--serif); font-size:1.18rem; font-weight:700; color:var(--dark); letter-spacing:-.02em; }
 .logo-sub  { font-size:.6rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); }
