@@ -75,7 +75,7 @@ nav.site-nav.scrolled { box-shadow:var(--shadow-md); }
 .logo { display:flex; align-items:center; gap:.9rem; }
 .nav-logo { height:72px; width:72px; object-fit:contain; flex-shrink:0; mix-blend-mode:multiply; }
 .footer-brand .nav-logo { height:62px; width:62px; mix-blend-mode:multiply; }
-.logo-text { display:flex; flex-direction:column; line-height:1.1; }
+.logo-text { display:flex; flex-direction:column; line-height:1.1; gap:3px; }
 .logo-name { font-family:var(--serif); font-size:1.18rem; font-weight:700; color:var(--dark); letter-spacing:-.02em; }
 .logo-sub  { font-size:.6rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); }
 .nav-links { display:flex; gap:1.8rem; list-style:none; align-items:center; }
