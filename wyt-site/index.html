@@ -39,12 +39,14 @@
     .proof-stars{color:var(--gold);font-size:.78rem;display:block;}
 
     /* Hero right collage */
-    .hero-right{position:relative;overflow:hidden;animation:fadeIn .8s .2s ease both;}
+    .hero-right{position:relative;overflow:visible;animation:fadeIn .8s .2s ease both;}
     .col-main{position:absolute;top:4rem;left:1rem;right:5rem;bottom:4rem;border-radius:28px;overflow:hidden;box-shadow:var(--shadow-lg);}
-    .col-main img{transition:transform 8s ease;}
+    .col-main img{transition:transform 8s ease;object-position:center 60%;}
     .col-main:hover img{transform:scale(1.04);}
     .col-a1{position:absolute;top:1.5rem;right:0;width:46%;height:42%;border-radius:22px;overflow:hidden;box-shadow:var(--shadow-md);border:4px solid var(--cream);animation:scaleIn .7s .5s ease both;}
+    .col-a1 img{object-position:center 25%;}
     .col-a2{position:absolute;bottom:1.5rem;right:0;width:44%;height:36%;border-radius:22px;overflow:hidden;box-shadow:var(--shadow-md);border:4px solid var(--cream);animation:scaleIn .7s .65s ease both;}
+    .col-a2 img{object-position:center 30%;}
     .col-award{position:absolute;bottom:5rem;left:2rem;background:linear-gradient(135deg,var(--purple-deep),var(--purple));color:#fff;border-radius:14px;padding:.75rem 1.1rem;box-shadow:0 8px 28px rgba(107,63,160,.45);display:flex;align-items:center;gap:.6rem;z-index:5;animation:scaleIn .6s .9s ease both;}
     .col-award .ca-num{font-family:var(--serif);font-size:1.5rem;font-weight:900;line-height:1;}
     .col-award .ca-txt{font-size:.72rem;opacity:.85;line-height:1.4;}
@@ -54,6 +56,16 @@
     .fp-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;}
     .fp-icon.pur{background:var(--purple-pale);}
     .fp-icon.gld{background:var(--gold-pale);}
+
+    /* ── Mobile hero photo strip (hidden on desktop, visible ≤1100px) ── */
+    .hero-photo-strip{display:none;}
+    .hps-track{display:flex;gap:.75rem;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:.25rem;}
+    .hps-track::-webkit-scrollbar{display:none;}
+    .hps-img{flex:0 0 200px;height:148px;border-radius:18px;overflow:hidden;box-shadow:var(--shadow-md);border:3px solid rgba(107,63,160,.12);flex-shrink:0;}
+    .hps-img img{width:100%;height:100%;object-fit:cover;}
+    .hps-img:nth-child(1) img{object-position:center 65%;}
+    .hps-img:nth-child(2) img{object-position:center 25%;}
+    .hps-img:nth-child(3) img{object-position:center 30%;}
 
     /* Services grid */
     .svc-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:auto auto;gap:1.25rem;}
@@ -136,8 +148,10 @@
 
     @media(max-width:1100px){
       #hero{grid-template-columns:1fr;min-height:auto;}
-      .hero-left{padding:4rem 2.5rem;}
+      .hero-left{padding:4rem 2.5rem 2rem;}
       .hero-right{display:none;}
+      /* Show photo strip below hero content on tablet/mobile */
+      .hero-photo-strip{display:block;padding:0 2.5rem 3.5rem;}
       .svc-grid{grid-template-columns:1fr 1fr;}
       .svc-1,.svc-2,.svc-3,.svc-4,.svc-5,.svc-6{grid-column:span 1;}
       .svc-wide{grid-column:span 1 !important;display:flex;flex-direction:column;}
@@ -146,7 +160,9 @@
       .about-chip{right:-.5rem;}
     }
     @media(max-width:640px){
-      .hero-left{padding:3rem 1.4rem;}
+      .hero-left{padding:3rem 1.4rem 2rem;}
+      .hero-photo-strip{padding:0 1.4rem 3rem;}
+      .hps-img{flex:0 0 165px;height:122px;border-radius:14px;}
       .svc-grid{grid-template-columns:1fr;}
       #hero::before{display:none;}
     }
@@ -218,15 +234,23 @@
     </div>
   </div>
   <div class="hero-right">
-    <!-- REPLACE src with actual client photos when available -->
-    <div class="col-main"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&auto=format&fit=crop&q=80" alt="Happy dog being walked in Sarasota" loading="eager"/></div>
-    <div class="col-a1"><img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&auto=format&fit=crop&q=80" alt="Dog sitting happily" loading="eager"/></div>
-    <div class="col-a2"><img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&auto=format&fit=crop&q=80" alt="Dogs running together" loading="eager"/></div>
+    <div class="col-main"><img src="assets/images/hero-dogs-walk.jpg" alt="Dogs being walked in a Sarasota neighborhood" loading="eager"/></div>
+    <div class="col-a1"><img src="assets/images/hero-frenchie.jpg" alt="French Bulldog client — Wiggle Your Tail Pet Care" loading="eager"/></div>
+    <div class="col-a2"><img src="assets/images/hero-cat.jpg" alt="Persian cat during in-home pet sitting" loading="eager"/></div>
     <div class="col-award"><div class="ca-num">#1</div><div class="ca-txt">Platinum Winner<br>Sarasota Pet Care</div></div>
     <div class="hero-fp fp1"><div class="fp-icon pur">✅</div><div><div style="font-size:.75rem;color:var(--muted);font-weight:400">Status</div><strong style="font-size:.82rem">Bonded &amp; Insured</strong></div></div>
     <div class="hero-fp fp2"><div class="fp-icon gld">❤️</div><div><div style="font-size:.75rem;color:var(--muted);font-weight:400">Certified</div><strong style="font-size:.82rem">Pet CPR Trained</strong></div></div>
   </div>
 </section>
+
+<!-- MOBILE HERO PHOTO STRIP — visible only below 1100 px, hidden on desktop -->
+<div class="hero-photo-strip" aria-hidden="true">
+  <div class="hps-track">
+    <div class="hps-img"><img src="assets/images/hero-dogs-walk.jpg" alt="Dog walking in Sarasota" loading="lazy"/></div>
+    <div class="hps-img"><img src="assets/images/hero-frenchie.jpg" alt="Happy French Bulldog client" loading="lazy"/></div>
+    <div class="hps-img"><img src="assets/images/hero-cat.jpg" alt="Persian cat pet sitting client" loading="lazy"/></div>
+  </div>
+</div>
 
 <!-- MARQUEE -->
 <div class="marquee-strip" aria-hidden="true">
