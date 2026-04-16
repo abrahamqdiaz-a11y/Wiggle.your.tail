@@ -26,16 +26,6 @@
   status = 301
 
 [[redirects]]
-  from = "/services-rates/dog-training"
-  to = "/dog-training.html"
-  status = 301
-
-[[redirects]]
-  from = "/services-rates/dog-training/"
-  to = "/dog-training.html"
-  status = 301
-
-[[redirects]]
   from = "/pet-taxi"
   to = "/wedding-pet-attendant.html"
   status = 301
