@@ -53,7 +53,7 @@ a, button, [role="button"] { -webkit-tap-highlight-color: transparent; }
 .btn-white-outline:hover { background:rgba(255,255,255,.1); border-color:rgba(255,255,255,.7); }
 
 /* ── TYPOGRAPHY UTILITIES ── */
-.tag { display:inline-flex; align-items:center; gap:6px; font-size:.72rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--gold); padding:.35rem .9rem; background:var(--gold-pale); border:1.5px solid rgba(212,150,10,.25); border-radius:100px; }
+.tag { display:inline-flex; align-items:center; gap:6px; font-size:.72rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--gold); padding:.35rem .9rem; background:var(--gold-pale); border:1.5px solid rgba(212,150,10,.25); border-radius:100px; width:fit-content; }
 .section-eyebrow { font-size:.72rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); display:flex; align-items:center; gap:.6rem; margin-bottom:.9rem; }
 .section-eyebrow::before { content:''; display:block; width:28px; height:2.5px; border-radius:2px; background:linear-gradient(90deg,var(--gold),var(--gold-warm)); }
 .section-eyebrow.center { justify-content:center; }
@@ -73,7 +73,7 @@ nav.site-nav {
 }
 nav.site-nav.scrolled { box-shadow:var(--shadow-md); }
 .logo { display:flex; align-items:center; gap:.9rem; }
-.nav-logo { height:72px; width:72px; object-fit:contain; flex-shrink:0; mix-blend-mode:multiply; }
+.nav-logo { height:72px; width:72px; object-fit:contain; flex-shrink:0; mix-blend-mode:multiply; border-radius:50%; }
 .footer-brand .nav-logo { height:62px; width:62px; mix-blend-mode:multiply; }
 .logo-text { display:flex; flex-direction:column; line-height:1.1; gap:3px; }
 .logo-name { font-family:var(--serif); font-size:1.18rem; font-weight:700; color:var(--dark); letter-spacing:-.02em; }

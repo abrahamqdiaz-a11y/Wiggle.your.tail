@@ -19,41 +19,41 @@
     @keyframes scaleIn{from{opacity:0;transform:scale(.94);}to{opacity:1;transform:scale(1);}}
     @keyframes marquee2{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 
-    #hero{min-height:100vh;display:grid;grid-template-columns:1.1fr .9fr;padding-top:72px;position:relative;overflow:hidden;}
+    #hero{min-height:100vh;display:grid;grid-template-columns:1fr 1.1fr;padding-top:72px;position:relative;overflow:hidden;}
     #hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(107,63,160,.06) 1.5px,transparent 1.5px);background-size:28px 28px;pointer-events:none;z-index:0;}
     .hero-bg1{position:absolute;top:-100px;right:-100px;width:700px;height:700px;background:radial-gradient(ellipse at center,rgba(107,63,160,.12) 0%,transparent 70%);border-radius:50%;pointer-events:none;}
     .hero-bg2{position:absolute;bottom:-80px;left:-80px;width:500px;height:500px;background:radial-gradient(ellipse at center,rgba(212,150,10,.08) 0%,transparent 70%);border-radius:50%;pointer-events:none;}
-    .hero-left{display:flex;flex-direction:column;justify-content:center;padding:5rem 3rem 5rem 4.5rem;position:relative;z-index:2;}
-    .hero-h1{font-family:var(--serif);font-size:clamp(3rem,5.5vw,5.8rem);font-weight:900;line-height:1.02;letter-spacing:-.04em;margin:1.4rem 0 1.8rem;}
+    .hero-left{display:flex;flex-direction:column;justify-content:center;padding:5rem 2rem 5rem 4.5rem;position:relative;z-index:2;}
+    .hero-h1{font-family:var(--serif);font-size:clamp(2.8rem,5vw,5.4rem);font-weight:900;line-height:1.02;letter-spacing:-.04em;margin:1.2rem 0 1.6rem;}
     .hero-h1 .l1{display:block;color:var(--dark);}
     .hero-h1 .l2{display:block;font-style:italic;font-weight:300;background:linear-gradient(120deg,var(--purple) 0%,var(--purple-soft) 50%,var(--gold) 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:goldShimmer 5s linear infinite;}
     .hero-h1 .l3{display:block;color:var(--dark);}
-    .hero-sub{font-size:1.08rem;line-height:1.78;font-weight:300;color:var(--muted);max-width:430px;margin-bottom:2.5rem;}
-    .hero-actions{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin-bottom:3rem;}
+    .hero-sub{font-size:1.05rem;line-height:1.78;font-weight:300;color:var(--muted);max-width:400px;margin-bottom:2.2rem;}
+    .hero-actions{display:flex;gap:.85rem;flex-wrap:wrap;align-items:center;margin-bottom:2.5rem;}
     .hero-proof{display:flex;align-items:center;gap:1.2rem;}
     .proof-avs{display:flex;}
-    .proof-avs span{width:38px;height:38px;border-radius:50%;border:3px solid var(--cream);margin-left:-10px;background:var(--purple-pale);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.75rem;color:var(--purple);}
+    .proof-avs span{width:36px;height:36px;border-radius:50%;border:3px solid var(--cream);margin-left:-10px;background:var(--purple-pale);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.73rem;color:var(--purple);}
     .proof-avs span:first-child{margin-left:0;}
-    .proof-txt{font-size:.84rem;color:var(--muted);}
+    .proof-txt{font-size:.83rem;color:var(--muted);}
     .proof-txt strong{color:var(--dark);}
-    .proof-stars{color:var(--gold);font-size:.78rem;display:block;}
+    .proof-stars{color:var(--gold);font-size:.76rem;display:block;}
 
     /* Hero right collage */
     .hero-right{position:relative;overflow:visible;animation:fadeIn .8s .2s ease both;}
-    .col-main{position:absolute;top:4rem;left:1rem;right:5rem;bottom:4rem;border-radius:28px;overflow:hidden;box-shadow:var(--shadow-lg);}
-    .col-main img{transition:transform 8s ease;object-position:center 60%;}
+    .col-main{position:absolute;top:3.5rem;left:0;right:4rem;bottom:3.5rem;border-radius:28px;overflow:hidden;box-shadow:var(--shadow-lg);}
+    .col-main img{transition:transform 8s ease;object-position:center 45%;}
     .col-main:hover img{transform:scale(1.04);}
-    .col-a1{position:absolute;top:1.5rem;right:0;width:46%;height:42%;border-radius:22px;overflow:hidden;box-shadow:var(--shadow-md);border:4px solid var(--cream);animation:scaleIn .7s .5s ease both;}
-    .col-a1 img{object-position:center 25%;}
-    .col-a2{position:absolute;bottom:1.5rem;right:0;width:44%;height:36%;border-radius:22px;overflow:hidden;box-shadow:var(--shadow-md);border:4px solid var(--cream);animation:scaleIn .7s .65s ease both;}
-    .col-a2 img{object-position:center 30%;}
-    .col-award{position:absolute;bottom:5rem;left:2rem;background:linear-gradient(135deg,var(--purple-deep),var(--purple));color:#fff;border-radius:14px;padding:.75rem 1.1rem;box-shadow:0 8px 28px rgba(107,63,160,.45);display:flex;align-items:center;gap:.6rem;z-index:5;animation:scaleIn .6s .9s ease both;}
+    .col-a1{position:absolute;top:1rem;right:0;width:38%;height:34%;border-radius:22px;overflow:hidden;box-shadow:var(--shadow-md);border:4px solid var(--cream);animation:scaleIn .7s .5s ease both;}
+    .col-a1 img{object-position:center 40%;}
+    .col-a2{position:absolute;bottom:1rem;right:0;width:38%;height:32%;border-radius:22px;overflow:hidden;box-shadow:var(--shadow-md);border:4px solid var(--cream);animation:scaleIn .7s .65s ease both;}
+    .col-a2 img{object-position:center 50%;}
+    .col-award{position:absolute;bottom:5rem;left:1.5rem;background:linear-gradient(135deg,var(--purple-deep),var(--purple));color:#fff;border-radius:14px;padding:.75rem 1.1rem;box-shadow:0 8px 28px rgba(107,63,160,.45);display:flex;align-items:center;gap:.6rem;z-index:5;animation:scaleIn .6s .9s ease both;}
     .col-award .ca-num{font-family:var(--serif);font-size:1.5rem;font-weight:900;line-height:1;}
     .col-award .ca-txt{font-size:.72rem;opacity:.85;line-height:1.4;}
-    .hero-fp{position:absolute;z-index:10;background:var(--white);border-radius:16px;padding:.75rem 1.1rem;box-shadow:0 8px 32px rgba(19,12,36,.15);display:flex;align-items:center;gap:.65rem;font-size:.82rem;font-weight:600;color:var(--dark);animation:drift 5s ease-in-out infinite;}
-    .hero-fp.fp1{top:42%;left:.5rem;animation-delay:0s;}
-    .hero-fp.fp2{bottom:28%;right:.2rem;animation-delay:1.8s;}
-    .fp-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;}
+    .hero-fp{position:absolute;z-index:10;background:var(--white);border-radius:16px;padding:.7rem 1rem;box-shadow:0 8px 32px rgba(19,12,36,.15);display:flex;align-items:center;gap:.6rem;font-size:.8rem;font-weight:600;color:var(--dark);animation:drift 5s ease-in-out infinite;}
+    .hero-fp.fp1{top:38%;left:.5rem;animation-delay:0s;}
+    .hero-fp.fp2{bottom:26%;right:.2rem;animation-delay:1.8s;}
+    .fp-icon{width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;}
     .fp-icon.pur{background:var(--purple-pale);}
     .fp-icon.gld{background:var(--gold-pale);}
 
@@ -225,7 +225,7 @@
       <span class="l2">Favourite People</span>
       <span class="l3">in Sarasota</span>
     </h1>
-    <p class="hero-sub" style="animation:fadeUp .6s .2s ease both">Premium dog walking, in-home pet sitting, and wedding day care — all with the personal touch your furry family member deserves.</p>
+    <p class="hero-sub" style="animation:fadeUp .6s .2s ease both">Premium dog walking, in-home pet sitting, and wedding day care — all with the personal touch your beloved companion deserves.</p>
     <div class="hero-actions" style="animation:fadeUp .6s .3s ease both">
       <a href="contact.html" class="btn btn-purple" style="font-size:.95rem;padding:.95rem 2rem">Get a Free Meet &amp; Greet</a>
       <a href="services-rates.html" class="btn btn-outline" style="font-size:.95rem;padding:.93rem 1.8rem">See Services</a>
@@ -236,7 +236,7 @@
     </div>
   </div>
   <div class="hero-right">
-    <div class="col-main"><img src="assets/images/hero-dogs-walk.jpg" alt="Dogs being walked in a Sarasota neighborhood" loading="eager"/></div>
+    <div class="col-main"><img src="assets/images/picsbyfran-dog-2579871.jpg" alt="Dog being walked in a Sarasota neighborhood" loading="eager"/></div>
     <div class="col-a1"><img src="assets/images/hero-frenchie.jpg" alt="French Bulldog client — Wiggle Your Tail Pet Care" loading="eager"/></div>
     <div class="col-a2"><img src="assets/images/hero-cat.jpg" alt="Persian cat during in-home pet sitting" loading="eager"/></div>
     <div class="col-award"><div class="ca-num">#1</div><div class="ca-txt">Platinum Winner<br>Sarasota Pet Care</div></div>
@@ -248,7 +248,7 @@
 <!-- MOBILE HERO PHOTO STRIP — visible only below 1100 px, hidden on desktop -->
 <div class="hero-photo-strip" aria-hidden="true">
   <div class="hps-track">
-    <div class="hps-img"><img src="assets/images/hero-dogs-walk.jpg" alt="Dog walking in Sarasota" loading="lazy"/></div>
+    <div class="hps-img"><img src="assets/images/picsbyfran-dog-2579871.jpg" alt="Dog walking in Sarasota" loading="lazy"/></div>
     <div class="hps-img"><img src="assets/images/hero-frenchie.jpg" alt="Happy French Bulldog client" loading="lazy"/></div>
     <div class="hps-img"><img src="assets/images/hero-cat.jpg" alt="Persian cat pet sitting client" loading="lazy"/></div>
   </div>
