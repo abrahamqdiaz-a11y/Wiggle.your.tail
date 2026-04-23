@@ -18,8 +18,8 @@
   --ink:          #2D1F47;
   --muted:        #7A6E8A;
   --border:       rgba(107,63,160,0.13);
-  --serif:  'Fraunces', Georgia, serif;
-  --sans:   'Plus Jakarta Sans', sans-serif;
+  --serif:  'Playfair Display', Georgia, serif;
+  --sans:   'Nunito', sans-serif;
   --shadow-sm: 0 2px 12px rgba(19,12,36,0.08);
   --shadow-md: 0 8px 32px rgba(19,12,36,0.12);
   --shadow-lg: 0 24px 64px rgba(19,12,36,0.16);
@@ -59,8 +59,8 @@ a, button, [role="button"] { -webkit-tap-highlight-color: transparent; }
 .section-eyebrow.center { justify-content:center; }
 .section-eyebrow.center::before { display:none; }
 .section-eyebrow.center::after { content:''; display:block; width:28px; height:2.5px; border-radius:2px; background:linear-gradient(90deg,var(--gold),var(--gold-warm)); }
-h2.display { font-family:var(--serif); font-size:clamp(2.2rem,4.5vw,3.6rem); font-weight:700; line-height:1.1; letter-spacing:-.03em; color:var(--dark); }
-h2.display em { font-style:italic; color:var(--purple); font-weight:300; }
+h2.display { font-family:var(--serif); font-size:clamp(2.2rem,4.5vw,3.6rem); font-weight:700; line-height:1.15; letter-spacing:-.02em; color:var(--dark); }
+h2.display em { font-style:italic; color:var(--purple); font-weight:400; }
 .lead { font-size:1.05rem; line-height:1.8; font-weight:300; color:var(--muted); max-width:520px; }
 
 /* ── NAV ── */
