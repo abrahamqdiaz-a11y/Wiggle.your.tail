@@ -189,7 +189,7 @@ nav.site-nav.scrolled { box-shadow:var(--shadow-md); }
 .feat-card:hover { border-color:var(--purple-soft); }
 
 /* ── SECTION HEADER 2-COL ── */
-.section-hdr { display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:end; margin-bottom:3.5rem; }
+.section-hdr { display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:start; margin-bottom:3.5rem; }
 
 /* ── PRICING CARDS ── */
 .pricing-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:3rem; }
