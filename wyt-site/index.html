@@ -98,19 +98,20 @@
     .svc-wide{grid-column:span 2 !important;display:grid;grid-template-columns:auto 1fr;gap:1.5rem;align-items:center;}
 
     /* How */
-    .how-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:6rem;align-items:center;margin-top:4rem;}
+    .how-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:4rem;align-items:start;}
+    .how-left{display:flex;flex-direction:column;gap:2.5rem;}
     .steps{display:flex;flex-direction:column;}
-    .how-step{display:flex;gap:1.4rem;padding:1.8rem 0;border-bottom:1px solid var(--border);}
+    .how-step{display:flex;gap:1.4rem;padding:1.6rem 0;border-bottom:1px solid var(--border);}
     .how-step:last-child{border-bottom:none;}
-    .step-num{font-family:var(--serif);font-size:3rem;font-weight:900;color:var(--purple-pale);line-height:1;flex-shrink:0;width:52px;transition:color .3s;}
+    .step-num{font-family:var(--serif);font-size:2.6rem;font-weight:900;color:var(--purple-pale);line-height:1;flex-shrink:0;width:48px;transition:color .3s;}
     .how-step:hover .step-num{color:var(--purple);}
-    .step-title{font-family:var(--serif);font-size:1.2rem;font-weight:700;color:var(--dark);margin-bottom:.45rem;}
-    .step-desc{font-size:.88rem;line-height:1.75;color:var(--muted);}
+    .step-title{font-family:var(--serif);font-size:1.1rem;font-weight:700;color:var(--dark);margin-bottom:.4rem;}
+    .step-desc{font-size:.86rem;line-height:1.75;color:var(--muted);}
     .how-vis{position:relative;}
-    .how-photo{border-radius:28px;overflow:hidden;aspect-ratio:4/5;box-shadow:var(--shadow-lg);}
-    .how-photo img{transition:transform 8s ease;}
+    .how-photo{border-radius:28px;overflow:hidden;height:540px;box-shadow:var(--shadow-lg);}
+    .how-photo img{transition:transform 8s ease;height:100%;object-position:center 30%;}
     .how-photo:hover img{transform:scale(1.04);}
-    .how-float{position:absolute;bottom:-24px;left:-28px;background:var(--white);border-radius:20px;padding:1.3rem 1.6rem;box-shadow:var(--shadow-lg);border:1.5px solid var(--border);min-width:230px;}
+    .how-float{position:absolute;bottom:1.5rem;left:-1.5rem;background:var(--white);border-radius:20px;padding:1.2rem 1.5rem;box-shadow:var(--shadow-lg);border:1.5px solid var(--border);min-width:210px;}
     .hf-label{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;}
     .hf-row{display:flex;align-items:center;gap:.6rem;margin-top:.5rem;}
     .hf-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
@@ -166,6 +167,7 @@
       .hero-photo-strip{padding:0 1.4rem 3rem;}
       .hps-img{flex:0 0 165px;height:122px;border-radius:14px;}
       .svc-grid{grid-template-columns:1fr;}
+      .how-photo{height:280px;}
       #hero::before{display:none;}
     }
   </style>
@@ -277,13 +279,15 @@
 
 <!-- HOW IT WORKS -->
 <section class="section bg-cream" id="how">
-  <div><div class="section-eyebrow">The Process</div><h2 class="display">Getting started is<br><em>refreshingly simple</em></h2></div>
   <div class="how-grid">
-    <div class="steps">
-      <div class="how-step"><div class="step-num">01</div><div><div class="step-title">Reach Out</div><div class="step-desc">Call (941) 280-5156, email, or fill out our contact form. We respond the same day.</div></div></div>
-      <div class="how-step"><div class="step-num">02</div><div><div class="step-title">Free Meet &amp; Greet</div><div class="step-desc">We visit your home at no charge to meet you and your pet, and learn their personality and routine.</div></div></div>
-      <div class="how-step"><div class="step-num">03</div><div><div class="step-title">Book via Our App</div><div class="step-desc">Schedule, pay, and manage everything through our Time to Pet client portal — 24/7 from any device.</div></div></div>
-      <div class="how-step"><div class="step-num">04</div><div><div class="step-title">Relax &amp; Get Updates</div><div class="step-desc">Receive photos and a full pet report card after every visit. You'll always know how they're doing.</div></div></div>
+    <div class="how-left">
+      <div><div class="section-eyebrow">The Process</div><h2 class="display">Getting started is<br><em>refreshingly simple</em></h2></div>
+      <div class="steps">
+        <div class="how-step"><div class="step-num">01</div><div><div class="step-title">Reach Out</div><div class="step-desc">Call (941) 280-5156, email, or fill out our contact form. We respond the same day.</div></div></div>
+        <div class="how-step"><div class="step-num">02</div><div><div class="step-title">Free Meet &amp; Greet</div><div class="step-desc">We visit your home at no charge to meet you and your pet, and learn their personality and routine.</div></div></div>
+        <div class="how-step"><div class="step-num">03</div><div><div class="step-title">Book via Our App</div><div class="step-desc">Schedule, pay, and manage everything through our Time to Pet client portal — 24/7 from any device.</div></div></div>
+        <div class="how-step"><div class="step-num">04</div><div><div class="step-title">Relax &amp; Get Updates</div><div class="step-desc">Receive photos and a full pet report card after every visit. You'll always know how they're doing.</div></div></div>
+      </div>
     </div>
     <div class="how-vis">
       <div class="how-photo"><img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&auto=format&fit=crop&q=80" alt="Walker with dog in Sarasota" loading="lazy"/></div>
