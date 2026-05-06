@@ -102,16 +102,19 @@
   <div style="max-width:680px;margin:0 auto" class="contact-form-wrap">
     <div class="cf-title">Pet Care Request Form</div>
     <div class="cf-sub">Free meet &amp; greet included. No commitment required. We'll respond within a few hours.</div>
-    <div class="cf-row"><div class="cf-group"><label>First Name *</label><input type="text" placeholder="Jane"/></div><div class="cf-group"><label>Last Name *</label><input type="text" placeholder="Smith"/></div></div>
-    <div class="cf-row"><div class="cf-group"><label>Phone</label><input type="tel" placeholder="(941) 000-0000"/></div><div class="cf-group"><label>Email *</label><input type="email" placeholder="jane@email.com"/></div></div>
-    <div class="cf-group"><label>City &amp; Zip *</label><input type="text" placeholder="Sarasota, 34233"/></div>
-    <div class="cf-group"><label>Services Needed</label><select><option value="">Select a service…</option><option>Dog Walking</option><option>Pet Sitting / Overnights</option><option>Pet Boarding</option><option>Pet Grooming</option><option>Wedding Pet Attendant</option><option>Snowbird / Away Services</option></select></div>
-    <div class="cf-group"><label>Tell Us About Your Pet</label><textarea placeholder="Breed, age, any special needs or personality notes…"></textarea></div>
-    <button class="cf-submit">Send Request — It's Free!</button>
-    <div class="cf-consent">
-      <p class="cf-consent-disc">By selecting an option below, you confirm your preference regarding SMS messages from Wiggle Your Tail Pet Care. These messages will be sent from (941) 280-5156 and may include appointment confirmations, service updates, and promotional messages. Message frequency may vary, with a maximum of 4 messages per month. Message and data rates may apply. Reply STOP to unsubscribe or HELP for assistance. Consent is not a condition of purchase. See our <a href="https://wiggleyourtail.com/terms-and-conditions/" target="_blank" style="color:var(--purple)">Terms &amp; Conditions</a> and <a href="https://wiggleyourtail.com/privacy-policy/" target="_blank" style="color:var(--purple)">Privacy Policy</a>.</p>
-      <label class="cf-check-label"><input type="checkbox" name="sms_consent" value="yes"> I agree to receive text messages from 941-280-5156 and emails from Wiggle Your Tail Pet Care. Message frequency varies. Message and data rates may apply.</label>
-    </div>
+    <form name="contact-how-it-works" method="POST" data-netlify="true" action="/thank-you.html">
+      <input type="hidden" name="form-name" value="contact-how-it-works"/>
+      <div class="cf-row"><div class="cf-group"><label for="hiw-first-name">First Name *</label><input id="hiw-first-name" type="text" name="first-name" placeholder="Jane" required/></div><div class="cf-group"><label for="hiw-last-name">Last Name *</label><input id="hiw-last-name" type="text" name="last-name" placeholder="Smith" required/></div></div>
+      <div class="cf-row"><div class="cf-group"><label for="hiw-phone">Phone</label><input id="hiw-phone" type="tel" name="phone" placeholder="(941) 000-0000"/></div><div class="cf-group"><label for="hiw-email">Email *</label><input id="hiw-email" type="email" name="email" placeholder="jane@email.com" required/></div></div>
+      <div class="cf-group"><label for="hiw-city-zip">City &amp; Zip *</label><input id="hiw-city-zip" type="text" name="city-zip" placeholder="Sarasota, 34233" required/></div>
+      <div class="cf-group"><label for="hiw-service">Services Needed</label><select id="hiw-service" name="service"><option value="">Select a service…</option><option>Dog Walking</option><option>Pet Sitting / Overnights</option><option>Pet Boarding</option><option>Pet Grooming</option><option>Wedding Pet Attendant</option><option>Snowbird / Away Services</option></select></div>
+      <div class="cf-group"><label for="hiw-pet-details">Tell Us About Your Pet</label><textarea id="hiw-pet-details" name="pet-details" placeholder="Breed, age, any special needs or personality notes…"></textarea></div>
+      <button type="submit" class="cf-submit">Send Request — It's Free!</button>
+      <div class="cf-consent">
+        <p class="cf-consent-disc">By selecting an option below, you confirm your preference regarding SMS messages from Wiggle Your Tail Pet Care. These messages will be sent from (941) 280-5156 and may include appointment confirmations, service updates, and promotional messages. Message frequency may vary, with a maximum of 4 messages per month. Message and data rates may apply. Reply STOP to unsubscribe or HELP for assistance. Consent is not a condition of purchase. See our <a href="https://wiggleyourtail.com/terms-and-conditions/" target="_blank" style="color:var(--purple)">Terms &amp; Conditions</a> and <a href="https://wiggleyourtail.com/privacy-policy/" target="_blank" style="color:var(--purple)">Privacy Policy</a>.</p>
+        <label class="cf-check-label"><input type="checkbox" name="sms_consent" value="yes"> I agree to receive text messages from 941-280-5156 and emails from Wiggle Your Tail Pet Care. Message frequency varies. Message and data rates may apply.</label>
+      </div>
+    </form>
   </div>
 </section>
 
