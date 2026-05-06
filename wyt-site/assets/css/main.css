@@ -320,6 +320,38 @@ nav.site-nav.scrolled { box-shadow:var(--shadow-md); }
 .grid-3up        { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; }
 .grid-4up        { display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem; text-align:left; }
 
+/* ── ABOUT PAGE COMPONENTS ── */
+.about-tagline { font-size:1.22rem; font-weight:600; color:var(--dark); line-height:1.5; margin-bottom:1.2rem; max-width:520px; }
+.trust-card { background:var(--white); border:1.5px solid var(--border); border-radius:20px; padding:1.8rem; display:flex; flex-direction:column; gap:.85rem; transition:all .3s; }
+.trust-card:hover { border-color:var(--purple-soft); box-shadow:var(--shadow-md); transform:translateY(-3px); }
+.trust-card-icon { width:48px; height:48px; border-radius:14px; background:var(--purple-pale); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.trust-card-icon svg { width:22px; height:22px; stroke:var(--purple); fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+.trust-card-title { font-family:var(--serif); font-size:1.08rem; font-weight:700; color:var(--dark); }
+.trust-card-desc { font-size:.84rem; line-height:1.7; color:var(--muted); }
+.about-quote { background:var(--purple-pale); border-left:4px solid var(--purple); border-radius:0 20px 20px 0; padding:2rem 2.4rem; }
+.about-quote p { font-family:var(--serif); font-size:1.22rem; font-style:italic; font-weight:700; color:var(--dark); line-height:1.55; }
+.about-quote cite { display:block; margin-top:.85rem; font-size:.76rem; font-weight:600; color:var(--purple); text-transform:uppercase; letter-spacing:.1em; font-style:normal; }
+.check-list { display:flex; flex-direction:column; gap:.85rem; }
+.check-item { display:flex; align-items:flex-start; gap:.85rem; font-size:.92rem; line-height:1.65; color:var(--ink); }
+.check-item-icon { width:22px; height:22px; border-radius:50%; background:var(--purple-pale); display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:.12rem; }
+.check-item-icon svg { width:12px; height:12px; stroke:var(--purple); fill:none; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; }
+.pet-type-card { padding:1.4rem 1.6rem; background:var(--cream); border:1.5px solid var(--border); border-radius:18px; display:flex; align-items:center; gap:1rem; transition:all .25s; }
+.pet-type-card:hover { border-color:var(--purple-soft); background:var(--purple-pale); transform:translateY(-2px); }
+.pet-type-icon { width:44px; height:44px; border-radius:12px; background:var(--purple-pale); display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:background .25s; }
+.pet-type-card:hover .pet-type-icon { background:var(--white); }
+.pet-type-icon svg { width:20px; height:20px; stroke:var(--purple); fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+.pet-type-label { font-size:.9rem; font-weight:600; color:var(--dark); }
+.about-stat { background:var(--purple-pale); border-radius:16px; padding:1.5rem; text-align:center; }
+.about-stat.gold { background:var(--gold-pale); }
+.about-stat-num { font-family:var(--serif); font-size:2.4rem; font-weight:900; color:var(--purple); line-height:1; }
+.about-stat.gold .about-stat-num { color:var(--gold); }
+.about-stat-label { font-size:.75rem; font-weight:600; color:var(--muted); margin-top:.4rem; text-transform:uppercase; letter-spacing:.08em; }
+.about-emo-card { background:var(--white); border:1.5px solid var(--border); border-radius:20px; padding:2.2rem; text-align:center; display:flex; flex-direction:column; align-items:center; gap:1rem; }
+.about-emo-icon { width:56px; height:56px; border-radius:16px; background:var(--purple-pale); display:flex; align-items:center; justify-content:center; }
+.about-emo-icon svg { width:26px; height:26px; stroke:var(--purple); fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+.about-emo-title { font-family:var(--serif); font-size:1.15rem; font-weight:700; color:var(--dark); }
+.about-emo-desc { font-size:.85rem; line-height:1.75; color:var(--muted); }
+
 /* ── REDUCED MOTION ── */
 @media(prefers-reduced-motion:reduce) {
   *, *::before, *::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
