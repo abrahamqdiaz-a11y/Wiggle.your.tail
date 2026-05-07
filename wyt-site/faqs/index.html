@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQs | Wiggle Your Tail Pet Care — Sarasota, FL</title>
+  <meta name="description" content="Frequently asked questions about Wiggle Your Tail's dog walking, pet sitting, grooming, and pet care services in Sarasota, FL. Get answers about scheduling, payments, safety policies, and more."/>
+  <link rel="canonical" href="https://wiggleyourtail.com/faqs/"/>
+  <meta property="og:title" content="FAQs | Wiggle Your Tail Pet Care — Sarasota, FL"/>
+  <meta property="og:description" content="Frequently asked questions about Wiggle Your Tail's dog walking, pet sitting, and pet care services in Sarasota, FL. Get answers about scheduling, payments, safety, and more."/>
+  <meta property="og:url" content="https://wiggleyourtail.com/faqs/"/>
+  <meta property="og:type" content="website"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I contact Wiggle Your Tail?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Call us at (941) 280-5156, email us at Contact@wiggleyourtail.com, or fill out our Contact Form on the website."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What services do you offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We offer Dog Walking, Wedding Pet Attendant, Dog Grooming, Pet Taxi, Overnight Pet Sitting, and Dog Training."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What kind of pets do you care for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our pet care professionals have experience with dogs, cats, hamsters, birds, and reptiles. Just let us know if you have a special pet or unusual needs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What areas do you service for dog walking and pet sitting?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Wiggle Your Tail services Sarasota, Fruitville, Siesta Key, Gulf Gate Estates, Bee Ridge, Bradenton, Downtown Sarasota, Longboat Key, Lakewood Ranch, Osprey and surrounding areas. Please note there are fees for out of service areas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What days are you available to take care of my pet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We provide dog walking and pet sitting services seven days a week, 365 days a year."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What advantages does in-home pet care have over boarding facilities?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In-home pet sittings reduce stress and increase comfort for your pet. Your pet stays in their familiar environment, which helps with separation anxiety. In-home sittings also reduce the risk of exposure to illness, fleas, and potential aggression from other animals."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are there fees for canceling scheduled services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For all visits, we require a 7-day notice for cancellation. We can issue a credit to your account minus the 50% non-refundable retainer that secures your dates on our calendar. No refund will be issued."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What type of payments do you accept?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We accept cash, Zelle, debit, credit cards (Visa, Mastercard, and Discover), and ACH Payments. We will require payment from you at the time of booking."
+        }
+      }
+    ]
+  }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../assets/css/main.css"/>
+  <style>
+    /* Override max-height for longer FAQ answers */
+    .faq-item.open .faq-a { max-height: 2000px; }
+
+    /* Category sidebar */
+    .faq-sidebar { position: sticky; top: 100px; }
+    .faq-cat-nav { background: var(--white); border: 1.5px solid var(--border); border-radius: 20px; padding: 1.8rem; }
+    .faq-cat-nav-title { font-size: .7rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 1rem; }
+    .faq-cat-links { display: flex; flex-direction: column; gap: .25rem; }
+    .faq-cat-link { display: flex; align-items: center; gap: .65rem; padding: .6rem .8rem; border-radius: 10px; font-size: .84rem; font-weight: 500; color: var(--muted); transition: background .18s, color .18s; }
+    .faq-cat-link:hover { background: var(--purple-pale); color: var(--purple); }
+    .faq-cat-link.active { background: var(--purple-pale); color: var(--purple); font-weight: 600; }
+    .faq-cat-icon { width: 28px; height: 28px; border-radius: 8px; background: var(--purple-pale); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: .85rem; }
+    .faq-cat-link:hover .faq-cat-icon, .faq-cat-link.active .faq-cat-icon { background: var(--purple); }
+
+    /* Contact card inside sidebar */
+    .faq-contact-card { margin-top: 1.2rem; background: linear-gradient(135deg, var(--purple-deep), var(--purple)); border-radius: 18px; padding: 1.6rem; color: #fff; }
+    .faq-contact-card .fcc-title { font-family: var(--serif); font-size: 1.1rem; font-weight: 700; margin-bottom: .5rem; }
+    .faq-contact-card .fcc-sub { font-size: .8rem; line-height: 1.6; opacity: .75; margin-bottom: 1.1rem; }
+    .faq-contact-card .btn-white-outline { padding: .7rem 1.2rem; font-size: .82rem; }
+
+    /* Category group header */
+    .faq-section { margin-bottom: 3.5rem; scroll-margin-top: 100px; }
+    .faq-section-title { display: flex; align-items: center; gap: .85rem; margin-bottom: 1.5rem; }
+    .faq-section-icon { width: 44px; height: 44px; border-radius: 13px; background: var(--purple-pale); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.15rem; }
+    .faq-section-name { font-family: var(--serif); font-size: 1.35rem; font-weight: 700; color: var(--dark); }
+
+    /* Service list inside a FAQ answer */
+    .faq-svc-list { display: flex; flex-direction: column; gap: .85rem; margin-top: .6rem; }
+    .faq-svc-item { padding: .9rem 1.1rem; background: var(--white); border: 1.5px solid var(--border); border-radius: 12px; }
+    .faq-svc-name { font-weight: 700; font-size: .88rem; color: var(--dark); margin-bottom: .3rem; }
+    .faq-svc-desc { font-size: .82rem; color: var(--muted); line-height: 1.65; }
+
+    /* Hero page band (simplified for FAQ — no photo) */
+    .faq-hero { padding: 2.5rem 4.5rem 4rem; background: var(--cream); position: relative; overflow: hidden; }
+    .faq-hero::before { content:''; position:absolute; inset:0; background-image:radial-gradient(rgba(107,63,160,.06) 1.5px,transparent 1.5px); background-size:28px 28px; pointer-events:none; }
+    .faq-hero-inner { position: relative; z-index: 2; max-width: 680px; }
+    .faq-hero-h1 { font-family: var(--serif); font-weight: 900; font-size: clamp(2.6rem, 5vw, 4.8rem); line-height: 1.04; letter-spacing: -.04em; margin: 1.2rem 0 1.4rem; }
+    .faq-hero-h1 .l1 { display: block; color: var(--dark); }
+    .faq-hero-h1 .l2 { display: block; font-style: italic; font-weight: 300; background: linear-gradient(120deg, var(--purple) 0%, var(--purple-soft) 50%, var(--gold) 100%); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: shimmer 5s linear infinite; }
+    .faq-hero-sub { font-size: 1.05rem; line-height: 1.78; font-weight: 300; color: var(--muted); max-width: 480px; margin-bottom: 2rem; }
+    .faq-hero-actions { display: flex; gap: .85rem; flex-wrap: wrap; align-items: center; }
+    .faq-count-strip { display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 2.5rem; padding-top: 2rem; border-top: 1.5px solid var(--border); }
+    .faq-count-item { font-size: .82rem; color: var(--muted); display: flex; align-items: center; gap: .4rem; }
+    .faq-count-item strong { font-size: 1.35rem; font-family: var(--serif); color: var(--purple); font-weight: 900; display: block; line-height: 1; }
+
+    /* Main FAQ layout */
+    .faq-layout { display: grid; grid-template-columns: 260px 1fr; gap: 4rem; align-items: start; }
+
+    @media(max-width:1100px) {
+      .faq-hero { padding: 2rem 2.5rem 3.5rem; }
+      .faq-sidebar { position: static; }
+      .faq-cat-nav { display: none; }
+      .faq-layout { grid-template-columns: 1fr; gap: 0; }
+      .faq-contact-card { display: none; }
+    }
+    @media(max-width:640px) {
+      .faq-hero { padding: 1.5rem 1.4rem 3rem; }
+      .faq-hero-actions { flex-direction: column; align-items: stretch; }
+      .faq-hero-actions .btn { justify-content: center; }
+      .faq-count-strip { gap: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="site-nav" id="nav">
+  <a href="../index.html" class="logo">
+    <img src="../assets/images/logo.png" alt="Wiggle Your Tail logo" class="nav-logo"/>
+    <div class="logo-text"><span class="logo-name">Wiggle Your Tail</span><span class="logo-sub">Premium Pet Care · Sarasota, FL</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li class="nav-dropdown"><a href="../services-rates.html">Services ▾</a>
+      <div class="nav-dropdown-menu">
+        <a href="../dog-walking.html">Dog Walking</a>
+        <a href="../pet-sitting.html">Pet Sitting &amp; Overnights</a>
+        <a href="../wedding-pet-attendant.html">Wedding Pet Attendant</a>
+        <a href="../snowbird-services.html">Snowbird &amp; House Sitting</a>
+      </div>
+    </li>
+    <li><a href="../how-it-works.html">How It Works</a></li>
+    <li><a href="../about.html">About</a></li>
+    <li><a href="../contact.html">Contact</a></li>
+    <li><a href="https://wiggleyourtail.com/doggybloggy/" target="_blank">Blog</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:1rem">
+    <a href="https://www.timetopet.com/portal/wiggleyourtail" target="_blank" class="btn btn-purple">Book Now →</a>
+    <div class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<nav class="mobile-nav">
+  <a href="../index.html">Home</a>
+  <a href="../services-rates.html">All Services</a>
+  <a href="../dog-walking.html">Dog Walking</a>
+  <a href="../pet-sitting.html">Pet Sitting &amp; Overnights</a>
+  <a href="../wedding-pet-attendant.html">Wedding Pet Attendant</a>
+  <a href="../snowbird-services.html">Snowbird &amp; House Sitting</a>
+  <a href="../how-it-works.html">How It Works</a>
+  <a href="../about.html">About</a>
+  <a href="../contact.html">Contact</a>
+  <a href="https://wiggleyourtail.com/doggybloggy/" target="_blank">Blog</a>
+  <a href="https://www.timetopet.com/portal/wiggleyourtail" target="_blank" class="mobile-cta">Book Now →</a>
+</nav>
+
+<!-- BREADCRUMB -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="../index.html">Home</a>
+  <span class="breadcrumb-sep">›</span>
+  <span class="breadcrumb-current">FAQs</span>
+</nav>
+
+<!-- HERO -->
+<div class="faq-hero">
+  <div class="faq-hero-inner">
+    <div class="tag">Questions &amp; Answers</div>
+    <h1 class="faq-hero-h1">
+      <span class="l1">Frequently Asked</span>
+      <span class="l2">Questions</span>
+    </h1>
+    <p class="faq-hero-sub">Everything you need to know about our pet care services. Can't find your answer? We're always happy to help.</p>
+    <div class="faq-hero-actions">
+      <a href="../contact.html" class="btn btn-purple">Ask Us Directly →</a>
+      <a href="tel:9412805156" class="btn btn-outline">Call (941) 280-5156</a>
+    </div>
+    <div class="faq-count-strip">
+      <div class="faq-count-item"><strong>30+</strong>Questions answered</div>
+      <div class="faq-count-item"><strong>9</strong>Topic categories</div>
+      <div class="faq-count-item"><strong>365</strong>Days a year we're here</div>
+    </div>
+  </div>
+</div>
+
+<!-- MARQUEE -->
+<div class="marquee-strip" aria-hidden="true">
+  <div class="mq-track">
+    <span class="mq-item"><span class="mq-dot"></span>Bonded &amp; Insured</span><span class="mq-item"><span class="mq-dot"></span>#1 Platinum Award Winner</span><span class="mq-item"><span class="mq-dot"></span>Pet CPR Certified</span><span class="mq-item"><span class="mq-dot"></span>7 Days a Week · 365 Days a Year</span><span class="mq-item"><span class="mq-dot"></span>One Family at a Time</span><span class="mq-item"><span class="mq-dot"></span>GPS &amp; Photo Updates</span><span class="mq-item"><span class="mq-dot"></span>Free Meet &amp; Greet</span>
+    <span class="mq-item"><span class="mq-dot"></span>Bonded &amp; Insured</span><span class="mq-item"><span class="mq-dot"></span>#1 Platinum Award Winner</span><span class="mq-item"><span class="mq-dot"></span>Pet CPR Certified</span><span class="mq-item"><span class="mq-dot"></span>7 Days a Week · 365 Days a Year</span><span class="mq-item"><span class="mq-dot"></span>One Family at a Time</span><span class="mq-item"><span class="mq-dot"></span>GPS &amp; Photo Updates</span><span class="mq-item"><span class="mq-dot"></span>Free Meet &amp; Greet</span>
+  </div>
+</div>
+
+<!-- MAIN FAQ CONTENT -->
+<section class="section bg-white">
+  <div class="faq-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="faq-sidebar">
+      <nav class="faq-cat-nav" aria-label="FAQ categories">
+        <div class="faq-cat-nav-title">Jump to a topic</div>
+        <div class="faq-cat-links">
+          <a href="#contact" class="faq-cat-link"><span class="faq-cat-icon">📞</span>Getting in Touch</a>
+          <a href="#services" class="faq-cat-link"><span class="faq-cat-icon">🐾</span>Our Services</a>
+          <a href="#pets-areas" class="faq-cat-link"><span class="faq-cat-icon">📍</span>Pets &amp; Service Areas</a>
+          <a href="#scheduling" class="faq-cat-link"><span class="faq-cat-icon">📅</span>Scheduling &amp; Visits</a>
+          <a href="#keys-access" class="faq-cat-link"><span class="faq-cat-icon">🔑</span>Keys &amp; Home Access</a>
+          <a href="#safety" class="faq-cat-link"><span class="faq-cat-icon">🛡️</span>Safety &amp; Policies</a>
+          <a href="#payments" class="faq-cat-link"><span class="faq-cat-icon">💳</span>Payments &amp; Fees</a>
+          <a href="#overnight" class="faq-cat-link"><span class="faq-cat-icon">🌙</span>Overnight Services</a>
+          <a href="#privacy" class="faq-cat-link"><span class="faq-cat-icon">🔒</span>Privacy</a>
+        </div>
+      </nav>
+      <div class="faq-contact-card">
+        <div class="fcc-title">Still have questions?</div>
+        <div class="fcc-sub">We're always happy to chat. Reach out and we'll get back to you quickly.</div>
+        <a href="../contact.html" class="btn btn-white-outline">Contact Us →</a>
+      </div>
+    </aside>
+
+    <!-- FAQ SECTIONS -->
+    <div>
+
+      <!-- 1. GETTING IN TOUCH -->
+      <div class="faq-section" id="contact">
+        <div class="faq-section-title">
+          <div class="faq-section-icon">📞</div>
+          <h2 class="faq-section-name">Getting in Touch</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              How do I contact Wiggle Your Tail?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>You can reach us in three easy ways:</p>
+              <ul style="margin:.6rem 0 .6rem 1.2rem;display:flex;flex-direction:column;gap:.3rem">
+                <li><strong>Call or text:</strong> <a href="tel:9412805156" style="color:var(--purple)">(941) 280-5156</a></li>
+                <li><strong>Email:</strong> <a href="mailto:Contact@wiggleyourtail.com" style="color:var(--purple)">Contact@wiggleyourtail.com</a></li>
+                <li><strong>Contact Form:</strong> <a href="../contact.html" style="color:var(--purple)">Fill out our Contact Form</a></li>
+              </ul>
+              <p>We respond the same day — often within a few hours.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              Will you take care of my pets without meeting the owner first?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>Wiggle Your Tail's pet care professionals are fully capable of handling care routines that they have not been previously introduced to. As long as we are given proper access to your home with clear instructions, we can start today.</p>
+              <p style="margin-top:.6rem">However, we highly recommend and prefer a <strong>free meet and greet</strong> with all new clients — it's the best way to assure the safety of your pets and our pet care professionals.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              Will I get the same sitter each time I am away?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>We believe it is important to have a pet care professional that you and your pets know and trust. Having a dedicated pet professional allows us to provide the most personal, custom care possible — we want your pets to feel like their care provider is family.</p>
+              <p style="margin-top:.6rem">However, if your preferred sitter is not available, we have other pet care professionals who would be more than happy to step in. Scheduling ahead of time helps confirm your preferred sitter's availability and allows enough time to arrange a meet with a different sitter if needed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. OUR SERVICES -->
+      <div class="faq-section" id="services">
+        <div class="faq-section-title">
+          <div class="faq-section-icon">🐾</div>
+          <h2 class="faq-section-name">Our Services</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              What services do you offer?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <div class="faq-svc-list">
+                <div class="faq-svc-item">
+                  <div class="faq-svc-name">1. Dog Walking</div>
+                  <div class="faq-svc-desc"><strong>What is it?</strong> Daily exercise for your dog, customized to their pace and needs.<br><strong>Who is it for?</strong> Busy pet owners who want to ensure their dog gets regular physical activity.<br><strong>Why choose us?</strong> Personalized walks with real-time updates and photos.</div>
+                </div>
+                <div class="faq-svc-item">
+                  <div class="faq-svc-name">2. Wedding Pet Attendant</div>
+                  <div class="faq-svc-desc"><strong>What is it?</strong> A dedicated service to include your pet in your special day.<br><strong>Who is it for?</strong> Couples who want their furry friend to be part of their wedding.<br><strong>Why choose us?</strong> We handle everything from transportation to on-site care.</div>
+                </div>
+                <div class="faq-svc-item">
+                  <div class="faq-svc-name">3. Dog Grooming</div>
+                  <div class="faq-svc-desc"><strong>What is it?</strong> Professional cage-free grooming services for all dog breeds.<br><strong>Who is it for?</strong> Pet owners looking to keep their dogs clean, healthy, and stylish.<br><strong>Why choose us?</strong> Full grooming packages tailored to your dog's needs.</div>
+                </div>
+                <div class="faq-svc-item">
+                  <div class="faq-svc-name">4. Pet Taxi</div>
+                  <div class="faq-svc-desc"><strong>What is it?</strong> Safe and reliable transportation for your pet.<br><strong>Who is it for?</strong> Pet owners needing assistance with transportation to appointments.<br><strong>Why choose us?</strong> Door-to-door service with comfort and care.</div>
+                </div>
+                <div class="faq-svc-item">
+                  <div class="faq-svc-name">5. Overnight Pet Sitting</div>
+                  <div class="faq-svc-desc"><strong>What is it?</strong> Overnight care for your pet in your home.<br><strong>Who is it for?</strong> Pet owners traveling overnight or on vacation.<br><strong>Why choose us?</strong> Personalized care and reliable service.</div>
+                </div>
+                <div class="faq-svc-item">
+                  <div class="faq-svc-name">6. Dog Training</div>
+                  <div class="faq-svc-desc"><strong>What is it?</strong> Customized training programs to improve your dog's behavior.<br><strong>Who is it for?</strong> Dog owners looking to enhance their pet's obedience and skills.<br><strong>Why choose us?</strong> Positive reinforcement techniques in private sessions.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              Can you administer medication to my animals while I am away?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>Yes, as long as your pets do not pose a threat to the sitter. When you first contact us, be sure to let us know of your pet's individual medicinal needs so we can pair you with the proper staff member who is able to administer them.</p>
+              <p style="margin-top:.6rem">Additional fees may apply for specialized or complex medication routines including injections, IVs, or other specialized services outside of oral and topical methods.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              Do you board dogs in your staff members' homes?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>Yes. We offer boarding services in our own homes and do not have a traditional boarding facility. All care takes place at our staff residences, providing a warm, homestyle boarding environment for your pet.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              How will I know how the visit went and what happened with my animals?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>For dog walking, you will receive a <strong>pet report card</strong> along with photos of your pet's experience after each visit. We want you to feel fully informed and connected to your pet's care, even when you're away.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. PETS & SERVICE AREAS -->
+      <div class="faq-section" id="pets-areas">
+        <div class="faq-section-title">
+          <div class="faq-section-icon">📍</div>
+          <h2 class="faq-section-name">Pets &amp; Service Areas</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              What kind of pets do you care for?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>Our pet care professionals have a wide range of experience with an array of pets — dogs and cats, hamsters, birds, and reptiles.</p>
+              <p style="margin-top:.6rem">Just let us know if you have a special pet or unusual needs, and we will do our best to exceed your expectations.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              What areas do you service for dog walking and pet sitting?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>Wiggle Your Tail services the following areas:</p>
+              <div style="display:flex;flex-wrap:wrap;gap:.45rem;margin:.75rem 0">
+                <span class="area-tag"><span class="area-tag-dot"></span>Sarasota</span>
+                <span class="area-tag"><span class="area-tag-dot"></span>Fruitville</span>
+                <span class="area-tag"><span class="area-tag-dot"></span>Siesta Key</span>
+                <span class="area-tag"><span class="area-tag-dot"></span>Gulf Gate Estates</span>
+                <span class="area-tag"><span class="area-tag-dot"></span>Bee Ridge</span>
+                <span class="area-tag"><span class="area-tag-dot"></span>Bradenton</span>
+                <span class="area-tag"><span class="area-tag-dot"></span>Downtown Sarasota</span>
+                <span class="area-tag"><span class="area-tag-dot"></span>Longboat Key</span>
+                <span class="area-tag"><span class="area-tag-dot"></span>Lakewood Ranch</span>
+                <span class="area-tag"><span class="area-tag-dot"></span>Osprey</span>
+                <span class="area-tag"><span class="area-tag-dot"></span>+ Surrounding Areas</span>
+              </div>
+              <p style="font-size:.82rem;color:var(--muted)">Please note there are additional fees for locations outside of our standard service areas.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              What days are you available to take care of my pet?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>We provide dog walking and pet sitting services <strong>seven days a week, 365 days a year</strong> — including holidays. Life doesn't take days off, and neither do we.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. SCHEDULING & VISITS -->
+      <div class="faq-section" id="scheduling">
+        <div class="faq-section-title">
+          <div class="faq-section-icon">📅</div>
+          <h2 class="faq-section-name">Scheduling &amp; Visits</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              How do you determine what time the sitter will visit my home?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>Whether providing daily visits or midday dog walks, your sitter will aim to keep as close to your pet's routines as possible. Just let us know the time range you prefer your scheduled visit to take place.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              What kind of timeframe do you work with? Do you come at an exact time?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>We schedule all visits with a minimum of a <strong>1-hour arrival window</strong> for our sitter. For example, if your scheduled time is 1:00 PM, the window of arrival may be between 12:30 PM and 1:30 PM.</p>
+              <p style="margin-top:.6rem">Special accommodations may be made by request.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              Do you accept last-minute or emergency requests?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>We understand life happens — flights get delayed, work meetings run long, and many things can cause your pets to need care unexpectedly. We will always make every effort to accommodate your emergency pet care needs.</p>
+              <p style="margin-top:.6rem">Last-minute scheduling may not be available at the exact time your pet needs services, but we will be there as soon as we can and are happy to clean up any messes that may have occurred during the wait.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              What kind of notice do you need for pet sitting and overnight reservations?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>Wiggle Your Tail generally requires <strong>1–2 weeks' notice</strong> for in-home pet sitting services. Our services are on a first-come, first-served basis — the more notice you provide, the better chance you have of booking a pet care professional for your desired dates.</p>
+              <p style="margin-top:.6rem">Advance notice also gives us time to set up a <strong>free meet &amp; greet</strong> to discuss your pet's needs. That said, we always try to accommodate all requests, so don't hesitate to reach out with less than 24 hours' notice.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. KEYS & HOME ACCESS -->
+      <div class="faq-section" id="keys-access">
+        <div class="faq-section-title">
+          <div class="faq-section-icon">🔑</div>
+          <h2 class="faq-section-name">Keys &amp; Home Access</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              When do I give my keys to the pet sitter?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>Most clients provide keys at the initial meet and greet consultation before services begin, or provide access information to their home at that time.</p>
+              <p style="margin-top:.6rem">To best prepare for your visits, we require <strong>two (2) copies of your keys</strong>. Please test the duplicate keys on your door before handing them over. One key will be securely kept at our office for emergency backup purposes, while the second is held by your assigned pet sitters for the duration of your visits.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              How can I help Wiggle Your Tail gain access to my gated or secure building?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>Wiggle Your Tail needs to be given access to any and all doors or gates required to reach your pets. This includes providing us with:</p>
+              <ul style="margin:.6rem 0 .6rem 1.2rem;display:flex;flex-direction:column;gap:.3rem">
+                <li>Gate keys or FOBs/Clickers</li>
+                <li>Gate codes</li>
+                <li>Authorization with any guarded gate attendants</li>
+              </ul>
+              <p>Not providing us direct access to your home may result in additional fees if the pet sitter is left waiting for another solution.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. SAFETY & POLICIES -->
+      <div class="faq-section" id="safety">
+        <div class="faq-section-title">
+          <div class="faq-section-icon">🛡️</div>
+          <h2 class="faq-section-name">Safety &amp; Policies</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              What advantages does in-home pet care have over boarding facilities?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>In-home pet sittings are geared towards <strong>reducing stress</strong> and increasing the comfort and happiness of your pet. Your pet may already be dealing with separation anxiety when their loved ones are away — adding an unfamiliar environment could cause a lot of additional, unnecessary stress.</p>
+              <p style="margin-top:.6rem">In-home sittings also reduce the risk of your pet being exposed to illness, fleas, and potential aggression from other animals in boarding facilities. The best place for your pet is always home sweet home!</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              What is your policy when weather affects visitations?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>As long as the weather does not pose a threat to either the pet sitter or the pets, we will stay on schedule to ensure proper care during all scheduled visitations.</p>
+              <p style="margin-top:.6rem">It is possible that inclement weather (such as heavy rain causing hazardous road conditions) may delay scheduled arrival times. We will do everything we can to keep both your pets and our sitters safe.</p>
+              <p style="margin-top:.6rem">When extreme weather conditions occur (including extreme heat), please understand that your dog's walk may be shortened to only a quick potty break. Leaving towels near the door to wipe down a wet pup during rainy seasons helps keep your home clean. The sitter will always stay with your pets for the full duration of the scheduled visit — rain or shine.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              Where do you walk my dog?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>We walk each client's dog in the comfort and safety of <strong>your own neighborhood</strong>. We do not gather dogs from different clients and walk them together at the same time. We take pride in believing that our attention to each client's pet should be focused solely on them.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              Do your dog walkers take my dog off-leash during their walk?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>For the safety of your dog, Wiggle Your Tail does <strong>not</strong> offer off-leash dog walking. Dogs may, however, be off-leash in the privacy of their own yard or a secured area on your property.</p>
+              <p style="margin-top:.6rem">Please note: it is unlawful for a domestic animal to stray, run, go, or roam at-large in or upon any public street, sidewalk, school grounds, school vehicle areas, beaches, parks, or on the private property of others without the property owner's consent.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              I allow my cat access to my patio or backyard. Will the pet sitter do this too?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>Due to safety concerns for your beloved cat, we generally keep all cats <strong>indoors</strong> throughout the duration of our visits.</p>
+              <p style="margin-top:.6rem">If you insist that the cat be given dual indoor/outdoor access during or between our visits, we <strong>cannot guarantee your cat's return</strong> and will not be held liable in the event it does not return.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              Can I have an overnight sitter if other family or friends are also staying at my home?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>No. Wiggle Your Tail staff will not stay at your residence if there are other people present. This policy is in place for the <strong>safety and privacy</strong> of our sitters.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. PAYMENTS & FEES -->
+      <div class="faq-section" id="payments">
+        <div class="faq-section-title">
+          <div class="faq-section-icon">💳</div>
+          <h2 class="faq-section-name">Payments &amp; Fees</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              Are there fees for canceling scheduled services?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>For all visits, we require a <strong>7-day notice</strong> for cancellation. We can issue a credit to your account minus the 50% non-refundable retainer that secures your dates on our calendar. <strong>No refund will be issued.</strong></p>
+              <p style="margin-top:.6rem">We guarantee visits on a first-come, first-served basis, so booking early is in your best interest. Our sitters may adjust their personal schedules or family commitments to be present for an overnight stay or drop-in appointment — our cancellation fees help fairly compensate our sitters for the time they reserved.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              How are payments handled for walks and sittings?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <ul style="display:flex;flex-direction:column;gap:.45rem;margin-left:1.2rem">
+                <li><strong>Individual walks:</strong> Billed at the start of each service.</li>
+                <li><strong>Recurring walks:</strong> Billed at the beginning of each month. Cancelled walks are charged a 50% cancellation fee, or you can reschedule for a credit if within the cancellation policy.</li>
+                <li><strong>Sittings:</strong> Payment is required before services begin to reserve your request. We do not issue refunds — however, we will apply a credit to your account for future services, minus the 50% non-refundable retainer.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              What type of payments do you accept?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>We accept the following forms of payment:</p>
+              <div style="display:flex;flex-wrap:wrap;gap:.45rem;margin:.75rem 0">
+                <span class="area-tag"><span class="area-tag-dot"></span>Cash</span>
+                <span class="area-tag"><span class="area-tag-dot"></span>Zelle</span>
+                <span class="area-tag"><span class="area-tag-dot"></span>Debit Card</span>
+                <span class="area-tag"><span class="area-tag-dot"></span>Visa</span>
+                <span class="area-tag"><span class="area-tag-dot"></span>Mastercard</span>
+                <span class="area-tag"><span class="area-tag-dot"></span>Discover</span>
+                <span class="area-tag"><span class="area-tag-dot"></span>ACH Payments</span>
+              </div>
+              <p style="font-size:.82rem;color:var(--muted)">Payment is required at the time of booking.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              What are the Holiday fees?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>There is an additional fee over all major national holidays. Wiggle Your Tail will let you know of the applicable fees when you book your service. This helps ensure our sitters remain available to you during popular travel times.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              May I give my sitter or dog walker gratuity?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>Absolutely — and it is much appreciated! Our sitters work hard to go above and beyond, and it means a lot to them when they are rewarded for their efforts.</p>
+              <p style="margin-top:.6rem">You can give gratuities directly to the sitter by leaving cash, or you may add it to your card at the end of your scheduled visits.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. OVERNIGHT SERVICES -->
+      <div class="faq-section" id="overnight">
+        <div class="faq-section-title">
+          <div class="faq-section-icon">🌙</div>
+          <h2 class="faq-section-name">Overnight Services</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              I have never used an overnight pet sitter. How does this service work?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>Our overnights run from <strong>9:30 PM to 7:00 AM</strong>. During the overnight, we will do everything you would do to help maintain your animals' routines.</p>
+              <p style="margin-top:.6rem">If you would like a midday walk or additional time spent with your pet during the day, we can schedule an additional drop-in visit accordingly. For more information on what overnights include, please visit our <a href="../services-rates.html" style="color:var(--purple)">Services page</a>.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              How are late-night returns handled for overnight stays?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>Overnights have an arrival time of <strong>9:30 PM – 10:00 PM</strong>, with departure between <strong>6:30 AM – 7:00 AM</strong> the following morning.</p>
+              <p style="margin-top:.6rem">If you plan to return late at night, please let us know in advance and we can make arrangements to end the sitting upon your return. Please note that the <strong>full night's fees</strong> will still be charged for overnight sittings that end before 7:00 AM the following morning.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9. PRIVACY -->
+      <div class="faq-section" id="privacy">
+        <div class="faq-section-title">
+          <div class="faq-section-icon">🔒</div>
+          <h2 class="faq-section-name">Privacy &amp; Confidentiality</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-q" role="button" aria-expanded="false">
+              Is the information I give to Wiggle Your Tail confidential?
+              <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <div class="faq-a">
+              <p>Yes. Wiggle Your Tail is committed to keeping all information we receive from our clients and staff confidential. We will not disclose any of your personal information, including your mailing address, phone numbers, or email address.</p>
+              <p style="margin-top:.6rem">We will only use your information as a means to take good care of your pets and home while you are away. All of our pet sitters have signed <strong>Privacy Agreements</strong> and are <strong>background checked</strong>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end FAQ sections -->
+  </div><!-- end faq-layout -->
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="cta-inner">
+    <div class="cta-badge"><span class="cta-badge-dot"></span>Now accepting new clients in Sarasota</div>
+    <h2>Still have questions?<br>We'd love to <em>hear from you.</em></h2>
+    <p>Reach out by phone, email, or contact form — we respond the same day and every new client gets a free meet &amp; greet with no commitment required.</p>
+    <div class="cta-btns">
+      <a href="../contact.html" class="btn btn-gold">Get a Free Meet &amp; Greet</a>
+      <a href="https://www.timetopet.com/portal/wiggleyourtail" target="_blank" class="btn btn-white-outline">Client Portal Login</a>
+    </div>
+    <div class="cta-meta">
+      <div class="cta-meta-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>No commitment required</div>
+      <div class="cta-meta-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Free meet &amp; greet</div>
+      <div class="cta-meta-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Bonded &amp; insured</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo">
+        <img src="../assets/images/logo.png" alt="Wiggle Your Tail logo" class="nav-logo"/>
+        <div class="logo-text"><span class="logo-name">Wiggle Your Tail</span><span class="logo-sub">Premium Pet Care</span></div>
+      </div>
+      <p class="footer-desc">Sarasota's #1 Platinum Award-Winning provider of dog walking and pet sitting. Bonded, insured &amp; Pet CPR certified.</p>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/WiggleYourTailDogWalking/" target="_blank" class="f-social"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="https://www.instagram.com/wiggleyourtailpetcare/" target="_blank" class="f-social"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <div class="f-col-title">Services</div>
+      <ul class="f-links">
+        <li><a href="../dog-walking.html">Dog Walking</a></li>
+        <li><a href="../pet-sitting.html">Pet Sitting</a></li>
+        <li><a href="../pet-sitting.html">Overnight Care</a></li>
+        <li><a href="../wedding-pet-attendant.html">Wedding Pet Attendant</a></li>
+        <li><a href="../snowbird-services.html">Snowbird Services</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="f-col-title">Company</div>
+      <ul class="f-links">
+        <li><a href="../about.html">About Christa</a></li>
+        <li><a href="https://wiggleyourtail.com/?page_id=171" target="_blank">Barkimonials</a></li>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="https://wiggleyourtail.com/become-a-walker/" target="_blank">Become a Walker</a></li>
+        <li><a href="https://wiggleyourtail.com/doggybloggy/" target="_blank">Doggy Bloggy</a></li>
+        <li><a href="https://wiggleyourtail.com/home-shop/" target="_blank">Shop</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="f-col-title">Contact</div>
+      <ul class="f-links">
+        <li><a href="tel:9412805156">(941) 280-5156</a></li>
+        <li><a href="mailto:contact@wiggleyourtail.com">contact@wiggleyourtail.com</a></li>
+        <li><a href="https://www.timetopet.com/portal/wiggleyourtail" target="_blank">Client Portal</a></li>
+        <li><a href="../contact.html">Free Meet &amp; Greet</a></li>
+        <li><a href="https://wiggleyourtail.com/faqs/" aria-current="page">FAQs</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Wiggle Your Tail Pet Care, LLC · Sarasota, FL · All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="https://wiggleyourtail.com/privacy-policy/" target="_blank">Privacy Policy</a>
+      <a href="https://wiggleyourtail.com/terms-and-conditions/" target="_blank">Terms &amp; Conditions</a>
+    </div>
+  </div>
+  <div class="footer-credit"><a href="https://echelonfox.com" target="_blank" rel="noopener noreferrer">Built by EchelonFox AI</a></div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
