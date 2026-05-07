@@ -269,6 +269,9 @@ nav.site-nav.scrolled { box-shadow:var(--shadow-md); }
 .footer-bottom-links { display:flex; gap:1.5rem; }
 .footer-bottom-links a { color:rgba(255,255,255,.3); transition:color .2s; }
 .footer-bottom-links a:hover { color:var(--gold-warm); }
+.footer-credit { text-align:center; padding-top:1.5rem; border-top:1px solid rgba(255,255,255,.06); margin-top:1.5rem; font-size:.72rem; }
+.footer-credit a { color:rgba(255,255,255,.28); text-decoration:none; transition:color .3s, opacity .3s; }
+.footer-credit a:hover { color:rgba(255,255,255,.65); }
 
 /* ── FAQ ACCORDION ── */
 .faq-list { display:flex; flex-direction:column; gap:.75rem; }
