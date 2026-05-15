@@ -193,7 +193,7 @@ nav.site-nav.scrolled { box-shadow:var(--shadow-md); }
 
 /* ── PRICING CARDS ── */
 .pricing-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:3rem; }
-.pricing-grid-2col { grid-template-columns:repeat(2,1fr); max-width:820px; margin-left:auto; margin-right:auto; }
+.pricing-grid-2col { grid-template-columns:repeat(2,1fr); max-width:900px; margin-left:auto; margin-right:auto; }
 .price-card { background:var(--white); border:1.5px solid var(--border); border-radius:24px; padding:2.2rem; display:flex; flex-direction:column; gap:1.6rem; transition:all .3s; position:relative; overflow:hidden; }
 .price-card::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; transform:scaleX(0); transform-origin:left; transition:transform .3s; background:linear-gradient(90deg,var(--purple),var(--gold)); }
 .price-card:hover { border-color:var(--purple-soft); box-shadow:var(--shadow-md); transform:translateY(-4px); }
