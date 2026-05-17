@@ -47,11 +47,26 @@
   to = "/services-rates.html"
   status = 301
 
-# ── Article dated WordPress URL → clean canonical ────────────────────────────
+# ── Article dated WordPress URLs → clean canonicals ──────────────────────────
 
 [[redirects]]
   from = "/2025/04/22/are-you-a-pet-mom-heres-why-you-deserve-a-shoutout-this-mothers-day/"
   to = "/are-you-a-pet-mom-heres-why-you-deserve-a-shoutout-this-mothers-day/"
+  status = 301
+
+[[redirects]]
+  from = "/2023/08/03/paw-paradise-discover-why-sarasota-is-a-dog-lovers-dream/"
+  to = "/paw-paradise-discover-why-sarasota-is-a-dog-lovers-dream/"
+  status = 301
+
+[[redirects]]
+  from = "/2024/06/04/the-future-of-pet-care/"
+  to = "/the-future-of-pet-care/"
+  status = 301
+
+[[redirects]]
+  from = "/2023/06/05/the-power-of-paws-how-dog-walking-benefits-your-furry-one/"
+  to = "/the-power-of-paws-how-dog-walking-benefits-your-furry-one/"
   status = 301
 
 # ── WordPress search feed — 410 Gone ─────────────────────────────────────────
