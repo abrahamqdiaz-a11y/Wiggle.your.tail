@@ -35,6 +35,18 @@
   to = "/contact.html"
   status = 301
 
+# ── /services/ → services-rates ──────────────────────────────────────────────
+
+[[redirects]]
+  from = "/services"
+  to = "/services-rates.html"
+  status = 301
+
+[[redirects]]
+  from = "/services/"
+  to = "/services-rates.html"
+  status = 301
+
 # ── Article dated WordPress URL → clean canonical ────────────────────────────
 
 [[redirects]]
