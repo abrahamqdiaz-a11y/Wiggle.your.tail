@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /search/
 
 Sitemap: https://wiggleyourtail.com/sitemap.xml

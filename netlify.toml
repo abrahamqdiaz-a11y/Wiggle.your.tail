@@ -3,6 +3,52 @@
 [build]
   publish = "wyt-site"
 
+# ── WiggleYourTail/ old WordPress path redirects ─────────────────────────────
+
+[[redirects]]
+  from = "/WiggleYourTail/how-it-works/"
+  to = "/how-it-works.html"
+  status = 301
+
+[[redirects]]
+  from = "/WiggleYourTail/contact/"
+  to = "/contact.html"
+  status = 301
+
+[[redirects]]
+  from = "/WiggleYourTail/pet-policy/"
+  to = "/terms-and-conditions.html"
+  status = 301
+
+[[redirects]]
+  from = "/WiggleYourTail/services-rates/"
+  to = "/services-rates.html"
+  status = 301
+
+[[redirects]]
+  from = "/WiggleYourTail/privacy-policy/"
+  to = "/privacy-policy.html"
+  status = 301
+
+[[redirects]]
+  from = "/WiggleYourTail/become-a-walker/"
+  to = "/contact.html"
+  status = 301
+
+# ── Article dated WordPress URL → clean canonical ────────────────────────────
+
+[[redirects]]
+  from = "/2025/04/22/are-you-a-pet-mom-heres-why-you-deserve-a-shoutout-this-mothers-day/"
+  to = "/are-you-a-pet-mom-heres-why-you-deserve-a-shoutout-this-mothers-day/"
+  status = 301
+
+# ── WordPress search feed — 410 Gone ─────────────────────────────────────────
+
+[[redirects]]
+  from = "/search/*/feed/rss2/"
+  to = "/404.html"
+  status = 410
+
 # ── URL Redirects: preserve all existing WordPress URLs ──────────────────────
 
 [[redirects]]
@@ -27,12 +73,12 @@
 
 [[redirects]]
   from = "/services-rates/dog-training"
-  to = "/dog-training.html"
+  to = "/dog-trainer-sarasota/"
   status = 301
 
 [[redirects]]
   from = "/services-rates/dog-training/"
-  to = "/dog-training.html"
+  to = "/dog-trainer-sarasota/"
   status = 301
 
 [[redirects]]
@@ -112,12 +158,6 @@
 [[redirects]]
   from = "/home-shop/*"
   to = "https://wiggleyourtail.com/home-shop/:splat"
-  status = 200
-  force = false
-
-[[redirects]]
-  from = "/become-a-walker/*"
-  to = "https://wiggleyourtail.com/become-a-walker/:splat"
   status = 200
   force = false
 
