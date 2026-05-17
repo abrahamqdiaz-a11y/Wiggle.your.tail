@@ -9,38 +9,45 @@
   </url>
 
   <url>
-    <loc>https://wiggleyourtail.com/wiggleyourtail-dog-walking/</loc>
+    <loc>https://wiggleyourtail.com/services-rates/</loc>
+    <lastmod>2025-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://wiggleyourtail.com/dog-walking/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://wiggleyourtail.com/drop-in-visits-overnight-dog-sitting/</loc>
+    <loc>https://wiggleyourtail.com/pet-sitting/</loc>
     <lastmod>2025-11-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://wiggleyourtail.com/pet-taxi/</loc>
+    <loc>https://wiggleyourtail.com/wedding-pet-attendant/</loc>
     <lastmod>2025-04-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://wiggleyourtail.com/away-from-home-snowbird-services/</loc>
+    <loc>https://wiggleyourtail.com/snowbird-services/</loc>
     <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://wiggleyourtail.com/services-rates/</loc>
-    <lastmod>2025-10-06</lastmod>
+    <loc>https://wiggleyourtail.com/dog-trainer-sarasota/</loc>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
@@ -51,17 +58,87 @@
   </url>
 
   <url>
-    <loc>https://wiggleyourtail.com/who-we-are/</loc>
+    <loc>https://wiggleyourtail.com/about/</loc>
     <lastmod>2026-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://wiggleyourtail.com/contactus/</loc>
+    <loc>https://wiggleyourtail.com/contact/</loc>
     <lastmod>2025-02-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://wiggleyourtail.com/privacy-policy/</loc>
+    <lastmod>2025-02-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://wiggleyourtail.com/terms-and-conditions/</loc>
+    <lastmod>2025-02-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://wiggleyourtail.com/paw-paradise-discover-why-sarasota-is-a-dog-lovers-dream/</loc>
+    <lastmod>2023-08-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://wiggleyourtail.com/the-future-of-pet-care/</loc>
+    <lastmod>2024-06-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://wiggleyourtail.com/the-power-of-paws-how-dog-walking-benefits-your-furry-one/</loc>
+    <lastmod>2023-06-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://wiggleyourtail.com/are-you-a-pet-mom-heres-why-you-deserve-a-shoutout-this-mothers-day/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://wiggleyourtail.com/how-a-dog-attendant-can-help-you-include-your-pet-in-your-wedding/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://wiggleyourtail.com/mastering-dog-training-from-puppies-to-adults/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://wiggleyourtail.com/best-time-to-walk-your-dog-in-sarasota/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://wiggleyourtail.com/sarasota-summers-keeping-your-furry-friend-cool-and-happy/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
 
 </urlset>
