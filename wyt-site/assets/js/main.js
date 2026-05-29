@@ -30,6 +30,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ── Desktop nav dropdown click/touch support ── */
+  document.querySelectorAll('.nav-dropdown').forEach(dd => {
+    const trigger = dd.querySelector(':scope > a');
+    if (!trigger) return;
+    trigger.addEventListener('click', e => {
+      const open = dd.classList.toggle('dd-open');
+      if (open) e.preventDefault();
+    });
+    document.addEventListener('click', e => {
+      if (!dd.contains(e.target)) dd.classList.remove('dd-open');
+    });
+  });
+
   /* ── Smooth scroll for anchor links ── */
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
