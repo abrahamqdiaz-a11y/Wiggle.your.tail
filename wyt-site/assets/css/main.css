@@ -96,6 +96,9 @@ nav.site-nav.scrolled { box-shadow:var(--shadow-md); }
 .nav-dropdown-menu a { display:block; padding:.6rem .9rem; font-size:.82rem; color:var(--muted); border-radius:10px; transition:background .15s, color .15s; }
 .nav-dropdown-menu a:hover { background:var(--purple-pale); color:var(--purple); }
 .nav-dropdown-menu a::after { display:none; }
+/* Bridge the gap so hover doesn't break when moving mouse to dropdown items */
+.nav-dropdown::after { content:''; position:absolute; top:100%; left:0; right:0; height:12px; }
+.nav-dropdown.dd-open .nav-dropdown-menu { opacity:1; pointer-events:all; transform:translateX(-50%) translateY(0); }
 
 /* ── MOBILE NAV TOGGLE ── */
 .nav-toggle { display:none; flex-direction:column; gap:5px; cursor:pointer; padding:8px 4px; touch-action:manipulation; }
