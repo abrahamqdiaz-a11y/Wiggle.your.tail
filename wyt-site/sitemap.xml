@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- ═══ CORE PAGES ═══ -->
   <url>
     <loc>https://wiggleyourtail.com/</loc>
     <lastmod>2026-03-19</lastmod>
@@ -44,13 +45,6 @@
   </url>
 
   <url>
-    <loc>https://wiggleyourtail.com/dog-trainer-sarasota/</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
     <loc>https://wiggleyourtail.com/how-it-works/</loc>
     <lastmod>2026-01-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -85,60 +79,84 @@
     <priority>0.3</priority>
   </url>
 
+  <!-- ═══ BLOG ═══ -->
   <url>
-    <loc>https://wiggleyourtail.com/paw-paradise-discover-why-sarasota-is-a-dog-lovers-dream/</loc>
-    <lastmod>2023-08-03</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://wiggleyourtail.com/blog/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ═══ LOCATION & SERVICE LANDING PAGES ═══ -->
+  <url>
+    <loc>https://wiggleyourtail.com/dog-sitter-sarasota/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://wiggleyourtail.com/the-future-of-pet-care/</loc>
-    <lastmod>2024-06-04</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://wiggleyourtail.com/dog-trainer-sarasota/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
+  <!-- ═══ BLOG ARTICLES ═══ -->
   <url>
-    <loc>https://wiggleyourtail.com/the-power-of-paws-how-dog-walking-benefits-your-furry-one/</loc>
-    <lastmod>2023-06-05</lastmod>
+    <loc>https://wiggleyourtail.com/sarasota-summers-keeping-your-furry-friend-cool-and-happy/</loc>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://wiggleyourtail.com/are-you-a-pet-mom-heres-why-you-deserve-a-shoutout-this-mothers-day/</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://wiggleyourtail.com/how-a-dog-attendant-can-help-you-include-your-pet-in-your-wedding/</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://wiggleyourtail.com/mastering-dog-training-from-puppies-to-adults/</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://wiggleyourtail.com/best-time-to-walk-your-dog-in-sarasota/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://wiggleyourtail.com/sarasota-summers-keeping-your-furry-friend-cool-and-happy/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <loc>https://wiggleyourtail.com/are-you-a-pet-mom-heres-why-you-deserve-a-shoutout-this-mothers-day/</loc>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://wiggleyourtail.com/how-a-dog-attendant-can-help-you-include-your-pet-in-your-wedding/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://wiggleyourtail.com/mastering-dog-training-from-puppies-to-adults/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://wiggleyourtail.com/the-future-of-pet-care/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://wiggleyourtail.com/the-power-of-paws-how-dog-walking-benefits-your-furry-one/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://wiggleyourtail.com/paw-paradise-discover-why-sarasota-is-a-dog-lovers-dream/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
 
 </urlset>
