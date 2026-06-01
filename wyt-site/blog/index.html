@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pet Care Tips &amp; News | Wiggle Your Tail Blog</title>
+  <meta name="description" content="Expert pet care tips, dog walking advice, and Sarasota pet news from Wiggle Your Tail — Sarasota's #1 award-winning pet care provider."/>
+  <link rel="canonical" href="https://wiggleyourtail.com/blog/"/>
+  <meta property="og:title" content="Pet Care Tips &amp; News | Wiggle Your Tail Blog"/>
+  <meta property="og:description" content="Expert pet care tips, dog walking advice, and Sarasota pet news from Wiggle Your Tail."/>
+  <meta property="og:url" content="https://wiggleyourtail.com/blog/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://wiggleyourtail.com/assets/images/wiggleyourtail.logo.wyt.logo.png"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Wiggle Your Tail Pet Care"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="../assets/images/favicon-192x192.png"/>
+  <link rel="icon" type="image/png" sizes="512x512" href="../assets/images/favicon-512x512.png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../assets/css/main.css"/>
+  <style>
+    /* ── BLOG LISTING PAGE STYLES ── */
+    .blog-hero {
+      padding: 7rem 4.5rem 4rem;
+      background: var(--cream);
+      position: relative;
+      overflow: hidden;
+    }
+    .blog-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(107,63,160,.05) 1.5px, transparent 1.5px);
+      background-size: 28px 28px;
+      pointer-events: none;
+    }
+    .blog-hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 640px;
+    }
+    .blog-hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(2.6rem, 5vw, 4rem);
+      font-weight: 900;
+      line-height: 1.06;
+      letter-spacing: -.04em;
+      color: var(--dark);
+      margin: 1rem 0 1.2rem;
+    }
+    .blog-hero h1 em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--purple);
+    }
+    .blog-hero p {
+      font-size: 1.05rem;
+      line-height: 1.78;
+      color: var(--muted);
+      font-weight: 300;
+      max-width: 480px;
+    }
+
+    /* ── BLOG GRID ── */
+    .blog-section {
+      padding: 4rem 4.5rem 6rem;
+      background: var(--white);
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    /* ── BLOG CARD ── */
+    .blog-card {
+      background: var(--cream);
+      border: 1.5px solid var(--border);
+      border-radius: 24px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all .3s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .blog-card:hover {
+      border-color: var(--purple-soft);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-5px);
+    }
+    .blog-card-img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: var(--purple-pale);
+      flex-shrink: 0;
+      position: relative;
+    }
+    .blog-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .5s ease;
+    }
+    .blog-card:hover .blog-card-img img {
+      transform: scale(1.04);
+    }
+    /* Placeholder when no image */
+    .blog-card-img-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--purple-pale), rgba(107,63,160,.12));
+    }
+    .blog-card-img-placeholder svg {
+      width: 48px;
+      height: 48px;
+      stroke: var(--purple-soft);
+      fill: none;
+      stroke-width: 1.5;
+      opacity: .6;
+    }
+    .blog-card-body {
+      padding: 1.6rem 1.8rem 1.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: .85rem;
+      flex: 1;
+    }
+    .blog-card-meta {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      flex-wrap: wrap;
+    }
+    .blog-card-tag {
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--purple);
+      background: var(--purple-pale);
+      border: 1.5px solid rgba(107,63,160,.15);
+      border-radius: 100px;
+      padding: .25rem .75rem;
+      white-space: nowrap;
+    }
+    .blog-card-date {
+      font-size: .75rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+    .blog-card-title {
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      font-weight: 700;
+      line-height: 1.3;
+      letter-spacing: -.02em;
+      color: var(--dark);
+      transition: color .2s;
+    }
+    .blog-card:hover .blog-card-title {
+      color: var(--purple);
+    }
+    .blog-card-excerpt {
+      font-size: .86rem;
+      line-height: 1.75;
+      color: var(--muted);
+      font-weight: 300;
+      flex: 1;
+    }
+    .blog-card-read {
+      display: inline-flex;
+      align-items: center;
+      gap: .35rem;
+      font-size: .82rem;
+      font-weight: 700;
+      color: var(--purple);
+      margin-top: .2rem;
+      transition: gap .2s;
+    }
+    .blog-card:hover .blog-card-read {
+      gap: .55rem;
+    }
+    .blog-card-read svg {
+      width: 14px;
+      height: 14px;
+      stroke: var(--purple);
+      fill: none;
+      stroke-width: 2.5;
+      flex-shrink: 0;
+    }
+
+    /* ── FEATURED CARD (first post, spans 2 cols) ── */
+    .blog-card.featured {
+      grid-column: span 2;
+      flex-direction: row;
+    }
+    .blog-card.featured .blog-card-img {
+      width: 55%;
+      aspect-ratio: auto;
+      flex-shrink: 0;
+      border-radius: 0;
+    }
+    .blog-card.featured .blog-card-title {
+      font-size: 1.45rem;
+    }
+    .blog-card.featured .blog-card-excerpt {
+      font-size: .9rem;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1100px) {
+      .blog-hero { padding: 6.5rem 2.5rem 3.5rem; }
+      .blog-section { padding: 3rem 2.5rem 5rem; }
+      .blog-grid { grid-template-columns: repeat(2, 1fr); }
+      .blog-card.featured {
+        grid-column: span 2;
+        flex-direction: column;
+      }
+      .blog-card.featured .blog-card-img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+      }
+    }
+    @media (max-width: 640px) {
+      .blog-hero { padding: 5.5rem 1.4rem 3rem; }
+      .blog-section { padding: 2.5rem 1.4rem 4rem; }
+      .blog-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+      .blog-card.featured {
+        grid-column: span 1;
+        flex-direction: column;
+      }
+      .blog-card.featured .blog-card-img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav class="site-nav" id="nav">
+  <a href="../index.html" class="logo">
+    <img src="../assets/images/wiggleyourtail.logo.wyt.logo.png" alt="Wiggle Your Tail logo" class="nav-logo">
+    <div class="logo-text">
+      <span class="logo-name">Wiggle Your Tail</span>
+      <span class="logo-sub">Premium Pet Care · Sarasota, FL</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li class="nav-dropdown"><a href="../services-rates.html">Services ▾</a>
+      <div class="nav-dropdown-menu">
+        <a href="../dog-walking.html">Dog Walking</a>
+        <a href="../pet-sitting.html">Pet Sitting &amp; Overnights</a>
+        <a href="../wedding-pet-attendant.html">Wedding Pet Attendant</a>
+        <a href="../snowbird-services.html">Snowbird &amp; House Sitting</a>
+      </div>
+    </li>
+    <li><a href="../how-it-works.html">How It Works</a></li>
+    <li><a href="../about.html">About</a></li>
+    <li><a href="../index.html">Blog</a></li>
+    <li><a href="../contact.html">Contact</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:1rem">
+    <a href="https://www.timetopet.com/portal/wiggleyourtail/create-account" target="_blank" class="btn btn-purple">Book Now →</a>
+    <div class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- ═══ MOBILE NAV ═══ -->
+<nav class="mobile-nav">
+  <a href="../index.html">Home</a>
+  <a href="../services-rates.html">All Services</a>
+  <a href="../dog-walking.html">Dog Walking</a>
+  <a href="../pet-sitting.html">Pet Sitting &amp; Overnights</a>
+  <a href="../wedding-pet-attendant.html">Wedding Pet Attendant</a>
+  <a href="../snowbird-services.html">Snowbird &amp; House Sitting</a>
+  <a href="../how-it-works.html">How It Works</a>
+  <a href="../about.html">About</a>
+  <a href="../blog/">Blog</a>
+  <a href="../contact.html">Contact</a>
+  <a href="https://www.timetopet.com/portal/wiggleyourtail/create-account" target="_blank" class="mobile-cta">Book Now →</a>
+</nav>
+
+<!-- ═══ BREADCRUMB ═══ -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="../index.html">Home</a>
+  <span class="breadcrumb-sep">›</span>
+  <span class="breadcrumb-current">Pet Care Tips &amp; News</span>
+</nav>
+
+<!-- ═══ BLOG HERO ═══ -->
+<section class="blog-hero">
+  <div class="blog-hero-inner">
+    <div class="section-eyebrow">Wiggle Your Tail Blog</div>
+    <h1>Pet Care Tips<br><em>&amp; News</em></h1>
+    <p>Expert advice on dog walking, pet care, and life with pets in Sarasota — from the team that loves your animals almost as much as you do.</p>
+  </div>
+</section>
+
+<!-- ═══ BLOG GRID ═══ -->
+<section class="blog-section">
+  <div class="blog-grid">
+
+    <!-- ─── FEATURED POST ─── -->
+    <!-- Post 1: Sarasota Summers (most seasonally relevant) -->
+    <a href="../sarasota-summers-keeping-your-furry-friend-cool-and-happy/" class="blog-card featured">
+      <div class="blog-card-img">
+        <img src="../assets/images/clarissabell-beach-3204990.jpg" alt="Dog on Sarasota beach in summer" loading="lazy"/>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-meta">
+          <span class="blog-card-tag">Sarasota Tips</span>
+          <span class="blog-card-date">June 15, 2025</span>
+        </div>
+        <div class="blog-card-title">Sarasota Summers: Keeping Your Furry Friend Cool and Happy</div>
+        <div class="blog-card-excerpt">Sarasota summers are brutal for dogs. Here's how to keep your pet safe, cool, and comfortable during Florida's hottest months — with practical tips from local pet care pros who walk dogs in this heat every day.</div>
+        <span class="blog-card-read">Read article <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </div>
+    </a>
+
+    <!-- Post 2: Best Time to Walk -->
+    <a href="../best-time-to-walk-your-dog-in-sarasota/" class="blog-card">
+      <div class="blog-card-img">
+        <img src="../assets/images/picsbyfran-dog-2579871.jpg" alt="Dog being walked in Sarasota" loading="lazy"/>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-meta">
+          <span class="blog-card-tag">Dog Walking</span>
+          <span class="blog-card-date">June 1, 2025</span>
+        </div>
+        <div class="blog-card-title">The Best Time to Walk Your Dog in Sarasota, FL</div>
+        <div class="blog-card-excerpt">Sarasota's heat and humidity make walk timing critical for your dog's safety. Here's the best time of day to walk your dog across every season.</div>
+        <span class="blog-card-read">Read article <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </div>
+    </a>
+
+    <!-- Post 3: Pet Mom -->
+    <a href="../are-you-a-pet-mom-heres-why-you-deserve-a-shoutout-this-mothers-day/" class="blog-card">
+      <div class="blog-card-img">
+        <img src="../assets/images/hero-frenchie.jpg" alt="Pet mom with her dog" loading="lazy"/>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-meta">
+          <span class="blog-card-tag">Pet Lifestyle</span>
+          <span class="blog-card-date">April 22, 2025</span>
+        </div>
+        <div class="blog-card-title">Are You a Pet Mom? Here's Why You Deserve a Shoutout This Mother's Day</div>
+        <div class="blog-card-excerpt">Pet moms do it all — feeding, walking, vet visits, and endless love. Here's why Sarasota's pet moms deserve serious recognition this Mother's Day.</div>
+        <span class="blog-card-read">Read article <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </div>
+    </a>
+
+    <!-- Post 4: Wedding Dog Attendant -->
+    <a href="../how-a-dog-attendant-can-help-you-include-your-pet-in-your-wedding/" class="blog-card">
+      <div class="blog-card-img">
+        <img src="../assets/images/dog.wedding.jpg" alt="Dog at a wedding" loading="lazy"/>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-meta">
+          <span class="blog-card-tag">Wedding Pets</span>
+          <span class="blog-card-date">April 10, 2025</span>
+        </div>
+        <div class="blog-card-title">How a Dog Attendant Can Help You Include Your Pet in Your Wedding</div>
+        <div class="blog-card-excerpt">Want your dog in your wedding? A professional wedding dog attendant makes it possible. Here's exactly how it works and what to expect on your big day.</div>
+        <span class="blog-card-read">Read article <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </div>
+    </a>
+
+    <!-- Post 5: Mastering Dog Training -->
+    <a href="../mastering-dog-training-from-puppies-to-adults/" class="blog-card">
+      <div class="blog-card-img">
+        <div class="blog-card-img-placeholder">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/><path d="M17 10s2 1 2 4"/></svg>
+        </div>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-meta">
+          <span class="blog-card-tag">Training</span>
+          <span class="blog-card-date">March 1, 2025</span>
+        </div>
+        <div class="blog-card-title">Mastering Dog Training: From Puppies to Adults</div>
+        <div class="blog-card-excerpt">A practical guide to dog training at every life stage — from early puppy socialization to adult behavioral work, positive reinforcement, and when to get professional help.</div>
+        <span class="blog-card-read">Read article <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </div>
+    </a>
+
+    <!-- Post 6: Future of Pet Care -->
+    <a href="../the-future-of-pet-care/" class="blog-card">
+      <div class="blog-card-img">
+        <div class="blog-card-img-placeholder">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-meta">
+          <span class="blog-card-tag">Pet Care Trends</span>
+          <span class="blog-card-date">June 4, 2024</span>
+        </div>
+        <div class="blog-card-title">The Future of Pet Care: What's Changing and What Stays the Same</div>
+        <div class="blog-card-excerpt">Pet care is evolving — from technology and scheduling apps to shifting owner expectations around transparency and personalization. Here's what the future looks like.</div>
+        <span class="blog-card-read">Read article <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </div>
+    </a>
+
+    <!-- Post 7: Power of Paws -->
+    <a href="../the-power-of-paws-how-dog-walking-benefits-your-furry-one/" class="blog-card">
+      <div class="blog-card-img">
+        <img src="../assets/images/clarkdonald413-dog-4259565.jpg" alt="Dogs on a walk" loading="lazy"/>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-meta">
+          <span class="blog-card-tag">Dog Walking</span>
+          <span class="blog-card-date">June 5, 2023</span>
+        </div>
+        <div class="blog-card-title">The Power of Paws: How Dog Walking Benefits Your Furry One</div>
+        <div class="blog-card-excerpt">Regular dog walks do far more than provide bathroom breaks. Here's the full picture of how daily walking benefits your dog physically, mentally, and emotionally.</div>
+        <span class="blog-card-read">Read article <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </div>
+    </a>
+
+    <!-- Post 8: Paw Paradise -->
+    <a href="../paw-paradise-discover-why-sarasota-is-a-dog-lovers-dream/" class="blog-card">
+      <div class="blog-card-img">
+        <img src="../assets/images/baninho-dog-7441303.jpg" alt="Dog enjoying Sarasota outdoors" loading="lazy"/>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-meta">
+          <span class="blog-card-tag">Sarasota Life</span>
+          <span class="blog-card-date">August 3, 2023</span>
+        </div>
+        <div class="blog-card-title">Paw Paradise: Discover Why Sarasota Is a Dog Lover's Dream</div>
+        <div class="blog-card-excerpt">Sarasota is one of the best cities in America for dog owners — from dog-friendly beaches to shaded parks and pet-welcoming restaurants.</div>
+        <span class="blog-card-read">Read article <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </div>
+    </a>
+
+    <!-- Post 9: Dog Sitter Sarasota -->
+    <a href="../dog-sitter-sarasota/" class="blog-card">
+      <div class="blog-card-img">
+        <img src="../assets/images/pet-sitting.jpg" alt="Dog sitter with pet" loading="lazy"/>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-meta">
+          <span class="blog-card-tag">Pet Sitting</span>
+          <span class="blog-card-date">Sarasota Guide</span>
+        </div>
+        <div class="blog-card-title">Dog Sitter in Sarasota, FL: In-Home Pet Sitting That Feels Like Family</div>
+        <div class="blog-card-excerpt">Looking for a trusted dog sitter in Sarasota? Learn what sets professional in-home pet sitting apart — and why it's the best option for your dog's wellbeing.</div>
+        <span class="blog-card-read">Read article <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </div>
+    </a>
+
+    <!-- Post 10: Dog Trainer Sarasota -->
+    <a href="../dog-trainer-sarasota/" class="blog-card">
+      <div class="blog-card-img">
+        <div class="blog-card-img-placeholder">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-meta">
+          <span class="blog-card-tag">Training</span>
+          <span class="blog-card-date">Sarasota Guide</span>
+        </div>
+        <div class="blog-card-title">Dog Trainer in Sarasota, FL: Professional Guidance for Every Breed</div>
+        <div class="blog-card-excerpt">Looking for a dog trainer in Sarasota? Here's how professional dog training support and structured care services can make a real difference for your pet.</div>
+        <span class="blog-card-read">Read article <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- ═══ CTA BAND ═══ -->
+<section class="cta-band">
+  <div class="cta-inner">
+    <div class="cta-badge"><span class="cta-badge-dot"></span>Professional pet care · Sarasota, FL</div>
+    <h2>Ready to Give Your Dog the<br><em>Care They Deserve?</em></h2>
+    <p>Wiggle Your Tail's Sarasota team is bonded, insured, and Pet CPR certified — and we love your animals almost as much as you do.</p>
+    <div class="cta-btns">
+      <a href="../contact.html" class="btn btn-gold">Schedule a Free Meet &amp; Greet →</a>
+      <a href="../services-rates.html" class="btn btn-white-outline">View Services &amp; Rates</a>
+    </div>
+    <div class="cta-meta">
+      <div class="cta-meta-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Bonded &amp; insured</div>
+      <div class="cta-meta-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Pet CPR certified</div>
+      <div class="cta-meta-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>5-star rated · 50+ reviews</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo">
+        <img src="../assets/images/wiggleyourtail.logo.wyt.logo.png" alt="Wiggle Your Tail logo" class="nav-logo">
+        <div class="logo-text"><span class="logo-name">Wiggle Your Tail</span><span class="logo-sub">Premium Pet Care</span></div>
+      </div>
+      <p class="footer-desc">Sarasota's #1 Platinum Award-Winning provider of dog walking and professional pet care. Bonded, insured &amp; Pet CPR certified.</p>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/WiggleYourTailDogWalking/" target="_blank" class="f-social"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="https://www.instagram.com/wiggleyourtailpetcare/" target="_blank" class="f-social"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <div class="f-col-title">Services</div>
+      <ul class="f-links">
+        <li><a href="../dog-walking.html">Dog Walking</a></li>
+        <li><a href="../pet-sitting.html">Pet Sitting</a></li>
+        <li><a href="../wedding-pet-attendant.html">Wedding Pet Attendant</a></li>
+        <li><a href="../snowbird-services.html">Snowbird Services</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="f-col-title">Company</div>
+      <ul class="f-links">
+        <li><a href="../about.html">About Us</a></li>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../blog/">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="f-col-title">Contact</div>
+      <ul class="f-links">
+        <li><a href="tel:9412805156">(941) 280-5156</a></li>
+        <li><a href="mailto:contact@wiggleyourtail.com">contact@wiggleyourtail.com</a></li>
+        <li><a href="../contact.html">Free Meet &amp; Greet</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Wiggle Your Tail Pet Care, LLC · Sarasota, FL · All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="../privacy-policy.html">Privacy Policy</a>
+      <a href="../terms-and-conditions.html">Terms &amp; Conditions</a>
+    </div>
+  </div>
+  <div class="footer-credit"><a href="https://echelonfox.com" target="_blank" rel="noopener noreferrer">Built by EchelonFox AI</a></div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

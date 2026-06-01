@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- ═══ SEO — EDIT THESE FOR EVERY NEW POST ═══ -->
+  <title>YOUR POST TITLE HERE | Wiggle Your Tail</title>
+  <meta name="description" content="YOUR META DESCRIPTION HERE — 140–160 characters summarizing what the post is about."/>
+  <link rel="canonical" href="https://wiggleyourtail.com/YOUR-POST-SLUG/"/>
+  <meta property="og:title" content="YOUR POST TITLE HERE"/>
+  <meta property="og:description" content="YOUR META DESCRIPTION HERE."/>
+  <meta property="og:url" content="https://wiggleyourtail.com/YOUR-POST-SLUG/"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:image" content="https://wiggleyourtail.com/assets/images/YOUR-THUMBNAIL.jpg"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Wiggle Your Tail Pet Care"/>
+  <!-- ════════════════════════════════════════════ -->
+
+  <!-- Schema markup — edit title, description, dates, and URL -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "YOUR POST TITLE HERE",
+    "description": "YOUR META DESCRIPTION HERE.",
+    "author": {
+      "@type": "Organization",
+      "name": "Wiggle Your Tail Pet Care"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Wiggle Your Tail Pet Care",
+      "url": "https://wiggleyourtail.com"
+    },
+    "datePublished": "YYYY-MM-DD",
+    "dateModified": "YYYY-MM-DD",
+    "url": "https://wiggleyourtail.com/YOUR-POST-SLUG/"
+  }
+  </script>
+
+  <link rel="icon" type="image/png" sizes="192x192" href="../assets/images/favicon-192x192.png"/>
+  <link rel="icon" type="image/png" sizes="512x512" href="../assets/images/favicon-512x512.png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../assets/css/main.css"/>
+  <style>
+    /* ── ARTICLE PAGE STYLES ── */
+    .article-hero {
+      padding: 6rem 1.5rem 3rem;
+      background: var(--cream);
+    }
+    .article-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.4rem;
+      flex-wrap: wrap;
+    }
+    .article-tag {
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--purple);
+      background: var(--purple-pale);
+      border: 1.5px solid rgba(107,63,160,.15);
+      border-radius: 100px;
+      padding: .3rem .9rem;
+    }
+    .article-date {
+      font-size: .78rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+    .article-h1 {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.12;
+      letter-spacing: -.03em;
+      color: var(--dark);
+      margin-bottom: 1.4rem;
+    }
+    .article-intro {
+      font-size: 1.1rem;
+      line-height: 1.78;
+      color: var(--muted);
+      font-weight: 300;
+      padding-bottom: 2.5rem;
+      border-bottom: 1.5px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+
+    /* Hero thumbnail */
+    .article-thumb {
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto 0;
+      border-radius: 20px;
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+    }
+    .article-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Body content */
+    .article-body {
+      font-size: .95rem;
+      line-height: 1.88;
+      color: var(--muted);
+    }
+    .article-body h2 {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin: 2.5rem 0 .9rem;
+      letter-spacing: -.02em;
+    }
+    .article-body h3 {
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin: 1.8rem 0 .6rem;
+    }
+    .article-body p {
+      margin-bottom: 1.2rem;
+    }
+    .article-body ul, .article-body ol {
+      padding-left: 1.4rem;
+      margin-bottom: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: .4rem;
+    }
+    .article-body a {
+      color: var(--purple);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .article-body img {
+      border-radius: 16px;
+      margin: 1.5rem 0;
+    }
+
+    /* Pull quote */
+    .article-pull {
+      border-left: 3px solid var(--purple);
+      padding: 1rem 1.5rem;
+      background: var(--purple-pale);
+      border-radius: 0 12px 12px 0;
+      margin: 2rem 0;
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--dark);
+      line-height: 1.65;
+    }
+
+    /* Tip box */
+    .article-tip {
+      padding: 1.4rem 1.6rem;
+      background: var(--gold-pale);
+      border: 1.5px solid rgba(212,150,10,.25);
+      border-radius: 14px;
+      margin: 2rem 0;
+      font-size: .9rem;
+      line-height: 1.75;
+      color: var(--ink);
+    }
+    .article-tip strong {
+      color: var(--gold);
+      display: block;
+      font-size: .7rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      margin-bottom: .4rem;
+    }
+
+    /* Related links box */
+    .article-related {
+      margin-top: 3rem;
+      padding: 1.5rem;
+      background: var(--purple-pale);
+      border-radius: 16px;
+      border: 1.5px solid rgba(107,63,160,.15);
+    }
+    .article-related-title {
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--purple);
+      margin-bottom: .8rem;
+    }
+    .article-related p {
+      font-size: .88rem;
+      color: var(--dark);
+      margin-bottom: .8rem;
+    }
+    .article-related-links {
+      display: flex;
+      gap: .75rem;
+      flex-wrap: wrap;
+    }
+
+    /* Back to blog link */
+    .article-back {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      font-size: .8rem;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: 1.2rem;
+      transition: color .2s;
+    }
+    .article-back:hover { color: var(--purple); }
+    .article-back svg {
+      width: 14px;
+      height: 14px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2.5;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav class="site-nav" id="nav">
+  <a href="../index.html" class="logo">
+    <img src="../assets/images/wiggleyourtail.logo.wyt.logo.png" alt="Wiggle Your Tail logo" class="nav-logo">
+    <div class="logo-text">
+      <span class="logo-name">Wiggle Your Tail</span>
+      <span class="logo-sub">Premium Pet Care · Sarasota, FL</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li class="nav-dropdown"><a href="../services-rates.html">Services ▾</a>
+      <div class="nav-dropdown-menu">
+        <a href="../dog-walking.html">Dog Walking</a>
+        <a href="../pet-sitting.html">Pet Sitting &amp; Overnights</a>
+        <a href="../wedding-pet-attendant.html">Wedding Pet Attendant</a>
+        <a href="../snowbird-services.html">Snowbird &amp; House Sitting</a>
+      </div>
+    </li>
+    <li><a href="../how-it-works.html">How It Works</a></li>
+    <li><a href="../about.html">About</a></li>
+    <li><a href="../blog/" class="active">Blog</a></li>
+    <li><a href="../contact.html">Contact</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:1rem">
+    <a href="https://www.timetopet.com/portal/wiggleyourtail/create-account" target="_blank" class="btn btn-purple">Book Now →</a>
+    <div class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- ═══ MOBILE NAV ═══ -->
+<nav class="mobile-nav">
+  <a href="../index.html">Home</a>
+  <a href="../services-rates.html">All Services</a>
+  <a href="../dog-walking.html">Dog Walking</a>
+  <a href="../pet-sitting.html">Pet Sitting &amp; Overnights</a>
+  <a href="../wedding-pet-attendant.html">Wedding Pet Attendant</a>
+  <a href="../snowbird-services.html">Snowbird &amp; House Sitting</a>
+  <a href="../how-it-works.html">How It Works</a>
+  <a href="../about.html">About</a>
+  <a href="../blog/">Blog</a>
+  <a href="../contact.html">Contact</a>
+  <a href="https://www.timetopet.com/portal/wiggleyourtail/create-account" target="_blank" class="mobile-cta">Book Now →</a>
+</nav>
+
+<!-- ═══ BREADCRUMB — update "Category" and "Post Title" ═══ -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="../index.html">Home</a>
+  <span class="breadcrumb-sep">›</span>
+  <a href="../blog/">Blog</a>
+  <span class="breadcrumb-sep">›</span>
+  <span class="breadcrumb-current">YOUR POST TITLE (short)</span>
+</nav>
+
+<!-- ═══ ARTICLE HERO ═══ -->
+<section class="article-hero">
+  <div class="article-wrap">
+    <a href="../blog/" class="article-back">
+      <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Back to Blog
+    </a>
+    <div class="article-meta">
+      <!-- Change tag text and date to match your post -->
+      <span class="article-tag">CATEGORY TAG</span>
+      <span class="article-date">Month Day, Year</span>
+    </div>
+    <h1 class="article-h1">YOUR POST TITLE HERE</h1>
+    <p class="article-intro">
+      YOUR INTRO / LEDE PARAGRAPH HERE. This appears larger and lighter than the body text. Keep it to 2–3 sentences that hook the reader and summarize the post.
+    </p>
+  </div>
+</section>
+
+<!-- OPTIONAL: Hero thumbnail image — delete this block if you have no image -->
+<div style="padding: 0 1.5rem 0; background: var(--cream);">
+  <div class="article-thumb">
+    <img src="../assets/images/YOUR-IMAGE.jpg" alt="Descriptive alt text for your image" loading="lazy"/>
+  </div>
+</div>
+
+<!-- ═══ ARTICLE BODY ═══ -->
+<section class="section bg-white" style="padding-top: 3rem;">
+  <div class="article-wrap article-body" style="padding-bottom: 4rem;">
+
+    <!-- ─────────────────────────────────────────────────
+         PASTE YOUR CONTENT BELOW.
+         Use these building blocks:
+
+         Heading:       <h2>Section Title</h2>
+         Sub-heading:   <h3>Sub-section</h3>
+         Paragraph:     <p>Text here.</p>
+         Bullet list:   <ul><li>Item</li></ul>
+         Numbered list: <ol><li>Step</li></ol>
+         Internal link: <a href="../dog-walking.html">dog walking</a>
+         Pull quote:    <div class="article-pull">"Your quote here."</div>
+         Tip box:       (see below)
+         Image:         <img src="../assets/images/FILE.jpg" alt="Alt text"/>
+    ───────────────────────────────────────────────── -->
+
+    <h2>First Section Heading</h2>
+    <p>Your paragraph text goes here. Write naturally and conversationally — Wiggle Your Tail's voice is warm, knowledgeable, and genuinely dog-obsessed.</p>
+    <p>Another paragraph. Keep paragraphs short (3–5 sentences) for easy reading on mobile.</p>
+
+    <!-- Pull quote example -->
+    <div class="article-pull">"Your memorable pull quote goes here — a key insight or piece of advice from the article."</div>
+
+    <h2>Second Section Heading</h2>
+    <p>More content here.</p>
+    <ul>
+      <li>Bullet point one</li>
+      <li>Bullet point two</li>
+      <li>Bullet point three</li>
+    </ul>
+
+    <!-- Tip box example -->
+    <div class="article-tip">
+      <strong>Pro Tip</strong>
+      Your helpful tip or callout goes here. Great for safety reminders, quick facts, or important warnings.
+    </div>
+
+    <h2>Third Section Heading</h2>
+    <p>Continue your content here. Link to relevant service pages naturally within the copy, like our <a href="../dog-walking.html">Sarasota dog walking services</a> or <a href="../contact.html">free meet &amp; greet</a>.</p>
+
+    <!-- ─── RELATED LINKS BOX ─── -->
+    <!-- Update links and descriptions to match this post -->
+    <div class="article-related">
+      <div class="article-related-title">Related Reading &amp; Services</div>
+      <p>Ready to take the next step? Wiggle Your Tail's Sarasota team is here to help.</p>
+      <div class="article-related-links">
+        <a href="../RELEVANT-SERVICE.html" class="btn btn-purple" style="font-size:.82rem;padding:.55rem 1.1rem">View Service →</a>
+        <a href="../blog/" class="btn btn-outline" style="font-size:.82rem;padding:.55rem 1.1rem">More Blog Posts →</a>
+        <a href="../contact.html" class="btn btn-outline" style="font-size:.82rem;padding:.55rem 1.1rem">Schedule a Meet &amp; Greet →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ CTA BAND — edit headline and body copy to match the post topic ═══ -->
+<section class="cta-band">
+  <div class="cta-inner">
+    <div class="cta-badge"><span class="cta-badge-dot"></span>Professional pet care · Sarasota, FL</div>
+    <h2>Ready to Give Your Pet the<br><em>Best Care in Sarasota?</em></h2>
+    <p>Wiggle Your Tail's team is bonded, insured, Pet CPR certified, and always available for a free meet &amp; greet.</p>
+    <div class="cta-btns">
+      <a href="../contact.html" class="btn btn-gold">Schedule a Free Meet &amp; Greet →</a>
+      <a href="../services-rates.html" class="btn btn-white-outline">View Services &amp; Rates</a>
+    </div>
+    <div class="cta-meta">
+      <div class="cta-meta-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Bonded &amp; insured</div>
+      <div class="cta-meta-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Pet CPR certified</div>
+      <div class="cta-meta-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>5-star rated · Sarasota</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo">
+        <img src="../assets/images/wiggleyourtail.logo.wyt.logo.png" alt="Wiggle Your Tail logo" class="nav-logo">
+        <div class="logo-text"><span class="logo-name">Wiggle Your Tail</span><span class="logo-sub">Premium Pet Care</span></div>
+      </div>
+      <p class="footer-desc">Sarasota's #1 Platinum Award-Winning provider of dog walking and professional pet care. Bonded, insured &amp; Pet CPR certified.</p>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/WiggleYourTailDogWalking/" target="_blank" class="f-social"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="https://www.instagram.com/wiggleyourtailpetcare/" target="_blank" class="f-social"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <div class="f-col-title">Services</div>
+      <ul class="f-links">
+        <li><a href="../dog-walking.html">Dog Walking</a></li>
+        <li><a href="../pet-sitting.html">Pet Sitting</a></li>
+        <li><a href="../wedding-pet-attendant.html">Wedding Pet Attendant</a></li>
+        <li><a href="../snowbird-services.html">Snowbird Services</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="f-col-title">Company</div>
+      <ul class="f-links">
+        <li><a href="../about.html">About Us</a></li>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../blog/">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="f-col-title">Contact</div>
+      <ul class="f-links">
+        <li><a href="tel:9412805156">(941) 280-5156</a></li>
+        <li><a href="mailto:contact@wiggleyourtail.com">contact@wiggleyourtail.com</a></li>
+        <li><a href="../contact.html">Free Meet &amp; Greet</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Wiggle Your Tail Pet Care, LLC · Sarasota, FL · All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="../privacy-policy.html">Privacy Policy</a>
+      <a href="../terms-and-conditions.html">Terms &amp; Conditions</a>
+    </div>
+  </div>
+  <div class="footer-credit"><a href="https://echelonfox.com" target="_blank" rel="noopener noreferrer">Built by EchelonFox AI</a></div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
