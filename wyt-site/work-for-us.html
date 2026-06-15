@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Work For Us | Join the Pack at Wiggle Your Tail Pet Care Sarasota</title>
+  <meta name="description" content="Join the Wiggle Your Tail Pet Care team in Sarasota, FL. We're hiring dog walkers and pet sitters who love animals. Flexible, meaningful work with a tight-knit crew."/>
+  <link rel="canonical" href="https://wiggleyourtail.com/work-for-us/"/>
+  <meta property="og:title" content="Work For Us | Wiggle Your Tail Pet Care Sarasota"/>
+  <meta property="og:description" content="Join the Wiggle Your Tail team in Sarasota. Flexible pet care jobs for animal lovers — dog walking, pet sitting, and more."/>
+  <meta property="og:url" content="https://wiggleyourtail.com/work-for-us/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://wiggleyourtail.com/assets/images/wig.logo.png"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Wiggle Your Tail Pet Care"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Work For Us | Wiggle Your Tail Pet Care Sarasota"/>
+  <meta name="twitter:description" content="Join the Wiggle Your Tail team in Sarasota. Flexible pet care jobs for animal lovers."/>
+  <meta name="twitter:image" content="https://wiggleyourtail.com/assets/images/wig.logo.png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <link rel="icon" href="/favicon.ico" sizes="any"/>
+  <link rel="icon" type="image/jpeg" href="/assets/images/wisfavo.jpg"/>
+  <link rel="apple-touch-icon" href="/assets/images/wisfavo.jpg"/>
+  <link rel="manifest" href="/site.webmanifest"/>
+  <style>
+    /* ── CAREERS PAGE STYLES ── */
+    .careers-hero {
+      padding: 2rem 4.5rem 5rem;
+      background: var(--cream);
+      position: relative;
+      overflow: hidden;
+    }
+    .careers-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(107,63,160,.055) 1.5px, transparent 1.5px);
+      background-size: 28px 28px;
+      pointer-events: none;
+    }
+    .careers-hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 680px;
+    }
+    .careers-hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(3rem, 5.5vw, 5rem);
+      font-weight: 900;
+      line-height: 1.03;
+      letter-spacing: -.04em;
+      color: var(--dark);
+      margin: 1rem 0 1.5rem;
+    }
+    .careers-hero h1 em {
+      font-style: italic;
+      font-weight: 300;
+      background: linear-gradient(120deg, var(--purple) 0%, var(--purple-soft) 50%, var(--gold) 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: shimmer 5s linear infinite;
+    }
+    .careers-hero-sub {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      font-weight: 300;
+      color: var(--muted);
+      max-width: 580px;
+      margin-bottom: 2rem;
+    }
+    .careers-trust-row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+    .careers-trust-item {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 100px;
+      padding: .45rem 1rem .45rem .7rem;
+      font-size: .78rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .ct-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .ct-dot.green  { background: #3FCB6D; }
+    .ct-dot.purple { background: var(--purple); }
+    .ct-dot.gold   { background: var(--gold); }
+
+    /* ── JOB CARDS ── */
+    .openings-lead {
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: var(--muted);
+      margin-bottom: 2.5rem;
+    }
+    .job-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 1fr;
+      gap: 1.5rem;
+      align-items: start;
+    }
+    .job-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 28px;
+      padding: 2.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+      transition: all .3s;
+      position: relative;
+      overflow: hidden;
+    }
+    .job-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--purple), var(--gold));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .35s;
+    }
+    .job-card:hover { border-color: var(--purple-soft); box-shadow: var(--shadow-md); transform: translateY(-4px); }
+    .job-card:hover::before { transform: scaleX(1); }
+    .job-card.featured {
+      background: linear-gradient(150deg, var(--purple-deep) 0%, var(--purple) 100%);
+      border-color: transparent;
+      box-shadow: 0 16px 48px rgba(107,63,160,.38);
+    }
+    .job-card.featured:hover { transform: translateY(-6px); box-shadow: 0 24px 64px rgba(107,63,160,.48); }
+    .job-card.featured::before { display: none; }
+
+    .job-card-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .job-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      font-size: .69rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: .3rem .8rem;
+      border-radius: 100px;
+    }
+    .job-badge.open {
+      background: rgba(63,203,109,.15);
+      color: #1a8f45;
+      border: 1.5px solid rgba(63,203,109,.3);
+    }
+    .job-badge.pool {
+      background: rgba(212,150,10,.12);
+      color: var(--gold);
+      border: 1.5px solid rgba(212,150,10,.25);
+    }
+    .job-badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .job-badge.open .job-badge-dot  { background: #3FCB6D; }
+    .job-badge.pool .job-badge-dot  { background: var(--gold-warm); }
+    .job-type-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: .69rem;
+      font-weight: 700;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: var(--cream);
+      border: 1.5px solid var(--border);
+      border-radius: 100px;
+      padding: .3rem .8rem;
+    }
+    .job-card.featured .job-type-tag {
+      background: rgba(255,255,255,.1);
+      border-color: rgba(255,255,255,.15);
+      color: rgba(255,255,255,.7);
+    }
+    .job-title {
+      font-family: var(--serif);
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--dark);
+      line-height: 1.2;
+      letter-spacing: -.02em;
+    }
+    .job-card.featured .job-title { color: #fff; }
+    .job-desc {
+      font-size: .88rem;
+      line-height: 1.78;
+      color: var(--muted);
+    }
+    .job-card.featured .job-desc { color: rgba(255,255,255,.68); }
+    .job-duties {
+      display: flex;
+      flex-direction: column;
+      gap: .65rem;
+      padding: 1.2rem;
+      background: var(--cream);
+      border-radius: 16px;
+    }
+    .job-card.featured .job-duties { background: rgba(255,255,255,.1); }
+    .job-duty {
+      display: flex;
+      align-items: flex-start;
+      gap: .7rem;
+      font-size: .85rem;
+      line-height: 1.65;
+      color: var(--ink);
+    }
+    .job-card.featured .job-duty { color: rgba(255,255,255,.82); }
+    .job-duty-icon {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--purple-pale);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: .16rem;
+    }
+    .job-card.featured .job-duty-icon { background: rgba(255,255,255,.18); }
+    .job-duty-icon svg {
+      width: 10px;
+      height: 10px;
+      stroke: var(--purple);
+      fill: none;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .job-card.featured .job-duty-icon svg { stroke: #fff; }
+    .job-req {
+      font-size: .79rem;
+      line-height: 1.68;
+      color: var(--muted);
+      font-style: italic;
+      padding: .85rem 1rem;
+      background: var(--purple-pale);
+      border-radius: 10px;
+    }
+    .job-card.featured .job-req {
+      background: rgba(255,255,255,.1);
+      color: rgba(255,255,255,.6);
+    }
+    .job-cta-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .job-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: .88rem;
+      font-weight: 700;
+      padding: .85rem 1.8rem;
+      border-radius: 100px;
+      transition: all .22s;
+    }
+    .job-cta.primary {
+      background: var(--gold);
+      background: linear-gradient(135deg, var(--gold), var(--gold-warm));
+      color: var(--dark);
+      box-shadow: 0 5px 20px rgba(212,150,10,.35);
+    }
+    .job-cta.primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 32px rgba(212,150,10,.5);
+    }
+    .job-cta.secondary {
+      background: var(--purple);
+      color: #fff;
+      box-shadow: 0 4px 18px rgba(107,63,160,.35);
+    }
+    .job-cta.secondary:hover {
+      background: var(--purple-deep);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 26px rgba(107,63,160,.45);
+    }
+    .job-cta.ghost {
+      background: rgba(255,255,255,.12);
+      color: #fff;
+      border: 1.5px solid rgba(255,255,255,.25);
+    }
+    .job-cta.ghost:hover {
+      background: rgba(255,255,255,.2);
+      border-color: rgba(255,255,255,.5);
+    }
+
+    /* ── OPEN APPLICATION LINK ── */
+    .open-app-link {
+      text-align: center;
+      padding: 2.5rem 0 .5rem;
+    }
+    .open-app-link a {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: .9rem;
+      font-weight: 600;
+      color: var(--purple);
+      border-bottom: 1.5px dashed rgba(107,63,160,.3);
+      padding-bottom: 2px;
+      transition: border-color .2s, color .2s;
+    }
+    .open-app-link a:hover {
+      color: var(--purple-deep);
+      border-color: var(--purple);
+    }
+
+    /* ── PERKS BAND ── */
+    .perks-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+      margin-top: 3rem;
+    }
+    .perk-card {
+      padding: 1.7rem;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 20px;
+      backdrop-filter: blur(8px);
+      transition: background .3s, transform .3s;
+    }
+    .perk-card:hover { background: rgba(255,255,255,.1); transform: translateY(-3px); }
+    .perk-icon {
+      width: 40px; height: 40px;
+      border-radius: 11px;
+      background: rgba(255,255,255,.1);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .perk-icon svg {
+      width: 18px; height: 18px;
+      stroke: var(--gold-warm);
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+    }
+    .perk-title {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: .4rem;
+    }
+    .perk-desc {
+      font-size: .82rem;
+      line-height: 1.7;
+      color: rgba(255,255,255,.55);
+    }
+
+    @media(max-width:1100px) {
+      .careers-hero { padding: 1.5rem 2.5rem 4rem; }
+      .job-grid { grid-template-columns: 1fr; }
+      .perks-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media(max-width:640px) {
+      .careers-hero { padding: 1rem 1.4rem 3rem; }
+      .perks-grid { grid-template-columns: 1fr; }
+      .job-cta-row { flex-direction: column; align-items: stretch; }
+      .job-cta { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" id="nav">
+  <a href="index.html" class="logo">
+    <img src="assets/images/wig.logo.png" alt="Wiggle Your Tail logo" class="nav-logo"/>
+    <div class="logo-text"><span class="logo-name">Wiggle Your Tail</span><span class="logo-sub">Premium Pet Care · Sarasota, FL</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="nav-dropdown"><a href="services-rates.html">Services ▾</a>
+      <div class="nav-dropdown-menu">
+        <a href="dog-walking.html">Dog Walking</a>
+        <a href="pet-sitting.html">Pet Sitting &amp; Overnights</a>
+        <a href="wedding-pet-attendant.html">Wedding Pet Attendant</a>
+        <a href="snowbird-services.html">Snowbird &amp; House Sitting</a>
+      </div>
+    </li>
+    <li><a href="how-it-works.html">How It Works</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="work-for-us.html" class="active">Work For Us</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:1rem">
+    <a href="https://www.timetopet.com/portal/wiggleyourtail/create-account" target="_blank" class="btn btn-purple">Book Now →</a>
+    <div class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<nav class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="services-rates.html">All Services</a>
+  <a href="dog-walking.html">Dog Walking</a>
+  <a href="pet-sitting.html">Pet Sitting &amp; Overnights</a>
+  <a href="wedding-pet-attendant.html">Wedding Pet Attendant</a>
+  <a href="snowbird-services.html">Snowbird &amp; House Sitting</a>
+  <a href="how-it-works.html">How It Works</a>
+  <a href="about.html">About</a>
+  <a href="blog/">Blog</a>
+  <a href="contact.html">Contact</a>
+  <a href="work-for-us.html">Work For Us</a>
+  <a href="https://www.timetopet.com/portal/wiggleyourtail/create-account" target="_blank" class="mobile-cta">Book Now →</a>
+</nav>
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="index.html">Home</a>
+  <span class="breadcrumb-sep">›</span>
+  <span class="breadcrumb-current">Work For Us</span>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="careers-hero">
+  <div class="careers-hero-inner">
+    <div class="section-eyebrow">Join the Team</div>
+    <h1>Join the<br><em>Pack.</em></h1>
+    <p class="careers-hero-sub">At Wiggle Your Tail Pet Care, we treat every dog, cat, and critter in the Sarasota area like our own. We're a small, tight crew who'd rather spend the day on a leash than behind a desk. If you're reliable, love animals, and want flexible work that actually means something to the families who trust us — we'd love to meet you.</p>
+    <a href="#openings" class="btn btn-purple">See Open Positions →</a>
+    <div class="careers-trust-row">
+      <div class="careers-trust-item"><div class="ct-dot green"></div>Flexible scheduling</div>
+      <div class="careers-trust-item"><div class="ct-dot purple"></div>Bonded &amp; insured team</div>
+      <div class="careers-trust-item"><div class="ct-dot gold"></div>Sarasota-based</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── OPENINGS ── -->
+<section class="section bg-white" id="openings">
+  <div class="section-eyebrow">Current Openings</div>
+  <h2 class="display" style="margin-bottom:.8rem">Here's who we're<br>looking for <em>right now.</em></h2>
+  <p class="openings-lead">Two paths in — the field role and the desk role. Both matter to the families who trust us.</p>
+
+  <div class="job-grid">
+
+    <!-- Card 1 — Featured Dog Walker / Pet Sitter -->
+    <div class="job-card featured">
+      <div class="job-card-head">
+        <div class="job-badge open"><div class="job-badge-dot"></div>3 Openings</div>
+        <div class="job-type-tag">Part-time · Flexible</div>
+      </div>
+
+      <div>
+        <div class="job-title">Dog Walker / Pet Sitter</div>
+        <p class="job-desc" style="margin-top:.5rem">Get paid to spend time with amazing animals. Every day is different — and every family you work with will trust you completely.</p>
+      </div>
+
+      <div class="job-duties">
+        <div class="job-duty">
+          <div class="job-duty-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <span>Visit pets in their homes for walks, feeding, playtime, and potty breaks</span>
+        </div>
+        <div class="job-duty">
+          <div class="job-duty-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <span>Send photo and video updates to pet parents after every visit</span>
+        </div>
+        <div class="job-duty">
+          <div class="job-duty-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <span>Handle basics for sitting clients — fresh water, meds if needed, bring in mail</span>
+        </div>
+        <div class="job-duty">
+          <div class="job-duty-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <span>Travel between client homes across our service area</span>
+        </div>
+      </div>
+
+      <div class="job-req">Must be 18+, hold a valid FL driver's license with reliable insured transportation, be comfortable with dogs of all sizes, and available some weekends/holidays.</div>
+
+      <div class="job-cta-row">
+        <a href="apply.html?role=walker-sitter" class="job-cta ghost">Apply now →</a>
+      </div>
+    </div>
+
+    <!-- Card 2 — Admin -->
+    <div class="job-card">
+      <div class="job-card-head">
+        <div class="job-badge pool"><div class="job-badge-dot"></div>Talent Pool</div>
+        <div class="job-type-tag">Part-time</div>
+      </div>
+
+      <div>
+        <div class="job-title" style="color:var(--dark)">Admin</div>
+        <p class="job-desc" style="margin-top:.5rem">The behind-the-scenes role that keeps the whole operation humming. If you're organized, client-focused, and love animals even if you can't walk them every day — this is for you.</p>
+      </div>
+
+      <div class="job-duties" style="background:var(--cream)">
+        <div class="job-duty" style="color:var(--ink)">
+          <div class="job-duty-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <span>Schedule visits and coordinate the walker/sitter team</span>
+        </div>
+        <div class="job-duty" style="color:var(--ink)">
+          <div class="job-duty-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <span>Handle client calls, texts, and booking changes</span>
+        </div>
+        <div class="job-duty" style="color:var(--ink)">
+          <div class="job-duty-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <span>Manage invoicing, payments, and scheduling software</span>
+        </div>
+        <div class="job-duty" style="color:var(--ink)">
+          <div class="job-duty-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <span>Keep the day-to-day running smoothly behind the scenes</span>
+        </div>
+      </div>
+
+      <div class="job-cta-row">
+        <a href="apply.html?role=admin" class="job-cta secondary">Join our talent pool →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="open-app-link">
+    <a href="apply.html?role=open">Don't see your role? Send us an open application →</a>
+  </div>
+</section>
+
+<!-- ── WHY JOIN US ── -->
+<section class="section bg-purple">
+  <div style="max-width:600px;margin-bottom:3rem">
+    <div class="section-eyebrow" style="color:var(--gold-warm)"><span style="display:block;width:28px;height:2.5px;border-radius:2px;background:var(--gold-warm);margin-right:.6rem"></span>Why Wiggle Your Tail</div>
+    <h2 style="font-family:var(--serif);font-size:clamp(2rem,4vw,3.2rem);font-weight:700;color:#fff;letter-spacing:-.03em;margin-top:.5rem;line-height:1.15">Work that actually <em style="font-style:italic;font-weight:300;color:rgba(255,255,255,.5)">means something.</em></h2>
+  </div>
+  <div class="perks-grid">
+    <div class="perk-card">
+      <div class="perk-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <div class="perk-title">Small, tight-knit crew</div>
+      <p class="perk-desc">You're not a number here. We're a small team where your work is seen, valued, and appreciated — every single day.</p>
+    </div>
+    <div class="perk-card">
+      <div class="perk-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <div class="perk-title">Flexible hours</div>
+      <p class="perk-desc">Build a schedule that works for your life. We accommodate students, parents, and anyone juggling multiple things — as long as pets get the love they deserve.</p>
+    </div>
+    <div class="perk-card">
+      <div class="perk-icon">
+        <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </div>
+      <div class="perk-title">Meaningful work</div>
+      <p class="perk-desc">The families who hire us are trusting you with their homes and the pets they love most. That trust means everything — and you'll feel it.</p>
+    </div>
+    <div class="perk-card">
+      <div class="perk-icon">
+        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      </div>
+      <div class="perk-title">Trusted by Sarasota families</div>
+      <p class="perk-desc">We've built real relationships in this community. When you join us, you're joining a name that Sarasota pet owners already know and trust.</p>
+    </div>
+    <div class="perk-card">
+      <div class="perk-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+      </div>
+      <div class="perk-title">Bonded &amp; insured team</div>
+      <p class="perk-desc">We operate professionally. You'll be covered, trained, and set up to do your job with confidence — from day one.</p>
+    </div>
+    <div class="perk-card">
+      <div class="perk-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+      </div>
+      <div class="perk-title">Work outdoors in Sarasota</div>
+      <p class="perk-desc">You'll spend your days in one of Florida's most beautiful cities, not stuck behind a screen. Fresh air, dogs, and sunshine — that's the job.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA BAND ── -->
+<section class="cta-band">
+  <div class="cta-inner">
+    <div class="cta-badge"><span class="cta-badge-dot"></span>We review every application personally</div>
+    <h2>Ready to join<br>the <em>pack?</em></h2>
+    <p>Tell us a little about yourself. It takes about 5 minutes and we read every single application that comes in.</p>
+    <div class="cta-btns">
+      <a href="apply.html?role=walker-sitter" class="btn btn-gold">Apply as Dog Walker / Pet Sitter</a>
+      <a href="apply.html?role=open" class="btn btn-white-outline">Send an Open Application</a>
+    </div>
+    <div class="cta-meta">
+      <div class="cta-meta-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Under 5 minutes</div>
+      <div class="cta-meta-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>No commitment required</div>
+      <div class="cta-meta-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>We'll be in touch soon</div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo"><img src="assets/images/wig.logo.png" alt="Wiggle Your Tail logo" class="nav-logo"/><div class="logo-text"><span class="logo-name">Wiggle Your Tail</span><span class="logo-sub">Premium Pet Care</span></div></div>
+      <p class="footer-desc">Sarasota's #1 Platinum Award-Winning provider of dog walking, pet sitting. Bonded, insured &amp; Pet CPR certified.</p>
+      <div class="footer-socials"><a href="https://www.facebook.com/WiggleYourTailDogWalking/" target="_blank" class="f-social"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a href="https://www.instagram.com/wiggleyourtailpetcare/" target="_blank" class="f-social"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a></div>
+    </div>
+    <div><div class="f-col-title">Company</div><ul class="f-links"><li><a href="about.html">About Christa</a></li><li><a href="how-it-works.html">How It Works</a></li><li><a href="blog/">Blog</a></li><li><a href="work-for-us.html">Work For Us</a></li></ul></div>
+    <div><div class="f-col-title">Contact</div><ul class="f-links"><li><a href="tel:9412805156">(941) 280-5156</a></li><li><a href="mailto:contact@wiggleyourtail.com">contact@wiggleyourtail.com</a></li><li><a href="https://www.timetopet.com/portal/wiggleyourtail" target="_blank">Existing Client Portal</a></li><li><a href="https://www.timetopet.com/portal/wiggleyourtail/create-account" target="_blank">New Client Portal</a></li><li><a href="contact.html">Free Meet &amp; Greet</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Wiggle Your Tail Pet Care, LLC · Sarasota, FL · All rights reserved.</span><div class="footer-bottom-links"><a href="privacy-policy.html">Privacy Policy</a><a href="terms-and-conditions.html">Terms &amp; Conditions</a></div></div>
+  <div class="footer-credit"><a href="https://echelonfox.com" target="_blank" rel="noopener noreferrer">Built by EchelonFox AI</a></div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
