@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apply to Join the Team | Wiggle Your Tail Pet Care Sarasota</title>
+  <meta name="description" content="Apply to join the Wiggle Your Tail Pet Care team in Sarasota, FL. Dog walkers, pet sitters, and admin roles available. Takes about 5 minutes."/>
+  <link rel="canonical" href="https://wiggleyourtail.com/apply/"/>
+  <meta property="og:title" content="Apply | Wiggle Your Tail Pet Care Sarasota"/>
+  <meta property="og:description" content="Apply to join the Wiggle Your Tail Pet Care team in Sarasota, FL. Takes about 5 minutes."/>
+  <meta property="og:url" content="https://wiggleyourtail.com/apply/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://wiggleyourtail.com/assets/images/wig.logo.png"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Wiggle Your Tail Pet Care"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <link rel="icon" href="/favicon.ico" sizes="any"/>
+  <link rel="icon" type="image/jpeg" href="/assets/images/wisfavo.jpg"/>
+  <link rel="apple-touch-icon" href="/assets/images/wisfavo.jpg"/>
+  <link rel="manifest" href="/site.webmanifest"/>
+  <style>
+    /* ── APPLICATION PAGE STYLES ── */
+    .apply-page {
+      min-height: 100vh;
+      background: var(--cream);
+      padding: 6.5rem 1.4rem 5rem;
+    }
+    .apply-wrap {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* Progress bar */
+    .progress-bar-wrap {
+      margin-bottom: 2.5rem;
+    }
+    .progress-steps {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      margin-bottom: 1rem;
+    }
+    .progress-step {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .4rem;
+      position: relative;
+    }
+    .progress-step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 14px;
+      left: 50%;
+      right: -50%;
+      height: 2px;
+      background: var(--border);
+      z-index: 0;
+      transition: background .35s;
+    }
+    .progress-step.done:not(:last-child)::after,
+    .progress-step.active:not(:last-child)::after {
+      background: var(--purple);
+    }
+    .progress-step-dot {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 2px solid var(--border);
+      background: var(--cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .7rem;
+      font-weight: 700;
+      color: var(--muted);
+      position: relative;
+      z-index: 1;
+      transition: all .3s;
+    }
+    .progress-step.active .progress-step-dot {
+      background: var(--purple);
+      border-color: var(--purple);
+      color: #fff;
+      box-shadow: 0 0 0 4px rgba(107,63,160,.15);
+    }
+    .progress-step.done .progress-step-dot {
+      background: var(--purple);
+      border-color: var(--purple);
+      color: #fff;
+    }
+    .progress-step-dot svg {
+      width: 13px;
+      height: 13px;
+      stroke: #fff;
+      fill: none;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      display: none;
+    }
+    .progress-step.done .progress-step-dot .step-num { display: none; }
+    .progress-step.done .progress-step-dot svg { display: block; }
+    .progress-step-label {
+      font-size: .67rem;
+      font-weight: 600;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-align: center;
+    }
+    .progress-step.active .progress-step-label { color: var(--purple); }
+    .progress-step.done .progress-step-label  { color: var(--purple); }
+    .progress-track {
+      height: 4px;
+      background: var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--purple), var(--purple-soft));
+      border-radius: 4px;
+      transition: width .4s ease;
+    }
+
+    /* Form card */
+    .form-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 28px;
+      padding: 2.8rem;
+    }
+    .form-card-title {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: .4rem;
+    }
+    .form-card-sub {
+      font-size: .88rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    /* Form fields */
+    .form-section-title {
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--purple);
+      margin: 1.8rem 0 1rem;
+      padding-bottom: .5rem;
+      border-bottom: 1.5px solid var(--purple-pale);
+    }
+    .form-section-title:first-child { margin-top: 0; }
+    .fg { display: flex; flex-direction: column; gap: .35rem; margin-bottom: 1.1rem; }
+    .fg label {
+      font-size: .75rem;
+      font-weight: 700;
+      color: var(--dark);
+      letter-spacing: .04em;
+    }
+    .fg label .req { color: var(--purple); }
+    .fg .hint {
+      font-size: .72rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .fg input[type="text"],
+    .fg input[type="email"],
+    .fg input[type="tel"],
+    .fg input[type="date"],
+    .fg select,
+    .fg textarea {
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: .82rem 1rem;
+      font-family: var(--sans);
+      font-size: 1rem;
+      color: var(--dark);
+      background: var(--white);
+      outline: none;
+      width: 100%;
+      transition: border-color .2s, box-shadow .2s;
+      -webkit-appearance: none;
+    }
+    .fg input::placeholder,
+    .fg textarea::placeholder { color: #bbb; }
+    .fg input:focus,
+    .fg select:focus,
+    .fg textarea:focus {
+      border-color: var(--purple);
+      box-shadow: 0 0 0 3.5px rgba(107,63,160,.1);
+    }
+    .fg input.error,
+    .fg select.error,
+    .fg textarea.error {
+      border-color: #e55;
+      box-shadow: 0 0 0 3px rgba(220,50,50,.1);
+    }
+    .fg textarea { resize: vertical; min-height: 90px; }
+    .fg-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+    /* Radio / Yes-No */
+    .yn-group {
+      display: flex;
+      gap: .7rem;
+    }
+    .yn-opt {
+      flex: 1;
+      position: relative;
+    }
+    .yn-opt input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .yn-opt label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: .75rem;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      font-size: .88rem;
+      font-weight: 600;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all .2s;
+      text-align: center;
+    }
+    .yn-opt input:checked + label {
+      background: var(--purple);
+      border-color: var(--purple);
+      color: #fff;
+    }
+    .yn-opt label:hover { border-color: var(--purple-soft); color: var(--purple); }
+
+    /* Multi-select chips for positions */
+    .chip-group {
+      display: flex;
+      flex-direction: column;
+      gap: .6rem;
+    }
+    .chip-opt {
+      position: relative;
+    }
+    .chip-opt input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .chip-opt label {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      padding: .9rem 1.1rem;
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      font-size: .88rem;
+      font-weight: 500;
+      color: var(--ink);
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .chip-opt input:checked + label {
+      background: var(--purple-pale);
+      border-color: var(--purple);
+      color: var(--purple);
+      font-weight: 600;
+    }
+    .chip-opt label:hover { border-color: var(--purple-soft); }
+    .chip-check {
+      width: 20px;
+      height: 20px;
+      border-radius: 5px;
+      border: 2px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: all .2s;
+    }
+    .chip-opt input:checked + label .chip-check {
+      background: var(--purple);
+      border-color: var(--purple);
+    }
+    .chip-check svg {
+      width: 11px;
+      height: 11px;
+      stroke: #fff;
+      fill: none;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      display: none;
+    }
+    .chip-opt input:checked + label .chip-check svg { display: block; }
+
+    /* Employment type */
+    .emp-type-group {
+      display: flex;
+      gap: .7rem;
+      flex-wrap: wrap;
+    }
+    .emp-type-opt { position: relative; }
+    .emp-type-opt input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .emp-type-opt label {
+      display: inline-flex;
+      align-items: center;
+      padding: .65rem 1.2rem;
+      border: 1.5px solid var(--border);
+      border-radius: 100px;
+      font-size: .83rem;
+      font-weight: 600;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all .2s;
+      white-space: nowrap;
+    }
+    .emp-type-opt input:checked + label {
+      background: var(--purple);
+      border-color: var(--purple);
+      color: #fff;
+    }
+
+    /* Availability grid */
+    .avail-grid {
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .avail-grid-head {
+      display: grid;
+      grid-template-columns: 110px repeat(3, 1fr);
+      background: var(--purple-pale);
+      border-bottom: 1.5px solid var(--border);
+    }
+    .avail-grid-head div {
+      padding: .65rem .5rem;
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      color: var(--purple);
+      text-align: center;
+    }
+    .avail-grid-head div:first-child { text-align: left; padding-left: 1rem; }
+    .avail-row {
+      display: grid;
+      grid-template-columns: 110px repeat(3, 1fr);
+      border-bottom: 1px solid var(--border);
+    }
+    .avail-row:last-child { border-bottom: none; }
+    .avail-day-label {
+      padding: .75rem 1rem;
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+    }
+    .avail-cell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: .65rem;
+    }
+    .avail-cell input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      accent-color: var(--purple);
+      cursor: pointer;
+    }
+    .avail-extras {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .7rem;
+      margin-top: 1rem;
+    }
+    .avail-extra-opt { position: relative; }
+    .avail-extra-opt input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .avail-extra-opt label {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      padding: .6rem 1.1rem;
+      border: 1.5px solid var(--border);
+      border-radius: 100px;
+      font-size: .83rem;
+      font-weight: 600;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .avail-extra-opt input:checked + label {
+      background: var(--purple-pale);
+      border-color: var(--purple);
+      color: var(--purple);
+    }
+
+    /* Employer blocks */
+    .employer-block {
+      background: var(--cream);
+      border: 1.5px solid var(--border);
+      border-radius: 16px;
+      padding: 1.4rem;
+      margin-bottom: 1rem;
+    }
+    .employer-block-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+    .employer-block-title {
+      font-size: .78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      color: var(--muted);
+    }
+    .remove-employer-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: .75rem;
+      font-weight: 600;
+      color: #e55;
+      padding: .3rem .5rem;
+      border-radius: 6px;
+      transition: background .2s;
+    }
+    .remove-employer-btn:hover { background: rgba(220,50,50,.08); }
+    .add-employer-btn, .add-ref-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--purple);
+      background: var(--purple-pale);
+      border: 1.5px dashed rgba(107,63,160,.35);
+      border-radius: 10px;
+      padding: .7rem 1.2rem;
+      cursor: pointer;
+      transition: all .2s;
+      width: 100%;
+      justify-content: center;
+      margin-top: .5rem;
+    }
+    .add-employer-btn:hover, .add-ref-btn:hover {
+      background: rgba(107,63,160,.12);
+      border-color: var(--purple);
+    }
+
+    /* Reference block */
+    .ref-block {
+      background: var(--cream);
+      border: 1.5px solid var(--border);
+      border-radius: 16px;
+      padding: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Resume toggle */
+    .resume-toggle-wrap {
+      background: var(--purple-pale);
+      border: 1.5px solid rgba(107,63,160,.18);
+      border-radius: 14px;
+      padding: 1.1rem 1.3rem;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: flex-start;
+      gap: .75rem;
+    }
+    .resume-toggle-wrap input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      margin-top: .14rem;
+      accent-color: var(--purple);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    .resume-toggle-label {
+      font-size: .88rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.5;
+      cursor: pointer;
+    }
+    .resume-toggle-label span {
+      display: block;
+      font-size: .76rem;
+      font-weight: 400;
+      color: var(--muted);
+      margin-top: .2rem;
+    }
+
+    /* EEO accordion */
+    .eeo-wrap {
+      background: var(--cream);
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 1.2rem;
+    }
+    .eeo-trigger {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: .9rem 1.1rem;
+      cursor: pointer;
+      font-size: .78rem;
+      font-weight: 600;
+      color: var(--muted);
+      gap: .5rem;
+      user-select: none;
+    }
+    .eeo-trigger svg {
+      width: 16px;
+      height: 16px;
+      stroke: var(--muted);
+      fill: none;
+      stroke-width: 2.5;
+      flex-shrink: 0;
+      transition: transform .25s;
+    }
+    .eeo-wrap.open .eeo-trigger svg { transform: rotate(180deg); }
+    .eeo-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .35s ease;
+      font-size: .78rem;
+      line-height: 1.75;
+      color: var(--muted);
+      padding: 0 1.1rem;
+    }
+    .eeo-wrap.open .eeo-body { max-height: 300px; padding: 0 1.1rem 1.1rem; }
+
+    /* Cert checkbox */
+    .cert-wrap {
+      background: var(--cream);
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 1.3rem;
+      margin-bottom: 1.5rem;
+    }
+    .cert-label {
+      display: flex;
+      align-items: flex-start;
+      gap: .7rem;
+      font-size: .85rem;
+      color: var(--ink);
+      line-height: 1.65;
+      cursor: pointer;
+    }
+    .cert-label input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      margin-top: .2rem;
+      accent-color: var(--purple);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    /* Navigation buttons */
+    .form-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      font-size: .88rem;
+      font-weight: 600;
+      color: var(--muted);
+      background: var(--cream);
+      border: 1.5px solid var(--border);
+      border-radius: 100px;
+      padding: .85rem 1.6rem;
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .btn-back:hover { border-color: var(--purple-soft); color: var(--purple); }
+    .btn-next {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      font-size: .92rem;
+      font-weight: 700;
+      color: #fff;
+      background: var(--purple);
+      border: none;
+      border-radius: 100px;
+      padding: .9rem 2rem;
+      cursor: pointer;
+      box-shadow: 0 5px 20px rgba(107,63,160,.35);
+      transition: all .25s;
+      flex: 1;
+      justify-content: center;
+      max-width: 300px;
+      margin-left: auto;
+    }
+    .btn-next:hover { background: var(--purple-deep); transform: translateY(-1px); box-shadow: 0 9px 28px rgba(107,63,160,.45); }
+    .btn-submit {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      font-size: .92rem;
+      font-weight: 700;
+      color: var(--dark);
+      background: linear-gradient(135deg, var(--gold), var(--gold-warm));
+      border: none;
+      border-radius: 100px;
+      padding: .95rem 2.2rem;
+      cursor: pointer;
+      box-shadow: 0 6px 22px rgba(212,150,10,.4);
+      transition: all .25s;
+      flex: 1;
+      justify-content: center;
+      max-width: 300px;
+      margin-left: auto;
+    }
+    .btn-submit:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(212,150,10,.5); }
+
+    /* Error messages */
+    .field-error {
+      font-size: .72rem;
+      color: #c33;
+      margin-top: .2rem;
+      display: none;
+    }
+    .field-error.show { display: block; }
+    .step-error {
+      background: rgba(220,50,50,.08);
+      border: 1.5px solid rgba(220,50,50,.2);
+      border-radius: 10px;
+      padding: .75rem 1rem;
+      font-size: .82rem;
+      color: #c33;
+      margin-bottom: 1rem;
+      display: none;
+    }
+    .step-error.show { display: block; }
+
+    /* Upload */
+    .file-upload-area {
+      border: 2px dashed var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      cursor: pointer;
+      transition: border-color .2s, background .2s;
+    }
+    .file-upload-area:hover { border-color: var(--purple-soft); background: var(--purple-pale); }
+    .file-upload-area input[type="file"] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .file-upload-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 11px;
+      background: var(--purple-pale);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto .75rem;
+    }
+    .file-upload-icon svg {
+      width: 18px;
+      height: 18px;
+      stroke: var(--purple);
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+    }
+    .file-upload-text {
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--purple);
+    }
+    .file-upload-hint {
+      font-size: .72rem;
+      color: var(--muted);
+      margin-top: .3rem;
+    }
+    .file-chosen {
+      font-size: .78rem;
+      color: var(--purple);
+      margin-top: .5rem;
+      font-weight: 600;
+    }
+
+    /* Confirmation state */
+    .apply-confirm {
+      display: none;
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+    .apply-confirm.show { display: block; }
+    .confirm-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: rgba(63,203,109,.12);
+      border: 2px solid rgba(63,203,109,.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+    }
+    .confirm-icon svg {
+      width: 32px;
+      height: 32px;
+      stroke: #2c9e57;
+      fill: none;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .confirm-title {
+      font-family: var(--serif);
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: .6rem;
+    }
+    .confirm-sub {
+      font-size: .95rem;
+      color: var(--muted);
+      line-height: 1.75;
+      max-width: 420px;
+      margin: 0 auto 2rem;
+    }
+    .confirm-next {
+      background: var(--purple-pale);
+      border: 1.5px solid rgba(107,63,160,.15);
+      border-radius: 12px;
+      padding: 1.1rem 1.4rem;
+      font-size: .82rem;
+      color: var(--ink);
+      line-height: 1.7;
+      max-width: 420px;
+      margin: 0 auto 2rem;
+    }
+    .confirm-next strong { color: var(--purple); }
+
+    @media(max-width:640px) {
+      .apply-page { padding: 5.5rem .9rem 4rem; }
+      .form-card { padding: 1.8rem 1.2rem; }
+      .fg-row { grid-template-columns: 1fr; }
+      .avail-grid-head,
+      .avail-row { grid-template-columns: 80px repeat(3, 1fr); }
+      .avail-day-label { padding-left: .6rem; font-size: .76rem; }
+      .btn-next, .btn-submit { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" id="nav">
+  <a href="index.html" class="logo">
+    <img src="assets/images/wig.logo.png" alt="Wiggle Your Tail logo" class="nav-logo"/>
+    <div class="logo-text"><span class="logo-name">Wiggle Your Tail</span><span class="logo-sub">Premium Pet Care · Sarasota, FL</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="nav-dropdown"><a href="services-rates.html">Services ▾</a>
+      <div class="nav-dropdown-menu">
+        <a href="dog-walking.html">Dog Walking</a>
+        <a href="pet-sitting.html">Pet Sitting &amp; Overnights</a>
+        <a href="wedding-pet-attendant.html">Wedding Pet Attendant</a>
+        <a href="snowbird-services.html">Snowbird &amp; House Sitting</a>
+      </div>
+    </li>
+    <li><a href="how-it-works.html">How It Works</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="work-for-us.html">Work For Us</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:1rem">
+    <a href="https://www.timetopet.com/portal/wiggleyourtail/create-account" target="_blank" class="btn btn-purple">Book Now →</a>
+    <div class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<nav class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="services-rates.html">All Services</a>
+  <a href="dog-walking.html">Dog Walking</a>
+  <a href="pet-sitting.html">Pet Sitting &amp; Overnights</a>
+  <a href="wedding-pet-attendant.html">Wedding Pet Attendant</a>
+  <a href="snowbird-services.html">Snowbird &amp; House Sitting</a>
+  <a href="how-it-works.html">How It Works</a>
+  <a href="about.html">About</a>
+  <a href="blog/">Blog</a>
+  <a href="contact.html">Contact</a>
+  <a href="work-for-us.html">Work For Us</a>
+  <a href="https://www.timetopet.com/portal/wiggleyourtail/create-account" target="_blank" class="mobile-cta">Book Now →</a>
+</nav>
+
+<div class="apply-page">
+  <div class="apply-wrap">
+
+    <!-- Back link -->
+    <a href="work-for-us.html" style="display:inline-flex;align-items:center;gap:.4rem;font-size:.8rem;font-weight:600;color:var(--muted);margin-bottom:1.5rem;transition:color .2s" onmouseover="this.style.color='var(--purple)'" onmouseout="this.style.color='var(--muted)'">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+      Back to Work For Us
+    </a>
+
+    <!-- Progress bar -->
+    <div class="progress-bar-wrap">
+      <div class="progress-steps">
+        <div class="progress-step active" id="ps1">
+          <div class="progress-step-dot"><span class="step-num">1</span><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="progress-step-label">About You</div>
+        </div>
+        <div class="progress-step" id="ps2">
+          <div class="progress-step-dot"><span class="step-num">2</span><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="progress-step-label">The Role</div>
+        </div>
+        <div class="progress-step" id="ps3">
+          <div class="progress-step-dot"><span class="step-num">3</span><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="progress-step-label">Pet Care</div>
+        </div>
+        <div class="progress-step" id="ps4">
+          <div class="progress-step-dot"><span class="step-num">4</span><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="progress-step-label">Background</div>
+        </div>
+      </div>
+      <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:25%"></div></div>
+    </div>
+
+    <!-- The actual Netlify form wraps all steps -->
+    <!-- Netlify bot detection: include a static copy of all field names -->
+    <form name="job-application" netlify netlify-honeypot="bot-field" action="thank-you-apply.html" method="POST" enctype="multipart/form-data" id="applyForm">
+      <input type="hidden" name="form-name" value="job-application"/>
+      <!-- Honeypot -->
+      <div style="display:none"><label>Don't fill this out: <input name="bot-field"/></label></div>
+
+      <!-- ══════════════════════════════════════
+           STEP 1 — About You
+      ══════════════════════════════════════ -->
+      <div class="form-card" id="step1">
+        <div class="form-card-title">Tell us about yourself</div>
+        <div class="form-card-sub">Basic info so we know who we're talking to. Takes about a minute.</div>
+
+        <div class="step-error" id="err1">Please fill in all required fields before continuing.</div>
+
+        <div class="fg-row">
+          <div class="fg">
+            <label for="legal_name">Legal Name <span class="req">*</span></label>
+            <input type="text" id="legal_name" name="legal_name" placeholder="First and last name" required autocomplete="name"/>
+          </div>
+          <div class="fg">
+            <label for="preferred_name">Preferred Name</label>
+            <input type="text" id="preferred_name" name="preferred_name" placeholder="What should we call you?"/>
+          </div>
+        </div>
+
+        <div class="fg-row">
+          <div class="fg">
+            <label for="phone">Phone Number <span class="req">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="(941) 555-1234" required autocomplete="tel"/>
+          </div>
+          <div class="fg">
+            <label for="email">Email Address <span class="req">*</span></label>
+            <input type="email" id="email" name="email" placeholder="you@email.com" required autocomplete="email"/>
+          </div>
+        </div>
+
+        <div class="fg">
+          <label for="city_area">City / Area You Live In <span class="req">*</span></label>
+          <input type="text" id="city_area" name="city_area" placeholder="e.g. Sarasota, Bradenton, Lakewood Ranch…" required/>
+          <div class="hint">We don't need a full address — just your general area.</div>
+        </div>
+
+        <div class="fg">
+          <label>Are you legally authorized to work in the United States? <span class="req">*</span></label>
+          <div class="yn-group" role="group" aria-label="Work authorization">
+            <div class="yn-opt">
+              <input type="radio" name="work_authorized" id="auth_yes" value="Yes" required/>
+              <label for="auth_yes">Yes</label>
+            </div>
+            <div class="yn-opt">
+              <input type="radio" name="work_authorized" id="auth_no" value="No"/>
+              <label for="auth_no">No</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="fg">
+          <label>Are you at least 18 years old? <span class="req">*</span></label>
+          <div class="yn-group" role="group" aria-label="Age confirmation">
+            <div class="yn-opt">
+              <input type="radio" name="is_18" id="age_yes" value="Yes" required/>
+              <label for="age_yes">Yes, I'm 18 or older</label>
+            </div>
+            <div class="yn-opt">
+              <input type="radio" name="is_18" id="age_no" value="No"/>
+              <label for="age_no">No</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-nav">
+          <div></div><!-- spacer -->
+          <button type="button" class="btn-next" onclick="goStep(2)">
+            Continue: The Role
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════════
+           STEP 2 — The Role
+      ══════════════════════════════════════ -->
+      <div class="form-card" id="step2" style="display:none">
+        <div class="form-card-title">The role you're after</div>
+        <div class="form-card-sub">Tell us which position interests you and when you can start.</div>
+
+        <div class="step-error" id="err2">Please complete all required fields before continuing.</div>
+
+        <div class="fg">
+          <label>Position(s) Interested In <span class="req">*</span></label>
+          <div class="chip-group" role="group" aria-label="Positions">
+            <div class="chip-opt">
+              <input type="checkbox" name="position[]" id="pos_walker" value="Dog Walker / Pet Sitter"/>
+              <label for="pos_walker">
+                <div class="chip-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                Dog Walker / Pet Sitter
+              </label>
+            </div>
+            <div class="chip-opt">
+              <input type="checkbox" name="position[]" id="pos_admin" value="Admin"/>
+              <label for="pos_admin">
+                <div class="chip-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                Admin
+              </label>
+            </div>
+            <div class="chip-opt">
+              <input type="checkbox" name="position[]" id="pos_open" value="Open / General Interest"/>
+              <label for="pos_open">
+                <div class="chip-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                Open / General Interest
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="fg">
+          <label>Employment Type Preferred <span class="req">*</span></label>
+          <div class="emp-type-group" role="group" aria-label="Employment type">
+            <div class="emp-type-opt">
+              <input type="radio" name="employment_type" id="et_full" value="Full Time" required/>
+              <label for="et_full">Full Time</label>
+            </div>
+            <div class="emp-type-opt">
+              <input type="radio" name="employment_type" id="et_part" value="Part Time"/>
+              <label for="et_part">Part Time</label>
+            </div>
+            <div class="emp-type-opt">
+              <input type="radio" name="employment_type" id="et_seasonal" value="Seasonal"/>
+              <label for="et_seasonal">Seasonal</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="fg">
+          <label for="start_date">Earliest Start Date <span class="req">*</span></label>
+          <input type="date" id="start_date" name="start_date" required/>
+        </div>
+
+        <div class="fg">
+          <label>Availability <span class="req">*</span></label>
+          <div class="hint" style="margin-bottom:.75rem">Check every time block you're generally available. More boxes = more shifts.</div>
+          <div class="avail-grid">
+            <div class="avail-grid-head">
+              <div>Day</div>
+              <div>Early AM<br><span style="font-weight:400;font-size:.65rem;opacity:.7">Before noon</span></div>
+              <div>Midday<br><span style="font-weight:400;font-size:.65rem;opacity:.7">Noon – 5pm</span></div>
+              <div>Evening<br><span style="font-weight:400;font-size:.65rem;opacity:.7">After 5pm</span></div>
+            </div>
+            <div class="avail-row">
+              <div class="avail-day-label">Monday</div>
+              <div class="avail-cell"><input type="checkbox" name="avail_mon_am" value="Mon AM" aria-label="Monday Early AM"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_mon_mid" value="Mon Midday" aria-label="Monday Midday"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_mon_eve" value="Mon Evening" aria-label="Monday Evening"/></div>
+            </div>
+            <div class="avail-row">
+              <div class="avail-day-label">Tuesday</div>
+              <div class="avail-cell"><input type="checkbox" name="avail_tue_am" value="Tue AM" aria-label="Tuesday Early AM"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_tue_mid" value="Tue Midday" aria-label="Tuesday Midday"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_tue_eve" value="Tue Evening" aria-label="Tuesday Evening"/></div>
+            </div>
+            <div class="avail-row">
+              <div class="avail-day-label">Wednesday</div>
+              <div class="avail-cell"><input type="checkbox" name="avail_wed_am" value="Wed AM" aria-label="Wednesday Early AM"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_wed_mid" value="Wed Midday" aria-label="Wednesday Midday"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_wed_eve" value="Wed Evening" aria-label="Wednesday Evening"/></div>
+            </div>
+            <div class="avail-row">
+              <div class="avail-day-label">Thursday</div>
+              <div class="avail-cell"><input type="checkbox" name="avail_thu_am" value="Thu AM" aria-label="Thursday Early AM"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_thu_mid" value="Thu Midday" aria-label="Thursday Midday"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_thu_eve" value="Thu Evening" aria-label="Thursday Evening"/></div>
+            </div>
+            <div class="avail-row">
+              <div class="avail-day-label">Friday</div>
+              <div class="avail-cell"><input type="checkbox" name="avail_fri_am" value="Fri AM" aria-label="Friday Early AM"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_fri_mid" value="Fri Midday" aria-label="Friday Midday"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_fri_eve" value="Fri Evening" aria-label="Friday Evening"/></div>
+            </div>
+            <div class="avail-row">
+              <div class="avail-day-label">Saturday</div>
+              <div class="avail-cell"><input type="checkbox" name="avail_sat_am" value="Sat AM" aria-label="Saturday Early AM"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_sat_mid" value="Sat Midday" aria-label="Saturday Midday"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_sat_eve" value="Sat Evening" aria-label="Saturday Evening"/></div>
+            </div>
+            <div class="avail-row">
+              <div class="avail-day-label">Sunday</div>
+              <div class="avail-cell"><input type="checkbox" name="avail_sun_am" value="Sun AM" aria-label="Sunday Early AM"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_sun_mid" value="Sun Midday" aria-label="Sunday Midday"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_sun_eve" value="Sun Evening" aria-label="Sunday Evening"/></div>
+            </div>
+          </div>
+          <div class="avail-extras">
+            <div class="avail-extra-opt">
+              <input type="checkbox" name="avail_weekends" value="Yes" id="avail_weekends"/>
+              <label for="avail_weekends">✓ Available weekends</label>
+            </div>
+            <div class="avail-extra-opt">
+              <input type="checkbox" name="avail_holidays" value="Yes" id="avail_holidays"/>
+              <label for="avail_holidays">✓ Available holidays</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-nav">
+          <button type="button" class="btn-back" onclick="goStep(1)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+            Back
+          </button>
+          <button type="button" class="btn-next" onclick="goStep(3)">
+            Continue: Pet Care
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════════
+           STEP 3 — Pet Care Fit & Transportation
+      ══════════════════════════════════════ -->
+      <div class="form-card" id="step3" style="display:none">
+        <div class="form-card-title">Pet care &amp; transportation</div>
+        <div class="form-card-sub">A few quick questions to make sure we're a good fit — and two short answers so we can see how you think on your feet.</div>
+
+        <div class="step-error" id="err3">Please complete all required fields before continuing.</div>
+
+        <div class="form-section-title">Transportation</div>
+
+        <div class="fg">
+          <label>Do you have a valid Florida driver's license? <span class="req">*</span></label>
+          <div class="yn-group" role="group">
+            <div class="yn-opt"><input type="radio" name="fl_license" id="fl_yes" value="Yes" required/><label for="fl_yes">Yes</label></div>
+            <div class="yn-opt"><input type="radio" name="fl_license" id="fl_no" value="No"/><label for="fl_no">No</label></div>
+          </div>
+        </div>
+
+        <div class="fg">
+          <label>Do you have reliable, insured personal transportation to travel to client homes? <span class="req">*</span></label>
+          <div class="yn-group" role="group">
+            <div class="yn-opt"><input type="radio" name="insured_transport" id="tr_yes" value="Yes" required/><label for="tr_yes">Yes</label></div>
+            <div class="yn-opt"><input type="radio" name="insured_transport" id="tr_no" value="No"/><label for="tr_no">No</label></div>
+          </div>
+        </div>
+
+        <div class="fg">
+          <label>Are you willing to travel throughout the Sarasota / Manatee area for mobile visits? <span class="req">*</span></label>
+          <div class="yn-group" role="group">
+            <div class="yn-opt"><input type="radio" name="willing_travel" id="wt_yes" value="Yes" required/><label for="wt_yes">Yes</label></div>
+            <div class="yn-opt"><input type="radio" name="willing_travel" id="wt_no" value="No"/><label for="wt_no">No</label></div>
+          </div>
+        </div>
+
+        <div class="form-section-title" style="margin-top:2rem">Working with pets</div>
+
+        <div class="fg">
+          <label>Comfortable working with dogs of all sizes and breeds? <span class="req">*</span></label>
+          <div class="yn-group" role="group">
+            <div class="yn-opt"><input type="radio" name="comfortable_dogs" id="cd_yes" value="Yes" required/><label for="cd_yes">Yes</label></div>
+            <div class="yn-opt"><input type="radio" name="comfortable_dogs" id="cd_no" value="No"/><label for="cd_no">No</label></div>
+          </div>
+        </div>
+
+        <div class="fg">
+          <label for="pet_challenge">Describe a time you had to handle a pet's challenging behavior — and what you did. <span class="req">*</span></label>
+          <textarea id="pet_challenge" name="pet_challenge" rows="3" placeholder="A couple sentences is plenty." required></textarea>
+        </div>
+
+        <div class="fg">
+          <label for="broken_item">Our clients trust us with their homes. How would you handle accidentally breaking a client's valuable item? <span class="req">*</span></label>
+          <textarea id="broken_item" name="broken_item" rows="3" placeholder="A couple sentences is plenty." required></textarea>
+        </div>
+
+        <div class="fg">
+          <label for="why_pet_care">What interests you most about working in the pet care industry? <span style="color:var(--muted);font-weight:400">(optional)</span></label>
+          <textarea id="why_pet_care" name="why_pet_care" rows="2" placeholder="Anything you'd like to share."></textarea>
+        </div>
+
+        <div class="form-nav">
+          <button type="button" class="btn-back" onclick="goStep(2)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+            Back
+          </button>
+          <button type="button" class="btn-next" onclick="goStep(4)">
+            Continue: Background
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════════
+           STEP 4 — Background
+      ══════════════════════════════════════ -->
+      <div class="form-card" id="step4" style="display:none">
+        <div class="form-card-title">Background &amp; references</div>
+        <div class="form-card-sub">Almost done! Tell us a bit about your work history and share a reference or two.</div>
+
+        <div class="step-error" id="err4">Please complete all required fields and check the certification box.</div>
+
+        <!-- Resume toggle -->
+        <div class="resume-toggle-wrap">
+          <input type="checkbox" id="resume_toggle" name="attaching_resume" value="Yes"/>
+          <label class="resume-toggle-label" for="resume_toggle">
+            I'm attaching a resume instead
+            <span>Check this to skip the detailed employment history below — just tell us your most recent employer and upload your resume.</span>
+          </label>
+        </div>
+
+        <!-- Employment section -->
+        <div class="form-section-title">Employment history</div>
+
+        <!-- Always-visible: most recent employer name + contact permission -->
+        <div class="employer-block" id="employer_block_1">
+          <div class="employer-block-head">
+            <div class="employer-block-title">Most Recent Employer</div>
+          </div>
+          <div class="fg">
+            <label for="emp1_company">Company Name <span class="req">*</span></label>
+            <input type="text" id="emp1_company" name="emp1_company" placeholder="Where did you last work?" required/>
+          </div>
+          <!-- Full fields (collapsed when resume toggle checked) -->
+          <div class="emp-full-fields" id="emp1_full">
+            <div class="fg-row">
+              <div class="fg">
+                <label for="emp1_position">Your Position</label>
+                <input type="text" id="emp1_position" name="emp1_position" placeholder="Job title"/>
+              </div>
+              <div class="fg">
+                <label for="emp1_start">Start Date</label>
+                <input type="date" id="emp1_start" name="emp1_start"/>
+              </div>
+            </div>
+            <div class="fg">
+              <label for="emp1_end">End Date</label>
+              <input type="date" id="emp1_end" name="emp1_end" placeholder="Leave blank if current"/>
+            </div>
+          </div>
+          <div class="fg">
+            <label>May we contact this employer? <span class="req">*</span></label>
+            <div class="yn-group" role="group">
+              <div class="yn-opt"><input type="radio" name="emp1_contact" id="emp1c_yes" value="Yes" required/><label for="emp1c_yes">Yes</label></div>
+              <div class="yn-opt"><input type="radio" name="emp1_contact" id="emp1c_no" value="No"/><label for="emp1c_no">No</label></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional employer blocks (hidden by default, added via JS) -->
+        <div id="extra_employers"></div>
+
+        <!-- Add employer button (hidden when resume toggle is on or max reached) -->
+        <div id="add_employer_wrap">
+          <button type="button" class="add-employer-btn" id="addEmployerBtn" onclick="addEmployer()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            + Add another employer
+          </button>
+        </div>
+
+        <!-- Resume / cover letter upload -->
+        <div class="form-section-title" style="margin-top:2rem">Resume &amp; cover letter <span style="font-weight:400;text-transform:none;font-size:.78rem;color:var(--muted)">(optional)</span></div>
+        <div class="fg">
+          <label for="resume_file">Upload resume or cover letter — PDF or DOC, max 10 MB</label>
+          <div class="file-upload-area" onclick="document.getElementById('resume_file').click()">
+            <div class="file-upload-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            </div>
+            <div class="file-upload-text">Tap to choose a file</div>
+            <div class="file-upload-hint">PDF or DOC — max 10 MB</div>
+            <div class="file-chosen" id="fileChosen" style="display:none"></div>
+          </div>
+          <input type="file" id="resume_file" name="resume_file" accept=".pdf,.doc,.docx" onchange="showFileName(this)"/>
+        </div>
+
+        <!-- References -->
+        <div class="form-section-title" style="margin-top:2rem">References</div>
+
+        <div class="ref-block" id="ref_block_1">
+          <div class="employer-block-head">
+            <div class="employer-block-title">Reference 1 <span style="color:#e55;font-weight:400">(required)</span></div>
+          </div>
+          <div class="fg">
+            <label for="ref1_name">Name <span class="req">*</span></label>
+            <input type="text" id="ref1_name" name="ref1_name" placeholder="Full name" required/>
+          </div>
+          <div class="fg-row">
+            <div class="fg">
+              <label for="ref1_relationship">Relationship to You <span class="req">*</span></label>
+              <input type="text" id="ref1_relationship" name="ref1_relationship" placeholder="e.g. Former supervisor, colleague…" required/>
+            </div>
+            <div class="fg">
+              <label for="ref1_phone">Phone <span class="req">*</span></label>
+              <input type="tel" id="ref1_phone" name="ref1_phone" placeholder="(941) 555-0000" required/>
+            </div>
+          </div>
+        </div>
+
+        <div id="extra_refs"></div>
+
+        <div id="add_ref_wrap">
+          <button type="button" class="add-ref-btn" id="addRefBtn" onclick="addRef()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            + Add another reference (optional)
+          </button>
+        </div>
+
+        <!-- EEO & Certification -->
+        <div class="form-section-title" style="margin-top:2rem">Compliance</div>
+
+        <div class="eeo-wrap" id="eeoWrap">
+          <div class="eeo-trigger" onclick="toggleEeo()" role="button" tabindex="0" aria-expanded="false" aria-controls="eeoBody">
+            <span>Equal Employment Opportunity Statement</span>
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="eeo-body" id="eeoBody">
+            Wiggle Your Tail Pet Care is an equal opportunity employer. We do not discriminate on the basis of race, color, religion, sex, national origin, age, disability, or any other characteristic protected by applicable federal, state, or local law. All qualified applicants will receive equal consideration for employment.
+          </div>
+        </div>
+
+        <div class="cert-wrap">
+          <label class="cert-label" for="certify">
+            <input type="checkbox" id="certify" name="certify" value="I certify" required/>
+            I certify that all information provided in this application is true and complete to the best of my knowledge. I understand that employment at Wiggle Your Tail Pet Care is at-will, and that any false statement, misrepresentation, or omission of facts may be grounds for refusal of employment or dismissal.
+          </label>
+        </div>
+
+        <div class="form-nav">
+          <button type="button" class="btn-back" onclick="goStep(3)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+            Back
+          </button>
+          <button type="submit" class="btn-submit" id="submitBtn">
+            Submit Application →
+          </button>
+        </div>
+      </div>
+    </form><!-- end #applyForm -->
+
+    <!-- Inline confirmation (shown after Netlify redirect or JS success) -->
+    <!-- Note: Netlify redirects to thank-you-apply.html; this is a fallback -->
+
+  </div><!-- .apply-wrap -->
+</div><!-- .apply-page -->
+
+<script src="assets/js/main.js"></script>
+<script>
+(function() {
+  /* ─── STATE ─── */
+  var currentStep = 1;
+  var totalSteps  = 4;
+  var extraEmployers = 0;
+  var extraRefs      = 0;
+  var MAX_EMPLOYERS  = 3;
+  var MAX_REFS       = 3;
+
+  /* ─── URL PARAM → PRE-SELECT ROLE ─── */
+  function preSelectRole() {
+    var params = new URLSearchParams(window.location.search);
+    var role   = (params.get('role') || '').toLowerCase();
+    if (role === 'walker-sitter') {
+      var cb = document.getElementById('pos_walker');
+      if (cb) cb.checked = true;
+    } else if (role === 'admin') {
+      var cb = document.getElementById('pos_admin');
+      if (cb) cb.checked = true;
+    } else if (role === 'open') {
+      var cb = document.getElementById('pos_open');
+      if (cb) cb.checked = true;
+    }
+  }
+  preSelectRole();
+
+  /* ─── STEP NAVIGATION ─── */
+  window.goStep = function(n) {
+    if (n > currentStep && !validateStep(currentStep)) return;
+
+    // Hide current, show target
+    document.getElementById('step' + currentStep).style.display = 'none';
+    document.getElementById('step' + n).style.display = 'block';
+
+    // Update progress indicators
+    var fills = [25, 50, 75, 100];
+    document.getElementById('progressFill').style.width = fills[n-1] + '%';
+
+    for (var i = 1; i <= totalSteps; i++) {
+      var ps = document.getElementById('ps' + i);
+      ps.classList.remove('active', 'done');
+      if (i < n)       ps.classList.add('done');
+      else if (i === n) ps.classList.add('active');
+    }
+
+    currentStep = n;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  /* ─── VALIDATION ─── */
+  function validateStep(step) {
+    var errEl = document.getElementById('err' + step);
+    var ok    = true;
+
+    if (step === 1) {
+      ok = checkRequired(['legal_name', 'phone', 'email', 'city_area'])
+        && checkRadioGroup('work_authorized')
+        && checkRadioGroup('is_18');
+    }
+    else if (step === 2) {
+      var posChecked = document.querySelectorAll('input[name="position[]"]:checked').length > 0;
+      var empType    = checkRadioGroup('employment_type');
+      var startDate  = document.getElementById('start_date').value.trim() !== '';
+      ok = posChecked && empType && startDate;
+    }
+    else if (step === 3) {
+      ok = checkRadioGroup('fl_license')
+        && checkRadioGroup('insured_transport')
+        && checkRadioGroup('willing_travel')
+        && checkRadioGroup('comfortable_dogs')
+        && checkRequired(['pet_challenge', 'broken_item']);
+    }
+    else if (step === 4) {
+      var emp1Company = document.getElementById('emp1_company').value.trim() !== '';
+      var emp1Contact = checkRadioGroup('emp1_contact');
+      var ref1Name    = document.getElementById('ref1_name').value.trim() !== '';
+      var ref1Rel     = document.getElementById('ref1_relationship').value.trim() !== '';
+      var ref1Phone   = document.getElementById('ref1_phone').value.trim() !== '';
+      var certified   = document.getElementById('certify').checked;
+      ok = emp1Company && emp1Contact && ref1Name && ref1Rel && ref1Phone && certified;
+    }
+
+    if (!ok) {
+      errEl.classList.add('show');
+      errEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } else {
+      errEl.classList.remove('show');
+    }
+    return ok;
+  }
+
+  function checkRequired(ids) {
+    return ids.every(function(id) {
+      var el = document.getElementById(id);
+      return el && el.value.trim() !== '';
+    });
+  }
+
+  function checkRadioGroup(name) {
+    return document.querySelector('input[name="' + name + '"]:checked') !== null;
+  }
+
+  /* ─── RESUME TOGGLE ─── */
+  document.getElementById('resume_toggle').addEventListener('change', function() {
+    var fullFields    = document.getElementById('emp1_full');
+    var addWrap       = document.getElementById('add_employer_wrap');
+    var extraEmpWrap  = document.getElementById('extra_employers');
+    if (this.checked) {
+      fullFields.style.display   = 'none';
+      addWrap.style.display      = 'none';
+      extraEmpWrap.style.display = 'none';
+    } else {
+      fullFields.style.display   = '';
+      addWrap.style.display      = '';
+      extraEmpWrap.style.display = '';
+    }
+  });
+
+  /* ─── ADD / REMOVE EMPLOYER ─── */
+  window.addEmployer = function() {
+    if (extraEmployers >= MAX_EMPLOYERS - 1) return; // total cap = 3 (1 base + 2 extra)
+    extraEmployers++;
+    var n   = extraEmployers + 1;
+    var div = document.createElement('div');
+    div.className = 'employer-block';
+    div.id = 'employer_block_' + n;
+    div.innerHTML = [
+      '<div class="employer-block-head">',
+        '<div class="employer-block-title">Employer ' + n + '</div>',
+        '<button type="button" class="remove-employer-btn" onclick="removeEmployer(' + n + ')">Remove</button>',
+      '</div>',
+      '<div class="fg">',
+        '<label for="emp' + n + '_company">Company Name</label>',
+        '<input type="text" id="emp' + n + '_company" name="emp' + n + '_company" placeholder="Company name"/>',
+      '</div>',
+      '<div class="fg-row">',
+        '<div class="fg"><label for="emp' + n + '_position">Your Position</label>',
+          '<input type="text" id="emp' + n + '_position" name="emp' + n + '_position" placeholder="Job title"/></div>',
+        '<div class="fg"><label for="emp' + n + '_start">Start Date</label>',
+          '<input type="date" id="emp' + n + '_start" name="emp' + n + '_start"/></div>',
+      '</div>',
+      '<div class="fg"><label for="emp' + n + '_end">End Date</label>',
+        '<input type="date" id="emp' + n + '_end" name="emp' + n + '_end"/></div>',
+      '<div class="fg"><label>May we contact this employer?</label>',
+        '<div class="yn-group">',
+          '<div class="yn-opt"><input type="radio" name="emp' + n + '_contact" id="emp' + n + 'c_yes" value="Yes"/>',
+            '<label for="emp' + n + 'c_yes">Yes</label></div>',
+          '<div class="yn-opt"><input type="radio" name="emp' + n + '_contact" id="emp' + n + 'c_no" value="No"/>',
+            '<label for="emp' + n + 'c_no">No</label></div>',
+        '</div></div>'
+    ].join('');
+    document.getElementById('extra_employers').appendChild(div);
+    if (extraEmployers >= MAX_EMPLOYERS - 1) {
+      document.getElementById('addEmployerBtn').style.display = 'none';
+    }
+  };
+
+  window.removeEmployer = function(n) {
+    var el = document.getElementById('employer_block_' + n);
+    if (el) el.remove();
+    extraEmployers = Math.max(0, extraEmployers - 1);
+    document.getElementById('addEmployerBtn').style.display = '';
+  };
+
+  /* ─── ADD / REMOVE REFERENCE ─── */
+  window.addRef = function() {
+    if (extraRefs >= MAX_REFS - 1) return;
+    extraRefs++;
+    var n   = extraRefs + 1;
+    var div = document.createElement('div');
+    div.className = 'ref-block';
+    div.id = 'ref_block_' + n;
+    div.innerHTML = [
+      '<div class="employer-block-head">',
+        '<div class="employer-block-title">Reference ' + n + '</div>',
+        '<button type="button" class="remove-employer-btn" onclick="removeRef(' + n + ')">Remove</button>',
+      '</div>',
+      '<div class="fg"><label for="ref' + n + '_name">Name</label>',
+        '<input type="text" id="ref' + n + '_name" name="ref' + n + '_name" placeholder="Full name"/></div>',
+      '<div class="fg-row">',
+        '<div class="fg"><label for="ref' + n + '_relationship">Relationship to You</label>',
+          '<input type="text" id="ref' + n + '_relationship" name="ref' + n + '_relationship" placeholder="e.g. Former supervisor…"/></div>',
+        '<div class="fg"><label for="ref' + n + '_phone">Phone</label>',
+          '<input type="tel" id="ref' + n + '_phone" name="ref' + n + '_phone" placeholder="(941) 555-0000"/></div>',
+      '</div>'
+    ].join('');
+    document.getElementById('extra_refs').appendChild(div);
+    if (extraRefs >= MAX_REFS - 1) {
+      document.getElementById('addRefBtn').style.display = 'none';
+    }
+  };
+
+  window.removeRef = function(n) {
+    var el = document.getElementById('ref_block_' + n);
+    if (el) el.remove();
+    extraRefs = Math.max(0, extraRefs - 1);
+    document.getElementById('addRefBtn').style.display = '';
+  };
+
+  /* ─── EEO TOGGLE ─── */
+  window.toggleEeo = function() {
+    var wrap    = document.getElementById('eeoWrap');
+    var trigger = wrap.querySelector('.eeo-trigger');
+    var isOpen  = wrap.classList.toggle('open');
+    trigger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  };
+  document.getElementById('eeoWrap').querySelector('.eeo-trigger')
+    .addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleEeo(); }
+    });
+
+  /* ─── FILE NAME DISPLAY ─── */
+  window.showFileName = function(input) {
+    var el = document.getElementById('fileChosen');
+    if (input.files && input.files[0]) {
+      el.textContent = '✓ ' + input.files[0].name;
+      el.style.display = 'block';
+    } else {
+      el.style.display = 'none';
+    }
+  };
+
+  /* ─── FINAL SUBMIT VALIDATION ─── */
+  document.getElementById('applyForm').addEventListener('submit', function(e) {
+    if (!validateStep(4)) {
+      e.preventDefault();
+    }
+  });
+
+})();
+</script>
+</body>
+</html>
