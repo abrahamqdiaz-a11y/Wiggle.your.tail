@@ -1228,6 +1228,22 @@
           <input type="file" id="resume_file" name="resume_file" accept=".pdf,.doc,.docx" onchange="showFileName(this)"/>
         </div>
 
+        <!-- Video Introduction -->
+        <div class="form-section-title" style="margin-top:2rem">Video Introduction <span style="font-weight:400;text-transform:none;font-size:.78rem;color:var(--muted)">(optional)</span></div>
+        <div class="fg">
+          <label for="video_intro">Upload a short video (1–3 min) telling us why you want to work in the pet industry</label>
+          <div class="hint" style="margin-bottom:.75rem">Share your passion for animals, what drew you to pet care, and why Wiggle Your Tail feels like the right fit. This is your chance to let your personality shine!</div>
+          <div class="file-upload-area" id="videoUploadArea" onclick="document.getElementById('video_intro').click()">
+            <div class="file-upload-icon">
+              <svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+            </div>
+            <div class="file-upload-text">Tap to upload your video</div>
+            <div class="file-upload-hint">MP4, MOV, or AVI — max 200 MB · 1–3 minutes recommended</div>
+            <div class="file-chosen" id="videoChosen" style="display:none"></div>
+          </div>
+          <input type="file" id="video_intro" name="video_intro" accept="video/mp4,video/quicktime,video/x-msvideo,.mp4,.mov,.avi" onchange="showVideoName(this)"/>
+        </div>
+
         <!-- References -->
         <div class="form-section-title" style="margin-top:2rem">References</div>
 
@@ -1519,6 +1535,20 @@
       el.style.display = 'block';
     } else {
       el.style.display = 'none';
+    }
+  };
+
+  window.showVideoName = function(input) {
+    var el = document.getElementById('videoChosen');
+    if (input.files && input.files[0]) {
+      el.textContent = '✓ ' + input.files[0].name;
+      el.style.display = 'block';
+      document.getElementById('videoUploadArea').style.borderColor = 'var(--purple)';
+      document.getElementById('videoUploadArea').style.background = 'var(--purple-pale)';
+    } else {
+      el.style.display = 'none';
+      document.getElementById('videoUploadArea').style.borderColor = '';
+      document.getElementById('videoUploadArea').style.background = '';
     }
   };
 
