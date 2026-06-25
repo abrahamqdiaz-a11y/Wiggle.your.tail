@@ -273,6 +273,9 @@ nav.site-nav.scrolled { box-shadow:var(--shadow-md); }
 .footer-bottom-links { display:flex; gap:1.5rem; }
 .footer-bottom-links a { color:rgba(255,255,255,.3); transition:color .2s; }
 .footer-bottom-links a:hover { color:var(--gold-warm); }
+.footer-bbb { text-align:center; padding-top:1rem; border-top:1px solid rgba(255,255,255,.06); margin-top:1rem; }
+.bbb-badge { display:inline-block; color:rgba(255,255,255,.55); font-size:.75rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase; text-decoration:none; border:1px solid rgba(255,255,255,.18); border-radius:4px; padding:.3rem .75rem; transition:color .2s, border-color .2s; }
+.bbb-badge:hover { color:var(--gold-warm); border-color:var(--gold-warm); }
 .footer-credit { text-align:center; padding-top:1rem; border-top:1px solid rgba(255,255,255,.06); margin-top:1rem; font-size:.65rem; letter-spacing:.03em; }
 .footer-credit a { color:rgba(255,255,255,.28); text-decoration:none; transition:color .3s, opacity .3s; }
 .footer-credit a:hover { color:rgba(255,255,255,.65); }
