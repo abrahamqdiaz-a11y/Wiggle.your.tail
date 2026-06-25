@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Staff Availability | Wiggle Your Tail Pet Care</title>
+  <meta name="robots" content="noindex, nofollow"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <link rel="icon" href="/favicon.ico" sizes="any"/>
+  <link rel="icon" type="image/jpeg" href="/assets/images/wisfavo.jpg"/>
+  <link rel="apple-touch-icon" href="/assets/images/wisfavo.jpg"/>
+  <style>
+    /* ── STAFF AVAILABILITY PAGE ── */
+    .sa-page {
+      min-height: 100vh;
+      background: var(--cream);
+      padding: 6.5rem 1.4rem 5rem;
+    }
+    .sa-wrap {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* Header block */
+    .sa-header {
+      margin-bottom: 2rem;
+    }
+    .sa-header h1 {
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 700;
+      color: var(--dark);
+      letter-spacing: -.03em;
+      margin: .6rem 0 .85rem;
+      line-height: 1.15;
+    }
+    .sa-header p {
+      font-size: .95rem;
+      line-height: 1.75;
+      color: var(--muted);
+      max-width: 520px;
+    }
+
+    /* Form card */
+    .form-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 24px;
+      padding: 2.4rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .form-section-title {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin: 1.8rem 0 1rem;
+      padding-bottom: .5rem;
+      border-bottom: 1.5px solid var(--border);
+    }
+    .form-section-title:first-of-type { margin-top: 0; }
+
+    /* Field group */
+    .fg { display: flex; flex-direction: column; gap: .35rem; margin-bottom: 1.1rem; }
+    .fg label {
+      font-size: .75rem;
+      font-weight: 700;
+      color: var(--dark);
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    .fg label .req { color: var(--purple); }
+    .fg .hint {
+      font-size: .72rem;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+    .fg input[type="text"],
+    .fg input[type="email"],
+    .fg input[type="tel"],
+    .fg input[type="date"],
+    .fg select {
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: .8rem 1rem;
+      font-family: var(--sans);
+      font-size: 1rem;
+      color: var(--dark);
+      background: var(--white);
+      outline: none;
+      width: 100%;
+      transition: border-color .2s, box-shadow .2s;
+      appearance: none;
+    }
+    .fg input::placeholder { color: #bbb; }
+    .fg input:focus,
+    .fg select:focus { border-color: var(--purple); box-shadow: 0 0 0 3.5px rgba(107,63,160,.1); }
+    .fg input.error,
+    .fg select.error { border-color: #e55; }
+    .fg-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+    /* Select wrapper (custom arrow) */
+    .select-wrap { position: relative; }
+    .select-wrap select { padding-right: 2.2rem; cursor: pointer; }
+    .select-wrap::after {
+      content: '';
+      position: absolute;
+      right: .85rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid var(--muted);
+      pointer-events: none;
+    }
+
+    /* Yes/No radio group */
+    .yn-group { display: flex; gap: .75rem; flex-wrap: wrap; }
+    .yn-opt { position: relative; }
+    .yn-opt input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .yn-opt label {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      padding: .6rem 1.1rem;
+      border: 1.5px solid var(--border);
+      border-radius: 100px;
+      font-size: .85rem;
+      font-weight: 600;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all .2s;
+      text-transform: none;
+      letter-spacing: 0;
+    }
+    .yn-opt input:checked + label {
+      background: var(--purple-pale);
+      border-color: var(--purple);
+      color: var(--purple);
+    }
+
+    /* Checkbox group (service types) */
+    .check-group { display: flex; flex-direction: column; gap: .55rem; }
+    .check-opt { position: relative; }
+    .check-opt input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .check-opt label {
+      display: flex;
+      align-items: center;
+      gap: .7rem;
+      padding: .7rem 1rem;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      font-size: .88rem;
+      font-weight: 500;
+      color: var(--ink);
+      cursor: pointer;
+      transition: all .2s;
+      text-transform: none;
+      letter-spacing: 0;
+    }
+    .check-opt label::before {
+      content: '';
+      flex-shrink: 0;
+      width: 18px;
+      height: 18px;
+      border: 1.5px solid var(--border);
+      border-radius: 5px;
+      background: var(--white);
+      transition: all .18s;
+    }
+    .check-opt input:checked + label { background: var(--purple-pale); border-color: var(--purple); color: var(--purple); }
+    .check-opt input:checked + label::before {
+      background: var(--purple);
+      border-color: var(--purple);
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='20 6 9 17 4 12' fill='none' stroke='%23fff' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-size: 12px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    /* ── AVAILABILITY GRID (desktop) ── */
+    .avail-grid {
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .avail-grid-head {
+      display: grid;
+      grid-template-columns: 110px repeat(4, 1fr);
+      background: var(--cream);
+      border-bottom: 1.5px solid var(--border);
+    }
+    .avail-grid-head div {
+      padding: .65rem .4rem;
+      font-size: .66rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.4;
+    }
+    .avail-grid-head div:first-child { text-align: left; padding-left: 1rem; }
+    .avail-row {
+      display: grid;
+      grid-template-columns: 110px repeat(4, 1fr);
+      border-bottom: 1.5px solid var(--border);
+    }
+    .avail-row:last-child { border-bottom: none; }
+    .avail-day-label {
+      padding: .75rem 1rem;
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--dark);
+      display: flex;
+      align-items: center;
+    }
+    .avail-cell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: .5rem;
+    }
+    .avail-cell input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      accent-color: var(--purple);
+      cursor: pointer;
+    }
+
+    /* ── MOBILE ACCORDION (≤640px) ── */
+    .avail-mobile { display: none; }
+    .avail-day-card {
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: .5rem;
+    }
+    .avail-day-trigger {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: .85rem 1rem;
+      font-size: .9rem;
+      font-weight: 600;
+      color: var(--dark);
+      cursor: pointer;
+      user-select: none;
+      background: var(--white);
+      transition: background .2s;
+    }
+    .avail-day-trigger:hover { background: var(--purple-pale); }
+    .avail-day-trigger svg {
+      width: 16px;
+      height: 16px;
+      stroke: var(--muted);
+      fill: none;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      transition: transform .25s;
+    }
+    .avail-day-card.open .avail-day-trigger svg { transform: rotate(180deg); }
+    .avail-day-body {
+      display: none;
+      padding: .75rem 1rem 1rem;
+      background: var(--cream);
+      border-top: 1.5px solid var(--border);
+    }
+    .avail-day-card.open .avail-day-body { display: block; }
+    .avail-block-row {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      padding: .4rem 0;
+    }
+    .avail-block-row input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--purple);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    .avail-block-row label {
+      font-size: .85rem;
+      font-weight: 500;
+      color: var(--ink);
+      cursor: pointer;
+      text-transform: none;
+      letter-spacing: 0;
+    }
+    .avail-block-sub {
+      font-size: .72rem;
+      color: var(--muted);
+      display: block;
+    }
+    .avail-day-badge {
+      font-size: .68rem;
+      font-weight: 600;
+      color: var(--purple);
+      background: var(--purple-pale);
+      border-radius: 100px;
+      padding: .18rem .55rem;
+      display: none;
+    }
+    .avail-day-card.has-checks .avail-day-badge { display: inline-block; }
+
+    /* Error banner */
+    .form-error {
+      background: rgba(220,50,50,.07);
+      border: 1.5px solid rgba(220,50,50,.2);
+      border-radius: 10px;
+      padding: .75rem 1rem;
+      font-size: .82rem;
+      color: #c33;
+      margin-bottom: 1.2rem;
+      display: none;
+    }
+    .form-error.show { display: block; }
+
+    /* Submit button */
+    .btn-submit-avail {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      width: 100%;
+      padding: 1rem;
+      background: linear-gradient(135deg, var(--gold), var(--gold-warm));
+      color: var(--dark);
+      border: none;
+      border-radius: 100px;
+      font-family: var(--sans);
+      font-size: .95rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 6px 22px rgba(212,150,10,.38);
+      transition: all .25s;
+      margin-top: .5rem;
+    }
+    .btn-submit-avail:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(212,150,10,.5); }
+    .btn-submit-avail:disabled { opacity: .6; cursor: not-allowed; transform: none; }
+
+    /* Confirmation state */
+    .sa-confirm {
+      display: none;
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+    .sa-confirm.show { display: block; }
+    .confirm-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: rgba(63,203,109,.12);
+      border: 2px solid rgba(63,203,109,.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+    }
+    .confirm-icon svg {
+      width: 32px;
+      height: 32px;
+      stroke: #2c9e57;
+      fill: none;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .confirm-title {
+      font-family: var(--serif);
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: .6rem;
+    }
+    .confirm-sub {
+      font-size: .95rem;
+      color: var(--muted);
+      line-height: 1.75;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+
+    @media(max-width:640px) {
+      .sa-page { padding: 5.5rem .9rem 4rem; }
+      .form-card { padding: 1.8rem 1.2rem; }
+      .fg-row { grid-template-columns: 1fr; }
+      .avail-grid { display: none; }
+      .avail-mobile { display: block; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" id="nav">
+  <a href="index.html" class="logo">
+    <img src="assets/images/wig.logo.png" alt="Wiggle Your Tail logo" class="nav-logo"/>
+    <div class="logo-text"><span class="logo-name">Wiggle Your Tail</span><span class="logo-sub">Premium Pet Care · Sarasota, FL</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="nav-dropdown"><a href="services-rates.html">Services ▾</a>
+      <div class="nav-dropdown-menu">
+        <a href="dog-walking.html">Dog Walking</a>
+        <a href="pet-sitting.html">Pet Sitting &amp; Overnights</a>
+        <a href="wedding-pet-attendant.html">Wedding Pet Attendant</a>
+        <a href="snowbird-services.html">Snowbird &amp; House Sitting</a>
+      </div>
+    </li>
+    <li><a href="how-it-works.html">How It Works</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="work-for-us.html">Work For Us</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:1rem">
+    <a href="https://www.timetopet.com/portal/wiggleyourtail/create-account" target="_blank" class="btn btn-purple">Book Now →</a>
+    <div class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<nav class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="services-rates.html">All Services</a>
+  <a href="dog-walking.html">Dog Walking</a>
+  <a href="pet-sitting.html">Pet Sitting &amp; Overnights</a>
+  <a href="wedding-pet-attendant.html">Wedding Pet Attendant</a>
+  <a href="snowbird-services.html">Snowbird &amp; House Sitting</a>
+  <a href="how-it-works.html">How It Works</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="work-for-us.html">Work For Us</a>
+  <a href="https://www.timetopet.com/portal/wiggleyourtail/create-account" target="_blank" class="mobile-cta">Book Now →</a>
+</nav>
+
+<div class="sa-page">
+  <div class="sa-wrap">
+
+    <div class="sa-header">
+      <div class="section-eyebrow">Stage 2 · Hiring</div>
+      <h1>Next Step: Your Availability</h1>
+      <p>Thanks for applying to Wiggle Your Tail! Please complete this form within 24 hours of receiving our email — it helps us schedule your follow-up call.</p>
+    </div>
+
+    <div class="form-card">
+
+      <!-- Netlify static form detection (hidden, never displayed) -->
+      <form name="staff-availability" netlify netlify-honeypot="bot-field" style="display:none">
+        <input type="text" name="name"/>
+        <input type="email" name="email"/>
+        <input type="tel" name="phone"/>
+        <input type="date" name="start_date"/>
+        <input type="text" name="max_walks_per_day"/>
+        <input type="text" name="services[]"/>
+        <input type="text" name="has_transport"/>
+        <!-- availability checkboxes — all field names must appear here for Netlify to register them -->
+        <input type="checkbox" name="avail_mon_morning"/><input type="checkbox" name="avail_mon_midday"/>
+        <input type="checkbox" name="avail_mon_afternoon"/><input type="checkbox" name="avail_mon_evening"/>
+        <input type="checkbox" name="avail_tue_morning"/><input type="checkbox" name="avail_tue_midday"/>
+        <input type="checkbox" name="avail_tue_afternoon"/><input type="checkbox" name="avail_tue_evening"/>
+        <input type="checkbox" name="avail_wed_morning"/><input type="checkbox" name="avail_wed_midday"/>
+        <input type="checkbox" name="avail_wed_afternoon"/><input type="checkbox" name="avail_wed_evening"/>
+        <input type="checkbox" name="avail_thu_morning"/><input type="checkbox" name="avail_thu_midday"/>
+        <input type="checkbox" name="avail_thu_afternoon"/><input type="checkbox" name="avail_thu_evening"/>
+        <input type="checkbox" name="avail_fri_morning"/><input type="checkbox" name="avail_fri_midday"/>
+        <input type="checkbox" name="avail_fri_afternoon"/><input type="checkbox" name="avail_fri_evening"/>
+        <input type="checkbox" name="avail_sat_morning"/><input type="checkbox" name="avail_sat_midday"/>
+        <input type="checkbox" name="avail_sat_afternoon"/><input type="checkbox" name="avail_sat_evening"/>
+        <input type="checkbox" name="avail_sun_morning"/><input type="checkbox" name="avail_sun_midday"/>
+        <input type="checkbox" name="avail_sun_afternoon"/><input type="checkbox" name="avail_sun_evening"/>
+      </form>
+
+      <!-- Error banner -->
+      <div class="form-error" id="formErr" role="alert">Please fill in all required fields and select at least one available time block before submitting.</div>
+
+      <!-- The actual form (submitted via AJAX) -->
+      <form id="availForm" novalidate>
+        <input type="hidden" name="form-name" value="staff-availability"/>
+        <!-- Honeypot -->
+        <div style="display:none"><label>Don't fill this out: <input name="bot-field"/></label></div>
+
+        <div class="form-section-title">Your Contact Info</div>
+
+        <div class="fg">
+          <label for="name">Full Name <span class="req">*</span></label>
+          <input type="text" id="name" name="name" placeholder="First and last name" autocomplete="name" required/>
+        </div>
+
+        <div class="fg-row">
+          <div class="fg">
+            <label for="email">Email Address <span class="req">*</span></label>
+            <input type="email" id="email" name="email" placeholder="you@email.com" autocomplete="email" required/>
+            <div class="hint">Use the same email we contacted you on.</div>
+          </div>
+          <div class="fg">
+            <label for="phone">Phone Number <span class="req">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="(941) 555-1234" autocomplete="tel" required/>
+          </div>
+        </div>
+
+        <div class="form-section-title">Scheduling &amp; Availability</div>
+
+        <!-- Availability grid — desktop -->
+        <div class="fg">
+          <label>Weekly Availability <span class="req">*</span></label>
+          <div class="hint" style="margin-bottom:.75rem">Check every block you're generally available. More coverage = more shifts.</div>
+
+          <div class="avail-grid" id="availGrid">
+            <div class="avail-grid-head">
+              <div>Day</div>
+              <div>Morning<br><span style="font-weight:400;font-size:.62rem;opacity:.7">7am – 11am</span></div>
+              <div>Midday<br><span style="font-weight:400;font-size:.62rem;opacity:.7">11am – 2pm</span></div>
+              <div>Afternoon<br><span style="font-weight:400;font-size:.62rem;opacity:.7">2pm – 5pm</span></div>
+              <div>Evening<br><span style="font-weight:400;font-size:.62rem;opacity:.7">5pm – 8pm</span></div>
+            </div>
+            <div class="avail-row">
+              <div class="avail-day-label">Monday</div>
+              <div class="avail-cell"><input type="checkbox" name="avail_mon_morning" value="Mon Morning" aria-label="Monday Morning"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_mon_midday" value="Mon Midday" aria-label="Monday Midday"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_mon_afternoon" value="Mon Afternoon" aria-label="Monday Afternoon"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_mon_evening" value="Mon Evening" aria-label="Monday Evening"/></div>
+            </div>
+            <div class="avail-row">
+              <div class="avail-day-label">Tuesday</div>
+              <div class="avail-cell"><input type="checkbox" name="avail_tue_morning" value="Tue Morning" aria-label="Tuesday Morning"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_tue_midday" value="Tue Midday" aria-label="Tuesday Midday"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_tue_afternoon" value="Tue Afternoon" aria-label="Tuesday Afternoon"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_tue_evening" value="Tue Evening" aria-label="Tuesday Evening"/></div>
+            </div>
+            <div class="avail-row">
+              <div class="avail-day-label">Wednesday</div>
+              <div class="avail-cell"><input type="checkbox" name="avail_wed_morning" value="Wed Morning" aria-label="Wednesday Morning"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_wed_midday" value="Wed Midday" aria-label="Wednesday Midday"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_wed_afternoon" value="Wed Afternoon" aria-label="Wednesday Afternoon"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_wed_evening" value="Wed Evening" aria-label="Wednesday Evening"/></div>
+            </div>
+            <div class="avail-row">
+              <div class="avail-day-label">Thursday</div>
+              <div class="avail-cell"><input type="checkbox" name="avail_thu_morning" value="Thu Morning" aria-label="Thursday Morning"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_thu_midday" value="Thu Midday" aria-label="Thursday Midday"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_thu_afternoon" value="Thu Afternoon" aria-label="Thursday Afternoon"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_thu_evening" value="Thu Evening" aria-label="Thursday Evening"/></div>
+            </div>
+            <div class="avail-row">
+              <div class="avail-day-label">Friday</div>
+              <div class="avail-cell"><input type="checkbox" name="avail_fri_morning" value="Fri Morning" aria-label="Friday Morning"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_fri_midday" value="Fri Midday" aria-label="Friday Midday"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_fri_afternoon" value="Fri Afternoon" aria-label="Friday Afternoon"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_fri_evening" value="Fri Evening" aria-label="Friday Evening"/></div>
+            </div>
+            <div class="avail-row">
+              <div class="avail-day-label">Saturday</div>
+              <div class="avail-cell"><input type="checkbox" name="avail_sat_morning" value="Sat Morning" aria-label="Saturday Morning"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_sat_midday" value="Sat Midday" aria-label="Saturday Midday"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_sat_afternoon" value="Sat Afternoon" aria-label="Saturday Afternoon"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_sat_evening" value="Sat Evening" aria-label="Saturday Evening"/></div>
+            </div>
+            <div class="avail-row">
+              <div class="avail-day-label">Sunday</div>
+              <div class="avail-cell"><input type="checkbox" name="avail_sun_morning" value="Sun Morning" aria-label="Sunday Morning"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_sun_midday" value="Sun Midday" aria-label="Sunday Midday"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_sun_afternoon" value="Sun Afternoon" aria-label="Sunday Afternoon"/></div>
+              <div class="avail-cell"><input type="checkbox" name="avail_sun_evening" value="Sun Evening" aria-label="Sunday Evening"/></div>
+            </div>
+          </div>
+
+          <!-- Mobile accordion (shown only on ≤640px via CSS) -->
+          <div class="avail-mobile" id="availMobile">
+            <!-- Days rendered by JS below -->
+          </div>
+        </div>
+
+        <div class="fg">
+          <label for="start_date">Earliest Start Date <span class="req">*</span></label>
+          <input type="date" id="start_date" name="start_date" required/>
+        </div>
+
+        <div class="fg">
+          <label for="max_walks">Max Visits / Walks Per Day <span class="req">*</span></label>
+          <div class="select-wrap">
+            <select id="max_walks" name="max_walks_per_day" required>
+              <option value="" disabled selected>Select a range…</option>
+              <option value="1-2">1 – 2</option>
+              <option value="3-5">3 – 5</option>
+              <option value="6-8">6 – 8</option>
+              <option value="9+">9 or more</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-section-title">Services &amp; Logistics</div>
+
+        <div class="fg">
+          <label>Service Types You're Willing to Do <span class="req">*</span></label>
+          <div class="hint" style="margin-bottom:.6rem">Select all that apply.</div>
+          <div class="check-group">
+            <div class="check-opt">
+              <input type="checkbox" name="services[]" id="svc_walking" value="Dog Walking"/>
+              <label for="svc_walking">Dog Walking</label>
+            </div>
+            <div class="check-opt">
+              <input type="checkbox" name="services[]" id="svc_dropin" value="Drop-in Visits"/>
+              <label for="svc_dropin">Drop-in Visits</label>
+            </div>
+            <div class="check-opt">
+              <input type="checkbox" name="services[]" id="svc_overnight" value="Overnight Stays"/>
+              <label for="svc_overnight">Overnight Stays</label>
+            </div>
+            <div class="check-opt">
+              <input type="checkbox" name="services[]" id="svc_sitting" value="Pet Sitting (daytime, in client's home)"/>
+              <label for="svc_sitting">Pet Sitting <span style="font-weight:400;color:var(--muted)">(daytime, in client's home)</span></label>
+            </div>
+            <div class="check-opt">
+              <input type="checkbox" name="services[]" id="svc_wedding" value="Wedding Pet Attendant"/>
+              <label for="svc_wedding">Wedding Pet Attendant</label>
+            </div>
+            <div class="check-opt">
+              <input type="checkbox" name="services[]" id="svc_snowbird" value="Snowbird / House Sitting"/>
+              <label for="svc_snowbird">Snowbird / House Sitting</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="fg">
+          <label>Do you have reliable personal transportation? <span class="req">*</span></label>
+          <div class="hint" style="margin-bottom:.5rem">Just a quick consistency check — thanks for bearing with us.</div>
+          <div class="yn-group" role="group" aria-label="Reliable transportation">
+            <div class="yn-opt">
+              <input type="radio" name="has_transport" id="transport_yes" value="Yes" required/>
+              <label for="transport_yes">Yes</label>
+            </div>
+            <div class="yn-opt">
+              <input type="radio" name="has_transport" id="transport_no" value="No"/>
+              <label for="transport_no">No</label>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-submit-avail" id="submitBtn">
+          Submit My Availability
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </form>
+
+      <!-- Confirmation (shown after successful submit) -->
+      <div class="sa-confirm" id="saConfirm">
+        <div class="confirm-icon">
+          <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div class="confirm-title">Got it — thanks!</div>
+        <p class="confirm-sub">We'll be in touch soon to schedule a quick call. Keep an eye on your inbox and phone — we may reach out via email or text.</p>
+      </div>
+
+    </div><!-- /form-card -->
+  </div><!-- /sa-wrap -->
+</div><!-- /sa-page -->
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo">
+        <img src="assets/images/wig.logo.png" alt="Wiggle Your Tail logo" class="nav-logo">
+        <div class="logo-text"><span class="logo-name">Wiggle Your Tail</span><span class="logo-sub">Premium Pet Care</span></div>
+      </div>
+      <p class="footer-desc">Sarasota's #1 Platinum Award-Winning provider of dog walking and pet sitting. Bonded, insured &amp; Pet CPR certified.</p>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/WiggleYourTailDogWalking/" target="_blank" class="f-social"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="https://www.instagram.com/wiggleyourtailpetcare/" target="_blank" class="f-social"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      </div>
+    </div>
+    <div><div class="f-col-title">Services</div><ul class="f-links"><li><a href="dog-walking.html">Dog Walking</a></li><li><a href="pet-sitting.html">Pet Sitting</a></li><li><a href="pet-sitting.html">Overnight Care</a></li><li><a href="wedding-pet-attendant.html">Wedding Pet Attendant</a></li><li><a href="snowbird-services.html">Snowbird Services</a></li></ul></div>
+    <div><div class="f-col-title">Company</div><ul class="f-links"><li><a href="about.html">About Christa</a></li><li><a href="how-it-works.html">How It Works</a></li><li><a href="work-for-us.html">Work For Us</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+    <div><div class="f-col-title">Contact</div><ul class="f-links"><li><a href="tel:9412805156">(941) 280-5156</a></li><li><a href="mailto:contact@wiggleyourtail.com">contact@wiggleyourtail.com</a></li><li><a href="contact.html">Free Meet &amp; Greet</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Wiggle Your Tail Pet Care, LLC · Sarasota, FL · All rights reserved.</span><div class="footer-bottom-links"><a href="privacy-policy.html">Privacy Policy</a><a href="terms-and-conditions.html">Terms &amp; Conditions</a></div></div>
+  <div class="footer-credit"><a href="https://echelonfox.com" target="_blank" rel="noopener noreferrer">Built by EchelonFox AI</a></div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+(function () {
+  'use strict';
+
+  /* ── Make.com webhook URL ──────────────────────────────────────────────
+     Replace the placeholder below with the real catch-hook URL from Make.
+     In a static site there's no server-side env, so the URL lives here.
+     Keep the URL out of public git if you prefer — set it via a Netlify
+     environment variable and a build-time replace, or swap it manually
+     before each deploy.
+  ─────────────────────────────────────────────────────────────────────── */
+  var WEBHOOK_URL = 'REPLACE_WITH_MAKE_AVAILABILITY_WEBHOOK_URL';
+
+  /* ── Build mobile accordion ── */
+  var DAYS = [
+    { key: 'mon', label: 'Monday' },
+    { key: 'tue', label: 'Tuesday' },
+    { key: 'wed', label: 'Wednesday' },
+    { key: 'thu', label: 'Thursday' },
+    { key: 'fri', label: 'Friday' },
+    { key: 'sat', label: 'Saturday' },
+    { key: 'sun', label: 'Sunday' }
+  ];
+  var BLOCKS = [
+    { key: 'morning',   label: 'Morning',   sub: '7am – 11am' },
+    { key: 'midday',    label: 'Midday',    sub: '11am – 2pm' },
+    { key: 'afternoon', label: 'Afternoon', sub: '2pm – 5pm' },
+    { key: 'evening',   label: 'Evening',   sub: '5pm – 8pm' }
+  ];
+
+  var mobileWrap = document.getElementById('availMobile');
+  DAYS.forEach(function (day) {
+    var card = document.createElement('div');
+    card.className = 'avail-day-card';
+    card.id = 'mcard_' + day.key;
+
+    var trigger = document.createElement('div');
+    trigger.className = 'avail-day-trigger';
+    trigger.setAttribute('role', 'button');
+    trigger.setAttribute('tabindex', '0');
+    trigger.setAttribute('aria-expanded', 'false');
+    trigger.innerHTML =
+      '<span>' + day.label + ' <span class="avail-day-badge" id="badge_' + day.key + '">✓</span></span>' +
+      '<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>';
+
+    var body = document.createElement('div');
+    body.className = 'avail-day-body';
+
+    BLOCKS.forEach(function (block) {
+      var fieldName = 'avail_' + day.key + '_' + block.key;
+      var row = document.createElement('div');
+      row.className = 'avail-block-row';
+      row.innerHTML =
+        '<input type="checkbox" id="m_' + fieldName + '" name="' + fieldName + '" value="' + day.label + ' ' + block.label + '" aria-label="' + day.label + ' ' + block.label + '"/>' +
+        '<label for="m_' + fieldName + '">' + block.label + ' <span class="avail-block-sub">' + block.sub + '</span></label>';
+      body.appendChild(row);
+
+      /* Badge update when a checkbox in this day changes */
+      var cb = row.querySelector('input');
+      cb.addEventListener('change', function () { updateDayBadge(day.key); });
+    });
+
+    trigger.addEventListener('click', function () { toggleDay(day.key); });
+    trigger.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleDay(day.key); }
+    });
+
+    card.appendChild(trigger);
+    card.appendChild(body);
+    mobileWrap.appendChild(card);
+  });
+
+  function toggleDay(key) {
+    var card = document.getElementById('mcard_' + key);
+    var isOpen = card.classList.toggle('open');
+    card.querySelector('.avail-day-trigger').setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  }
+
+  function updateDayBadge(key) {
+    var checked = document.querySelectorAll('[name^="avail_' + key + '_"]:checked').length;
+    var card = document.getElementById('mcard_' + key);
+    if (card) card.classList.toggle('has-checks', checked > 0);
+  }
+
+  /* ── Validation ── */
+  function getCheckedAvailability() {
+    return Array.from(document.querySelectorAll('[name^="avail_"]:checked'));
+  }
+
+  function validate() {
+    var ok = true;
+    var form = document.getElementById('availForm');
+
+    var name = form.querySelector('#name');
+    var email = form.querySelector('#email');
+    var phone = form.querySelector('#phone');
+    var startDate = form.querySelector('#start_date');
+    var maxWalks = form.querySelector('#max_walks');
+
+    [name, email, phone, startDate, maxWalks].forEach(function (el) {
+      if (!el.value.trim()) { el.classList.add('error'); ok = false; }
+      else el.classList.remove('error');
+    });
+
+    /* Email format */
+    if (email.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+      email.classList.add('error'); ok = false;
+    }
+
+    /* At least one availability block */
+    if (getCheckedAvailability().length === 0) { ok = false; }
+
+    /* At least one service */
+    if (document.querySelectorAll('[name="services[]"]:checked').length === 0) { ok = false; }
+
+    /* Transport radio */
+    if (!document.querySelector('[name="has_transport"]:checked')) { ok = false; }
+
+    return ok;
+  }
+
+  /* ── Submit ── */
+  document.getElementById('availForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    var errEl = document.getElementById('formErr');
+    if (!validate()) {
+      errEl.classList.add('show');
+      errEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return;
+    }
+    errEl.classList.remove('show');
+
+    var btn = document.getElementById('submitBtn');
+    btn.disabled = true;
+    btn.textContent = 'Submitting…';
+
+    var form = document.getElementById('availForm');
+    var formData = new FormData(form);
+
+    /* Netlify Forms AJAX submission */
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString()
+    })
+    .then(function (res) {
+      if (!res.ok) throw new Error('Netlify form error: ' + res.status);
+
+      /* Fire Make.com webhook (best-effort, don't block confirmation on failure) */
+      if (WEBHOOK_URL && WEBHOOK_URL !== 'REPLACE_WITH_MAKE_AVAILABILITY_WEBHOOK_URL') {
+        fetch(WEBHOOK_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: formData.get('name'),
+            email: formData.get('email'),
+            phone: formData.get('phone'),
+            submitted_at: new Date().toISOString()
+          })
+        }).catch(function () { /* webhook failure is non-fatal */ });
+      }
+
+      /* Show confirmation */
+      form.style.display = 'none';
+      errEl.style.display = 'none';
+      var confirm = document.getElementById('saConfirm');
+      confirm.classList.add('show');
+      confirm.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    })
+    .catch(function () {
+      btn.disabled = false;
+      btn.innerHTML = 'Submit My Availability <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>';
+      errEl.textContent = 'Something went wrong — please try again or email us at contact@wiggleyourtail.com.';
+      errEl.classList.add('show');
+      errEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  });
+
+})();
+</script>
+</body>
+</html>
