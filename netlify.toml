@@ -7,44 +7,44 @@
 
 [[redirects]]
   from = "/WiggleYourTail/how-it-works/"
-  to = "/how-it-works.html"
+  to = "/how-it-works/"
   status = 301
 
 [[redirects]]
   from = "/WiggleYourTail/contact/"
-  to = "/contact.html"
+  to = "/contact/"
   status = 301
 
 [[redirects]]
   from = "/WiggleYourTail/pet-policy/"
-  to = "/terms-and-conditions.html"
+  to = "/terms-and-conditions/"
   status = 301
 
 [[redirects]]
   from = "/WiggleYourTail/services-rates/"
-  to = "/services-rates.html"
+  to = "/services-rates/"
   status = 301
 
 [[redirects]]
   from = "/WiggleYourTail/privacy-policy/"
-  to = "/privacy-policy.html"
+  to = "/privacy-policy/"
   status = 301
 
 [[redirects]]
   from = "/WiggleYourTail/become-a-walker/"
-  to = "/contact.html"
+  to = "/contact/"
   status = 301
 
 # ── /services/ → services-rates ──────────────────────────────────────────────
 
 [[redirects]]
   from = "/services"
-  to = "/services-rates.html"
+  to = "/services-rates/"
   status = 301
 
 [[redirects]]
   from = "/services/"
-  to = "/services-rates.html"
+  to = "/services-rates/"
   status = 301
 
 # ── Article dated WordPress URLs → clean canonicals ──────────────────────────
@@ -80,22 +80,22 @@
 
 [[redirects]]
   from = "/wiggleyourtail-dog-walking"
-  to = "/dog-walking.html"
+  to = "/dog-walking/"
   status = 301
 
 [[redirects]]
   from = "/wiggleyourtail-dog-walking/"
-  to = "/dog-walking.html"
+  to = "/dog-walking/"
   status = 301
 
 [[redirects]]
   from = "/drop-in-visits-overnight-dog-sitting"
-  to = "/pet-sitting.html"
+  to = "/pet-sitting/"
   status = 301
 
 [[redirects]]
   from = "/drop-in-visits-overnight-dog-sitting/"
-  to = "/pet-sitting.html"
+  to = "/pet-sitting/"
   status = 301
 
 [[redirects]]
@@ -110,62 +110,52 @@
 
 [[redirects]]
   from = "/pet-taxi"
-  to = "/wedding-pet-attendant.html"
+  to = "/wedding-pet-attendant/"
   status = 301
 
 [[redirects]]
   from = "/pet-taxi/"
-  to = "/wedding-pet-attendant.html"
+  to = "/wedding-pet-attendant/"
   status = 301
 
 [[redirects]]
   from = "/away-from-home-snowbird-services"
-  to = "/snowbird-services.html"
+  to = "/snowbird-services/"
   status = 301
 
 [[redirects]]
   from = "/away-from-home-snowbird-services/"
-  to = "/snowbird-services.html"
+  to = "/snowbird-services/"
   status = 301
 
 [[redirects]]
   from = "/services-rates"
-  to = "/services-rates.html"
-  status = 301
-
-[[redirects]]
-  from = "/services-rates/"
-  to = "/services-rates.html"
+  to = "/services-rates/"
   status = 301
 
 [[redirects]]
   from = "/how-it-works"
-  to = "/how-it-works.html"
-  status = 301
-
-[[redirects]]
-  from = "/how-it-works/"
-  to = "/how-it-works.html"
+  to = "/how-it-works/"
   status = 301
 
 [[redirects]]
   from = "/who-we-are"
-  to = "/about.html"
+  to = "/about/"
   status = 301
 
 [[redirects]]
   from = "/who-we-are/"
-  to = "/about.html"
+  to = "/about/"
   status = 301
 
 [[redirects]]
   from = "/contactus"
-  to = "/contact.html"
+  to = "/contact/"
   status = 301
 
 [[redirects]]
   from = "/contactus/"
-  to = "/contact.html"
+  to = "/contact/"
   status = 301
 
 # ── WordPress pages: pass through to WP (don't 404 on Netlify) ───────────────
