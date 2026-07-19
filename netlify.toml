@@ -158,31 +158,12 @@
   to = "/contact/"
   status = 301
 
-# ── WordPress pages: pass through to WP (don't 404 on Netlify) ───────────────
+# ── .html → clean URL wildcard (must be last redirect rule) ──────────────────
 
 [[redirects]]
-  from = "/doggybloggy/*"
-  to = "https://wiggleyourtail.com/doggybloggy/:splat"
-  status = 200
-  force = false
-
-[[redirects]]
-  from = "/faqs/*"
-  to = "https://wiggleyourtail.com/faqs/:splat"
-  status = 200
-  force = false
-
-[[redirects]]
-  from = "/home-shop/*"
-  to = "https://wiggleyourtail.com/home-shop/:splat"
-  status = 200
-  force = false
-
-[[redirects]]
-  from = "/pet-boarding/*"
-  to = "https://wiggleyourtail.com/pet-boarding/:splat"
-  status = 200
-  force = false
+  from = "/*.html"
+  to = "/:splat/"
+  status = 301
 
 # ── Security & performance headers ───────────────────────────────────────────
 
