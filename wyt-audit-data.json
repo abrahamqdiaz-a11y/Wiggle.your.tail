@@ -1,0 +1,1629 @@
+{
+  "audit_date": "2026-07-19",
+  "site": "https://wiggleyourtail.com",
+  "note": "Live HTTP checks blocked by audit proxy. Redirect analysis based on netlify.toml.",
+  "summary": {
+    "total_pages_crawled": 27,
+    "pages_in_sitemap": 22,
+    "pages_missing_from_sitemap": 5,
+    "pages_with_inbound_links_lt_2": 9,
+    "images_over_200kb": 22,
+    "pages_with_title_over_60": 16,
+    "pages_with_meta_desc_issues": 13,
+    "pages_missing_h1": 1,
+    "pages_missing_schema": 7,
+    "pages_with_canonical_issues": 7
+  },
+  "step1_url_inventory": [
+    {
+      "url": "/",
+      "in_sitemap": true,
+      "inbound_links": 2,
+      "outbound_internal": 15,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/about/",
+      "in_sitemap": true,
+      "inbound_links": 16,
+      "outbound_internal": 14,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/are-you-a-pet-mom-heres-why-you-deserve-a-shoutout-this-mothers-day/",
+      "in_sitemap": true,
+      "inbound_links": 1,
+      "outbound_internal": 12,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/best-sarasota-neighborhoods-for-dog-owners/",
+      "in_sitemap": false,
+      "inbound_links": 1,
+      "outbound_internal": 15,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/best-time-to-walk-your-dog-in-sarasota/",
+      "in_sitemap": true,
+      "inbound_links": 7,
+      "outbound_internal": 13,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/blog/",
+      "in_sitemap": true,
+      "inbound_links": 15,
+      "outbound_internal": 26,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/contact/",
+      "in_sitemap": true,
+      "inbound_links": 16,
+      "outbound_internal": 15,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/dog-sitter-sarasota/",
+      "in_sitemap": true,
+      "inbound_links": 1,
+      "outbound_internal": 13,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/dog-trainer-sarasota/",
+      "in_sitemap": true,
+      "inbound_links": 2,
+      "outbound_internal": 14,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/dog-walking/",
+      "in_sitemap": true,
+      "inbound_links": 16,
+      "outbound_internal": 15,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/faqs/",
+      "in_sitemap": false,
+      "inbound_links": 12,
+      "outbound_internal": 13,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/how-a-dog-attendant-can-help-you-include-your-pet-in-your-wedding/",
+      "in_sitemap": true,
+      "inbound_links": 1,
+      "outbound_internal": 12,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/how-it-works/",
+      "in_sitemap": true,
+      "inbound_links": 16,
+      "outbound_internal": 15,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/mastering-dog-training-from-puppies-to-adults/",
+      "in_sitemap": true,
+      "inbound_links": 2,
+      "outbound_internal": 13,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/paw-paradise-discover-why-sarasota-is-a-dog-lovers-dream/",
+      "in_sitemap": true,
+      "inbound_links": 2,
+      "outbound_internal": 14,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/pet-sitting/",
+      "in_sitemap": true,
+      "inbound_links": 16,
+      "outbound_internal": 15,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/pricing/",
+      "in_sitemap": false,
+      "inbound_links": 1,
+      "outbound_internal": 15,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/privacy-policy/",
+      "in_sitemap": true,
+      "inbound_links": 17,
+      "outbound_internal": 17,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/sarasota-summers-keeping-your-furry-friend-cool-and-happy/",
+      "in_sitemap": true,
+      "inbound_links": 5,
+      "outbound_internal": 13,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/services-rates/",
+      "in_sitemap": true,
+      "inbound_links": 16,
+      "outbound_internal": 15,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/snowbird-checklist-managing-your-home-and-pets/",
+      "in_sitemap": false,
+      "inbound_links": 1,
+      "outbound_internal": 12,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/snowbird-services/",
+      "in_sitemap": true,
+      "inbound_links": 16,
+      "outbound_internal": 15,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/terms-and-conditions/",
+      "in_sitemap": true,
+      "inbound_links": 16,
+      "outbound_internal": 17,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/the-future-of-pet-care/",
+      "in_sitemap": true,
+      "inbound_links": 1,
+      "outbound_internal": 12,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/the-power-of-paws-how-dog-walking-benefits-your-furry-one/",
+      "in_sitemap": true,
+      "inbound_links": 1,
+      "outbound_internal": 13,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/ultimate-sarasota-pet-sitter-guide/",
+      "in_sitemap": false,
+      "inbound_links": 1,
+      "outbound_internal": 14,
+      "http_status": "N/A (proxy blocked)"
+    },
+    {
+      "url": "/wedding-pet-attendant/",
+      "in_sitemap": true,
+      "inbound_links": 16,
+      "outbound_internal": 15,
+      "http_status": "N/A (proxy blocked)"
+    }
+  ],
+  "step2_netlify_redirects": [
+    {
+      "from": "/services-rates/",
+      "to": "/services-rates.html",
+      "status": 301,
+      "issue": "Redirects canonical URL to .html variant"
+    },
+    {
+      "from": "/how-it-works/",
+      "to": "/how-it-works.html",
+      "status": 301,
+      "issue": "Redirects canonical URL to .html variant"
+    },
+    {
+      "from": "/pet-taxi/",
+      "to": "/wedding-pet-attendant.html",
+      "status": 301,
+      "issue": "Points to .html not clean URL"
+    },
+    {
+      "from": "/pet-taxi",
+      "to": "/wedding-pet-attendant.html",
+      "status": 301,
+      "issue": "Points to .html not clean URL"
+    },
+    {
+      "from": "/services/",
+      "to": "/services-rates.html",
+      "status": 301,
+      "issue": "Legacy - acceptable"
+    },
+    {
+      "from": "/who-we-are/",
+      "to": "/about.html",
+      "status": 301,
+      "issue": "Legacy - acceptable"
+    },
+    {
+      "from": "/contactus/",
+      "to": "/contact.html",
+      "status": 301,
+      "issue": "Legacy - acceptable"
+    },
+    {
+      "from": "/faqs/*",
+      "to": "https://wiggleyourtail.com/faqs/:splat",
+      "status": 200,
+      "issue": "Proxy passthrough to live domain - potential loop since /faqs/index.html exists locally"
+    }
+  ],
+  "step3_canonical_audit": [
+    {
+      "url": "/",
+      "canonical": "https://wiggleyourtail.com/",
+      "og_url": "https://wiggleyourtail.com/",
+      "expected_canonical": "https://wiggleyourtail.com/",
+      "issues": []
+    },
+    {
+      "url": "/about/",
+      "canonical": "https://wiggleyourtail.com/about/",
+      "og_url": "https://wiggleyourtail.com/about/",
+      "expected_canonical": "https://wiggleyourtail.com/about/",
+      "issues": []
+    },
+    {
+      "url": "/are-you-a-pet-mom-heres-why-you-deserve-a-shoutout-this-mothers-day/",
+      "canonical": "https://wiggleyourtail.com/are-you-a-pet-mom-heres-why-you-deserve-a-shoutout-this-mothers-day/",
+      "og_url": "https://wiggleyourtail.com/are-you-a-pet-mom-heres-why-you-deserve-a-shoutout-this-mothers-day/",
+      "expected_canonical": "https://wiggleyourtail.com/are-you-a-pet-mom-heres-why-you-deserve-a-shoutout-this-mothers-day/",
+      "issues": []
+    },
+    {
+      "url": "/best-sarasota-neighborhoods-for-dog-owners/",
+      "canonical": "https://wiggleyourtail.com/best-sarasota-neighborhoods-for-dog-owners/",
+      "og_url": "https://wiggleyourtail.com/best-sarasota-neighborhoods-for-dog-owners/",
+      "expected_canonical": "https://wiggleyourtail.com/best-sarasota-neighborhoods-for-dog-owners/",
+      "issues": [
+        "CANONICAL_NOT_IN_SITEMAP"
+      ]
+    },
+    {
+      "url": "/best-time-to-walk-your-dog-in-sarasota/",
+      "canonical": "https://wiggleyourtail.com/best-time-to-walk-your-dog-in-sarasota/",
+      "og_url": null,
+      "expected_canonical": "https://wiggleyourtail.com/best-time-to-walk-your-dog-in-sarasota/",
+      "issues": [
+        "MISSING_OG_URL"
+      ]
+    },
+    {
+      "url": "/blog/",
+      "canonical": "https://wiggleyourtail.com/blog/",
+      "og_url": "https://wiggleyourtail.com/blog/",
+      "expected_canonical": "https://wiggleyourtail.com/blog/",
+      "issues": []
+    },
+    {
+      "url": "/contact/",
+      "canonical": "https://wiggleyourtail.com/contact/",
+      "og_url": "https://wiggleyourtail.com/contact/",
+      "expected_canonical": "https://wiggleyourtail.com/contact/",
+      "issues": []
+    },
+    {
+      "url": "/dog-sitter-sarasota/",
+      "canonical": "https://wiggleyourtail.com/dog-sitter-sarasota/",
+      "og_url": "https://wiggleyourtail.com/dog-sitter-sarasota/",
+      "expected_canonical": "https://wiggleyourtail.com/dog-sitter-sarasota/",
+      "issues": []
+    },
+    {
+      "url": "/dog-trainer-sarasota/",
+      "canonical": "https://wiggleyourtail.com/dog-trainer-sarasota/",
+      "og_url": "https://wiggleyourtail.com/dog-trainer-sarasota/",
+      "expected_canonical": "https://wiggleyourtail.com/dog-trainer-sarasota/",
+      "issues": []
+    },
+    {
+      "url": "/dog-walking/",
+      "canonical": "https://wiggleyourtail.com/dog-walking/",
+      "og_url": "https://wiggleyourtail.com/dog-walking/",
+      "expected_canonical": "https://wiggleyourtail.com/dog-walking/",
+      "issues": []
+    },
+    {
+      "url": "/faqs/",
+      "canonical": "https://wiggleyourtail.com/faqs/",
+      "og_url": "https://wiggleyourtail.com/faqs/",
+      "expected_canonical": "https://wiggleyourtail.com/faqs/",
+      "issues": [
+        "CANONICAL_NOT_IN_SITEMAP"
+      ]
+    },
+    {
+      "url": "/how-a-dog-attendant-can-help-you-include-your-pet-in-your-wedding/",
+      "canonical": "https://wiggleyourtail.com/how-a-dog-attendant-can-help-you-include-your-pet-in-your-wedding/",
+      "og_url": "https://wiggleyourtail.com/how-a-dog-attendant-can-help-you-include-your-pet-in-your-wedding/",
+      "expected_canonical": "https://wiggleyourtail.com/how-a-dog-attendant-can-help-you-include-your-pet-in-your-wedding/",
+      "issues": []
+    },
+    {
+      "url": "/how-it-works/",
+      "canonical": "https://wiggleyourtail.com/how-it-works/",
+      "og_url": "https://wiggleyourtail.com/how-it-works/",
+      "expected_canonical": "https://wiggleyourtail.com/how-it-works/",
+      "issues": []
+    },
+    {
+      "url": "/mastering-dog-training-from-puppies-to-adults/",
+      "canonical": "https://wiggleyourtail.com/mastering-dog-training-from-puppies-to-adults/",
+      "og_url": "https://wiggleyourtail.com/mastering-dog-training-from-puppies-to-adults/",
+      "expected_canonical": "https://wiggleyourtail.com/mastering-dog-training-from-puppies-to-adults/",
+      "issues": []
+    },
+    {
+      "url": "/paw-paradise-discover-why-sarasota-is-a-dog-lovers-dream/",
+      "canonical": "https://wiggleyourtail.com/paw-paradise-discover-why-sarasota-is-a-dog-lovers-dream/",
+      "og_url": "https://wiggleyourtail.com/paw-paradise-discover-why-sarasota-is-a-dog-lovers-dream/",
+      "expected_canonical": "https://wiggleyourtail.com/paw-paradise-discover-why-sarasota-is-a-dog-lovers-dream/",
+      "issues": []
+    },
+    {
+      "url": "/pet-sitting/",
+      "canonical": "https://wiggleyourtail.com/pet-sitting/",
+      "og_url": "https://wiggleyourtail.com/pet-sitting/",
+      "expected_canonical": "https://wiggleyourtail.com/pet-sitting/",
+      "issues": []
+    },
+    {
+      "url": "/pricing/",
+      "canonical": "https://wiggleyourtail.com/pricing/",
+      "og_url": "https://wiggleyourtail.com/pricing/",
+      "expected_canonical": "https://wiggleyourtail.com/pricing/",
+      "issues": [
+        "CANONICAL_NOT_IN_SITEMAP"
+      ]
+    },
+    {
+      "url": "/privacy-policy/",
+      "canonical": "https://wiggleyourtail.com/privacy-policy/",
+      "og_url": "https://wiggleyourtail.com/privacy-policy/",
+      "expected_canonical": "https://wiggleyourtail.com/privacy-policy/",
+      "issues": []
+    },
+    {
+      "url": "/sarasota-summers-keeping-your-furry-friend-cool-and-happy/",
+      "canonical": "https://wiggleyourtail.com/sarasota-summers-keeping-your-furry-friend-cool-and-happy/",
+      "og_url": null,
+      "expected_canonical": "https://wiggleyourtail.com/sarasota-summers-keeping-your-furry-friend-cool-and-happy/",
+      "issues": [
+        "MISSING_OG_URL"
+      ]
+    },
+    {
+      "url": "/services-rates/",
+      "canonical": "https://wiggleyourtail.com/services-rates/",
+      "og_url": "https://wiggleyourtail.com/services-rates/",
+      "expected_canonical": "https://wiggleyourtail.com/services-rates/",
+      "issues": []
+    },
+    {
+      "url": "/snowbird-checklist-managing-your-home-and-pets/",
+      "canonical": "https://wiggleyourtail.com/snowbird-checklist-managing-your-home-and-pets/",
+      "og_url": "https://wiggleyourtail.com/snowbird-checklist-managing-your-home-and-pets/",
+      "expected_canonical": "https://wiggleyourtail.com/snowbird-checklist-managing-your-home-and-pets/",
+      "issues": [
+        "CANONICAL_NOT_IN_SITEMAP"
+      ]
+    },
+    {
+      "url": "/snowbird-services/",
+      "canonical": "https://wiggleyourtail.com/snowbird-services/",
+      "og_url": "https://wiggleyourtail.com/snowbird-services/",
+      "expected_canonical": "https://wiggleyourtail.com/snowbird-services/",
+      "issues": []
+    },
+    {
+      "url": "/terms-and-conditions/",
+      "canonical": "https://wiggleyourtail.com/terms-and-conditions/",
+      "og_url": "https://wiggleyourtail.com/terms-and-conditions/",
+      "expected_canonical": "https://wiggleyourtail.com/terms-and-conditions/",
+      "issues": []
+    },
+    {
+      "url": "/the-future-of-pet-care/",
+      "canonical": "https://wiggleyourtail.com/the-future-of-pet-care/",
+      "og_url": "https://wiggleyourtail.com/the-future-of-pet-care/",
+      "expected_canonical": "https://wiggleyourtail.com/the-future-of-pet-care/",
+      "issues": []
+    },
+    {
+      "url": "/the-power-of-paws-how-dog-walking-benefits-your-furry-one/",
+      "canonical": "https://wiggleyourtail.com/the-power-of-paws-how-dog-walking-benefits-your-furry-one/",
+      "og_url": "https://wiggleyourtail.com/the-power-of-paws-how-dog-walking-benefits-your-furry-one/",
+      "expected_canonical": "https://wiggleyourtail.com/the-power-of-paws-how-dog-walking-benefits-your-furry-one/",
+      "issues": []
+    },
+    {
+      "url": "/ultimate-sarasota-pet-sitter-guide/",
+      "canonical": "https://wiggleyourtail.com/ultimate-sarasota-pet-sitter-guide/",
+      "og_url": "https://wiggleyourtail.com/ultimate-sarasota-pet-sitter-guide/",
+      "expected_canonical": "https://wiggleyourtail.com/ultimate-sarasota-pet-sitter-guide/",
+      "issues": [
+        "CANONICAL_NOT_IN_SITEMAP"
+      ]
+    },
+    {
+      "url": "/wedding-pet-attendant/",
+      "canonical": "https://wiggleyourtail.com/wedding-pet-attendant/",
+      "og_url": "https://wiggleyourtail.com/wedding-pet-attendant/",
+      "expected_canonical": "https://wiggleyourtail.com/wedding-pet-attendant/",
+      "issues": []
+    }
+  ],
+  "step4_meta_audit": [
+    {
+      "url": "/",
+      "title": "Wiggle Your Tail \u2014 Dog Walking &amp; Pet Care in Sarasota, FL",
+      "title_len": 61,
+      "title_issues": [
+        "TOO_LONG_61"
+      ],
+      "description": "Sarasota",
+      "desc_len": 8,
+      "desc_issues": [
+        "TOO_SHORT_8"
+      ],
+      "h1s": [
+        "Sarasota's\n      Favorite\n      Dog Walking &amp; In-Home Pet Sitting"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "Premium care forevery occasion",
+        "Getting started isrefreshingly simple",
+        "What pet parentsare saying"
+      ]
+    },
+    {
+      "url": "/about/",
+      "title": "About Wiggle Your Tail Pet Care | Dog Walking &amp; Pet Sitting in Sarasota, FL",
+      "title_len": 79,
+      "title_issues": [
+        "TOO_LONG_79"
+      ],
+      "description": "Wiggle Your Tail Pet Care provides professional dog walking, pet sitting, home boarding, and wedding pet attendant services in Sarasota, FL. Bonded, insured, and built around trust, routine, and clear communication since 2019.",
+      "desc_len": 226,
+      "desc_issues": [
+        "TOO_LONG_226"
+      ],
+      "h1s": [
+        "About Wiggle Your Tail\n      Pet Care"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "Built by Someone WhoUnderstands Pets",
+        "Experienced WithAll Types of Pets",
+        "Professional Care,Not Just Pet Sitting"
+      ]
+    },
+    {
+      "url": "/are-you-a-pet-mom-heres-why-you-deserve-a-shoutout-this-mothers-day/",
+      "title": "Are You a Pet Mom? Here's Why You Deserve a Shoutout This Mother's Day | Wiggle Your Tail",
+      "title_len": 89,
+      "title_issues": [
+        "TOO_LONG_89"
+      ],
+      "description": "Pet moms do it all \u2014 feeding, walking, vet visits, and endless love. This Mother",
+      "desc_len": 80,
+      "desc_issues": [],
+      "h1s": [
+        "Are You a Pet Mom? Here's Why You Deserve a Shoutout This Mother's Day"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "What It Actually Means to Be a Pet Mom",
+        "The Science Behind What You Already Know",
+        "The Invisible Labor of Being a Pet Mom"
+      ]
+    },
+    {
+      "url": "/best-sarasota-neighborhoods-for-dog-owners/",
+      "title": "The Best Sarasota Neighborhoods for Dog Owners (And Where We Walk Every Day) | Wiggle Your Tail",
+      "title_len": 95,
+      "title_issues": [
+        "TOO_LONG_95"
+      ],
+      "description": "Wiggle Your Tail owner Christa shares which Sarasota neighborhoods are truly the best for dog owners \u2014 from Laurel Park to Gulf Gate \u2014 based on years of daily walks.",
+      "desc_len": 165,
+      "desc_issues": [
+        "TOO_LONG_165"
+      ],
+      "h1s": [
+        "The Best Sarasota Neighborhoods for Dog Owners (And Where We Walk Every Day)"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "Laurel Park",
+        "Southside Village",
+        "Gulf Gate Estates"
+      ]
+    },
+    {
+      "url": "/best-time-to-walk-your-dog-in-sarasota/",
+      "title": "The Best Time to Walk Your Dog in Sarasota, FL | Wiggle Your Tail",
+      "title_len": 65,
+      "title_issues": [
+        "TOO_LONG_65"
+      ],
+      "description": "Sarasota",
+      "desc_len": 8,
+      "desc_issues": [
+        "TOO_SHORT_8"
+      ],
+      "h1s": [
+        "The Best Time to Walk Your Dog in Sarasota, FL"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "Why Sarasota's Climate Is Uniquely Demanding for Dogs",
+        "Summer Walk Timing: May Through October",
+        "The Pavement Temperature Test: The 5-Second Rule"
+      ]
+    },
+    {
+      "url": "/blog/",
+      "title": "Pet Care Tips &amp; News | Wiggle Your Tail Blog",
+      "title_len": 48,
+      "title_issues": [],
+      "description": "Expert pet care tips, dog walking advice, and Sarasota pet news from Wiggle Your Tail \u2014 Sarasota",
+      "desc_len": 96,
+      "desc_issues": [],
+      "h1s": [
+        "Pet Care Tips&amp; News"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "Ready to Give Your Dog theCare They Deserve?"
+      ]
+    },
+    {
+      "url": "/contact/",
+      "title": "Contact Wiggle Your Tail | Dog Walking & Pet Care Sarasota",
+      "title_len": 58,
+      "title_issues": [],
+      "description": "Contact Wiggle Your Tail Pet Care in Sarasota FL. Call (941) 280-5156, email contact@wiggleyourtail.com or fill out our form. Free meet & greet included.",
+      "desc_len": 153,
+      "desc_issues": [],
+      "h1s": [
+        "Let's find the perfectcare for your pet"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "Ready to give your petthe care they deserve?"
+      ]
+    },
+    {
+      "url": "/dog-sitter-sarasota/",
+      "title": "Dog Sitter in Sarasota, FL | In-Home Pet Sitting | Wiggle Your Tail",
+      "title_len": 67,
+      "title_issues": [
+        "TOO_LONG_67"
+      ],
+      "description": "Looking for a trusted dog sitter in Sarasota, FL? Wiggle Your Tail offers professional in-home dog sitting, drop-in visits & overnight care. Bonded, insured & Pet CPR certified. Free meet & greet.",
+      "desc_len": 196,
+      "desc_issues": [
+        "TOO_LONG_196"
+      ],
+      "h1s": [
+        "Dog Sitter\n      Sarasota, FL"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "In-Home Care ThatKeeps Tails Wagging",
+        "Home is AlwaysBest for Your Dog",
+        "What Sarasotapet parents say"
+      ]
+    },
+    {
+      "url": "/dog-trainer-sarasota/",
+      "title": "Dog Trainer Sarasota, FL | Professional Dog Training | Wiggle Your Tail",
+      "title_len": 71,
+      "title_issues": [
+        "TOO_LONG_71"
+      ],
+      "description": "Looking for a dog trainer in Sarasota, FL? Wiggle Your Tail offers professional dog training support, behavioral guidance, and structured care services. Bonded, insured, and experienced with dogs of all ages.",
+      "desc_len": 208,
+      "desc_issues": [
+        "TOO_LONG_208"
+      ],
+      "h1s": [
+        "Dog Trainer\n      Sarasota, FL"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "Structured Care ThatSupports Your Training Goals",
+        "Training in aReal Sarasota Environment",
+        "Dog TrainingFAQ"
+      ]
+    },
+    {
+      "url": "/dog-walking/",
+      "title": "Dog Walking Sarasota | Wiggle Your Tail Pet Care",
+      "title_len": 48,
+      "title_issues": [],
+      "description": "Professional, one-on-one dog walking in Sarasota, FL. No pack walks \u2014 one family at a time. Bonded, insured &amp; Pet CPR certified. Book a free meet &amp; greet.",
+      "desc_len": 162,
+      "desc_issues": [
+        "TOO_LONG_162"
+      ],
+      "h1s": [
+        "Tailored Walks forEvery Dog"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "Simple, honestpricing plans",
+        "Dog walking donethe right way",
+        "What pet parentsare saying"
+      ]
+    },
+    {
+      "url": "/faqs/",
+      "title": "FAQs | Wiggle Your Tail Pet Care \u2014 Sarasota, FL",
+      "title_len": 47,
+      "title_issues": [],
+      "description": "Frequently asked questions about Wiggle Your Tail",
+      "desc_len": 49,
+      "desc_issues": [
+        "TOO_SHORT_49"
+      ],
+      "h1s": [
+        "Frequently Asked\n      Questions"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "Getting in Touch",
+        "Our Services",
+        "Pets &amp; Service Areas"
+      ]
+    },
+    {
+      "url": "/how-a-dog-attendant-can-help-you-include-your-pet-in-your-wedding/",
+      "title": "How a Dog Attendant Can Help You Include Your Pet in Your Wedding | Wiggle Your Tail",
+      "title_len": 84,
+      "title_issues": [
+        "TOO_LONG_84"
+      ],
+      "description": "Want your dog in your wedding? A professional wedding dog attendant makes it possible. Here",
+      "desc_len": 91,
+      "desc_issues": [],
+      "h1s": [
+        "How a Dog Attendant Can Help You Include Your Pet in Your Wedding"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "The Growing Trend: Dogs at Weddings",
+        "Why Asking a Friend or Family Member Never Quite Works",
+        "What a Professional Wedding Dog Attendant Does: A Full Day Breakdown"
+      ]
+    },
+    {
+      "url": "/how-it-works/",
+      "title": "How It Works | Wiggle Your Tail Pet Care Sarasota",
+      "title_len": 49,
+      "title_issues": [],
+      "description": "Getting started with Wiggle Your Tail is easy. Connect with us, get a free meet & greet, then book via our Time to Pet app. Professional pet care in Sarasota FL.",
+      "desc_len": 161,
+      "desc_issues": [
+        "TOO_LONG_161"
+      ],
+      "h1s": [],
+      "h1_issues": [
+        "NO_H1"
+      ],
+      "h2s": [
+        "Getting started isrefreshingly simple",
+        "Everything inone easy app",
+        "Contact us toget started today"
+      ]
+    },
+    {
+      "url": "/mastering-dog-training-from-puppies-to-adults/",
+      "title": "Mastering Dog Training: From Puppies to Adults | Wiggle Your Tail Sarasota",
+      "title_len": 74,
+      "title_issues": [
+        "TOO_LONG_74"
+      ],
+      "description": "A practical guide to dog training at every life stage \u2014 from early puppy socialization to adult behavioral work. Covers key commands, positive reinforcement, and when to get professional help in Sarasota.",
+      "desc_len": 204,
+      "desc_issues": [
+        "TOO_LONG_204"
+      ],
+      "h1s": [
+        "Mastering Dog Training: From Puppies to Adults"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "Why Training Is a Lifelong Commitment",
+        "Training by Life Stage",
+        "Senior Dogs: Training Is Always Worth It"
+      ]
+    },
+    {
+      "url": "/paw-paradise-discover-why-sarasota-is-a-dog-lovers-dream/",
+      "title": "Paw Paradise: Discover Why Sarasota Is a Dog Lover's Dream | Wiggle Your Tail",
+      "title_len": 77,
+      "title_issues": [
+        "TOO_LONG_77"
+      ],
+      "description": "Sarasota, FL is one of the best cities in America for dog owners. From dog-friendly beaches to shaded parks and pet-welcoming restaurants \u2014 here",
+      "desc_len": 144,
+      "desc_issues": [],
+      "h1s": [
+        "Paw Paradise: Discover Why Sarasota Is a Dog Lover's Dream"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "Sarasota's Dog-Friendly Reputation \u2014 and Why It's Earned",
+        "Best Dog-Friendly Parks &amp; Green Spaces",
+        "Dog-Friendly Beaches: The Real Story"
+      ]
+    },
+    {
+      "url": "/pet-sitting/",
+      "title": "Pet Sitting & Overnight Care Sarasota | Wiggle Your Tail",
+      "title_len": 56,
+      "title_issues": [],
+      "description": "In-home pet sitting &amp; overnight care in Sarasota, FL \u2014 your pet stays home, not in a kennel. Bonded, insured &amp; Pet CPR certified. Free meet &amp; greet.",
+      "desc_len": 160,
+      "desc_issues": [],
+      "h1s": [
+        "In-Home CareDone with Love"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "Flexible care forevery situation",
+        "What pet parentsare saying",
+        "Pet sittingquestions answered"
+      ]
+    },
+    {
+      "url": "/pricing/",
+      "title": "Pet Care Pricing Sarasota | Wiggle Your Tail Pet Care",
+      "title_len": 53,
+      "title_issues": [],
+      "description": "See all Wiggle Your Tail pet care rates in one place \u2014 walking, sitting, snowbird care &amp; wedding packages. Transparent Sarasota, FL pricing, no surprises.",
+      "desc_len": 158,
+      "desc_issues": [],
+      "h1s": [
+        "Every rate,all in one place"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "Membership &amp; one-timewalk rates",
+        "Drop-ins, travel care&amp; overnight stays",
+        "Home &amp; pet carewhile you're away"
+      ]
+    },
+    {
+      "url": "/privacy-policy/",
+      "title": "Privacy Policy | Wiggle Your Tail Pet Care Sarasota",
+      "title_len": 51,
+      "title_issues": [],
+      "description": "Privacy Policy for Wiggle Your Tail Pet Care. Learn how we collect, use, and protect your personal information and pet care data.",
+      "desc_len": 129,
+      "desc_issues": [],
+      "h1s": [
+        "Privacy Policy"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "What Information We Collect",
+        "How We Use Your Information",
+        "SMS Opt-In Details &amp; Consent Policy"
+      ]
+    },
+    {
+      "url": "/sarasota-summers-keeping-your-furry-friend-cool-and-happy/",
+      "title": "Sarasota Summers: Keeping Your Furry Friend Cool and Happy | Wiggle Your Tail",
+      "title_len": 77,
+      "title_issues": [
+        "TOO_LONG_77"
+      ],
+      "description": "Sarasota summers are brutal for dogs. Here",
+      "desc_len": 42,
+      "desc_issues": [
+        "TOO_SHORT_42"
+      ],
+      "h1s": [
+        "Sarasota Summers: Keeping Your Furry Friend Cool and Happy"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "Why Sarasota Summers Are Genuinely Dangerous for Pets",
+        "10 Ways to Keep Your Dog Cool All Summer Long",
+        "Never, Ever Leave Your Dog in a Parked Car"
+      ]
+    },
+    {
+      "url": "/services-rates/",
+      "title": "Pet Care Services & Rates Sarasota | Wiggle Your Tail",
+      "title_len": 53,
+      "title_issues": [],
+      "description": "Dog walking, pet sitting, overnight care, wedding pet attendant &amp; snowbird services in Sarasota, FL. Bonded, insured &amp; Pet CPR certified. Free meet &amp; greet.",
+      "desc_len": 168,
+      "desc_issues": [
+        "TOO_LONG_168"
+      ],
+      "h1s": [
+        "Pet Care Services &amp; Rates in Sarasota, FL"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "Premium care forevery occasion",
+        "Why chooseWiggle Your Tail?",
+        "Ready to give your petthe care they deserve?"
+      ]
+    },
+    {
+      "url": "/snowbird-checklist-managing-your-home-and-pets/",
+      "title": "The Snowbird Checklist: Managing Your Home &amp; Pets | Wiggle Your Tail",
+      "title_len": 72,
+      "title_issues": [
+        "TOO_LONG_72"
+      ],
+      "description": "Leaving Sarasota for the summer? This snowbird checklist covers humidity control, water shutoff, pet travel protocols, and how to find trusted local pet care while you",
+      "desc_len": 167,
+      "desc_issues": [
+        "TOO_LONG_167"
+      ],
+      "h1s": [
+        "The Snowbird Checklist: Managing Your Home &amp; Pets"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "1. Preserving the Property: Humidity Control and Security",
+        "2. Ensuring Pet Health: Travel Protocols and Local Security",
+        "3. High-Value Support: Selecting Local Professional Services"
+      ]
+    },
+    {
+      "url": "/snowbird-services/",
+      "title": "Snowbird & House Sitting Services Sarasota | Wiggle Your Tail",
+      "title_len": 61,
+      "title_issues": [
+        "TOO_LONG_61"
+      ],
+      "description": "Heading north for the season? Sarasota home checks, mail collection &amp; pet care while you",
+      "desc_len": 92,
+      "desc_issues": [],
+      "h1s": [
+        "Away for the Season?We've Got You Covered"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "Complete home &amp; petcare while you're away",
+        "Straightforward,honest rates",
+        "Ready to give your petthe care they deserve?"
+      ]
+    },
+    {
+      "url": "/terms-and-conditions/",
+      "title": "Terms and Conditions | Wiggle Your Tail Pet Care Sarasota",
+      "title_len": 57,
+      "title_issues": [],
+      "description": "Terms and Conditions for Wiggle Your Tail Pet Care. Review our booking, cancellation, SMS, and liability policies before using our services.",
+      "desc_len": 140,
+      "desc_issues": [],
+      "h1s": [
+        "Terms &amp; Conditions"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "Services Offered",
+        "Appointment &amp; Booking Terms",
+        "Client Responsibilities"
+      ]
+    },
+    {
+      "url": "/the-future-of-pet-care/",
+      "title": "The Future of Pet Care: What's Changing and What Stays the Same | Wiggle Your Tail",
+      "title_len": 82,
+      "title_issues": [
+        "TOO_LONG_82"
+      ],
+      "description": "Pet care is evolving \u2014 from technology and scheduling apps to shifting owner expectations around transparency and personalization. Here",
+      "desc_len": 135,
+      "desc_issues": [],
+      "h1s": [
+        "The Future of Pet Care: What's Changing and What Stays the Same"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "How Pet Ownership Has Changed",
+        "The Rise of the Pet Economy",
+        "Technology Transforming Pet Care"
+      ]
+    },
+    {
+      "url": "/the-power-of-paws-how-dog-walking-benefits-your-furry-one/",
+      "title": "The Power of Paws: How Dog Walking Benefits Your Furry One | Wiggle Your Tail",
+      "title_len": 77,
+      "title_issues": [
+        "TOO_LONG_77"
+      ],
+      "description": "Regular dog walks do far more than provide bathroom breaks. Here",
+      "desc_len": 64,
+      "desc_issues": [],
+      "h1s": [
+        "The Power of Paws: How Dog Walking Benefits Your Furry One"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "Walks Are Not Optional \u2014 They're a Biological Need",
+        "The Physical Benefits of Regular Dog Walking",
+        "Mental Benefits: Why Sniffing Is the Real Work"
+      ]
+    },
+    {
+      "url": "/ultimate-sarasota-pet-sitter-guide/",
+      "title": "The Ultimate Sarasota Pet Owner's Guide: Choosing and Preparing a Pet Sitter | Wiggle Your Tail",
+      "title_len": 95,
+      "title_issues": [
+        "TOO_LONG_95"
+      ],
+      "description": "Looking for a trusted pet sitter in Sarasota, FL? Wiggle Your Tail Pet Care shares everything local pet owners need to know before they travel.",
+      "desc_len": 143,
+      "desc_issues": [],
+      "h1s": [
+        "The Ultimate Sarasota Pet Owner's Guide: Choosing and Preparing a Pet Sitter"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "What Makes Finding a Pet Sitter in Sarasota Different",
+        "What to Look for in a Sarasota Pet Sitter",
+        "Sarasota County Law: What Every Pet Owner Needs to Know"
+      ]
+    },
+    {
+      "url": "/wedding-pet-attendant/",
+      "title": "Wedding Pet Attendant Sarasota | Wiggle Your Tail",
+      "title_len": 49,
+      "title_issues": [],
+      "description": "Let your dog be part of your wedding day. Sarasota pet attendants handle transport, comfort care &amp; photo coordination so you don",
+      "desc_len": 132,
+      "desc_issues": [],
+      "h1s": [
+        "Your Dog Belongsat Your Wedding"
+      ],
+      "h1_issues": [],
+      "h2s": [
+        "We handle everythingso you don't have to",
+        "What pet parentsare saying",
+        "Let's make yourwedding unforgettable"
+      ]
+    }
+  ],
+  "step5_schema_audit": [
+    {
+      "url": "/",
+      "schema_types": [
+        "LocalBusiness"
+      ],
+      "has_schema": true
+    },
+    {
+      "url": "/about/",
+      "schema_types": [],
+      "has_schema": false
+    },
+    {
+      "url": "/are-you-a-pet-mom-heres-why-you-deserve-a-shoutout-this-mothers-day/",
+      "schema_types": [
+        "Article",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "has_schema": true
+    },
+    {
+      "url": "/best-sarasota-neighborhoods-for-dog-owners/",
+      "schema_types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "has_schema": true
+    },
+    {
+      "url": "/best-time-to-walk-your-dog-in-sarasota/",
+      "schema_types": [
+        "FAQPage",
+        "Article",
+        "BreadcrumbList"
+      ],
+      "has_schema": true
+    },
+    {
+      "url": "/blog/",
+      "schema_types": [],
+      "has_schema": false
+    },
+    {
+      "url": "/contact/",
+      "schema_types": [],
+      "has_schema": false
+    },
+    {
+      "url": "/dog-sitter-sarasota/",
+      "schema_types": [
+        "Service",
+        "FAQPage"
+      ],
+      "has_schema": true
+    },
+    {
+      "url": "/dog-trainer-sarasota/",
+      "schema_types": [
+        "Service",
+        "FAQPage"
+      ],
+      "has_schema": true
+    },
+    {
+      "url": "/dog-walking/",
+      "schema_types": [
+        "Service"
+      ],
+      "has_schema": true
+    },
+    {
+      "url": "/faqs/",
+      "schema_types": [
+        "FAQPage"
+      ],
+      "has_schema": true
+    },
+    {
+      "url": "/how-a-dog-attendant-can-help-you-include-your-pet-in-your-wedding/",
+      "schema_types": [
+        "Article",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "has_schema": true
+    },
+    {
+      "url": "/how-it-works/",
+      "schema_types": [],
+      "has_schema": false
+    },
+    {
+      "url": "/mastering-dog-training-from-puppies-to-adults/",
+      "schema_types": [
+        "Article",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "has_schema": true
+    },
+    {
+      "url": "/paw-paradise-discover-why-sarasota-is-a-dog-lovers-dream/",
+      "schema_types": [
+        "Article",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "has_schema": true
+    },
+    {
+      "url": "/pet-sitting/",
+      "schema_types": [
+        "Service"
+      ],
+      "has_schema": true
+    },
+    {
+      "url": "/pricing/",
+      "schema_types": [
+        "Service"
+      ],
+      "has_schema": true
+    },
+    {
+      "url": "/privacy-policy/",
+      "schema_types": [],
+      "has_schema": false
+    },
+    {
+      "url": "/sarasota-summers-keeping-your-furry-friend-cool-and-happy/",
+      "schema_types": [
+        "FAQPage",
+        "Article",
+        "BreadcrumbList"
+      ],
+      "has_schema": true
+    },
+    {
+      "url": "/services-rates/",
+      "schema_types": [],
+      "has_schema": false
+    },
+    {
+      "url": "/snowbird-checklist-managing-your-home-and-pets/",
+      "schema_types": [
+        "Article",
+        "FAQPage"
+      ],
+      "has_schema": true
+    },
+    {
+      "url": "/snowbird-services/",
+      "schema_types": [
+        "Service"
+      ],
+      "has_schema": true
+    },
+    {
+      "url": "/terms-and-conditions/",
+      "schema_types": [],
+      "has_schema": false
+    },
+    {
+      "url": "/the-future-of-pet-care/",
+      "schema_types": [
+        "Article",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "has_schema": true
+    },
+    {
+      "url": "/the-power-of-paws-how-dog-walking-benefits-your-furry-one/",
+      "schema_types": [
+        "Article",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "has_schema": true
+    },
+    {
+      "url": "/ultimate-sarasota-pet-sitter-guide/",
+      "schema_types": [
+        "Article",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "has_schema": true
+    },
+    {
+      "url": "/wedding-pet-attendant/",
+      "schema_types": [
+        "Service"
+      ],
+      "has_schema": true
+    }
+  ],
+  "step6_keyword_cannibalization": {
+    "dog_sitter_sarasota": [
+      "/blog/",
+      "/dog-sitter-sarasota/"
+    ],
+    "pet_sitter_sarasota": [
+      "/the-future-of-pet-care/",
+      "/ultimate-sarasota-pet-sitter-guide/"
+    ],
+    "dog_trainer_sarasota": [
+      "/dog-trainer-sarasota/",
+      "/mastering-dog-training-from-puppies-to-adults/"
+    ],
+    "wedding_pet_attendant": [
+      "/wedding-pet-attendant/",
+      "/how-a-dog-attendant-can-help-you-include-your-pet-in-your-wedding/"
+    ],
+    "notes": "Site-wide footer contains all service keywords; cannibalization analysis restricted to title/H1/body-level competition"
+  },
+  "step7_internal_linking": {
+    "inbound_counts": {
+      "/": 2,
+      "/about/": 16,
+      "/are-you-a-pet-mom-heres-why-you-deserve-a-shoutout-this-mothers-day/": 1,
+      "/best-sarasota-neighborhoods-for-dog-owners/": 1,
+      "/best-time-to-walk-your-dog-in-sarasota/": 7,
+      "/blog/": 15,
+      "/contact/": 16,
+      "/dog-sitter-sarasota/": 1,
+      "/dog-trainer-sarasota/": 2,
+      "/dog-walking/": 16,
+      "/faqs/": 12,
+      "/how-a-dog-attendant-can-help-you-include-your-pet-in-your-wedding/": 1,
+      "/how-it-works/": 16,
+      "/mastering-dog-training-from-puppies-to-adults/": 2,
+      "/paw-paradise-discover-why-sarasota-is-a-dog-lovers-dream/": 2,
+      "/pet-sitting/": 16,
+      "/pricing/": 1,
+      "/privacy-policy/": 17,
+      "/sarasota-summers-keeping-your-furry-friend-cool-and-happy/": 5,
+      "/services-rates/": 16,
+      "/snowbird-checklist-managing-your-home-and-pets/": 1,
+      "/snowbird-services/": 16,
+      "/terms-and-conditions/": 16,
+      "/the-future-of-pet-care/": 1,
+      "/the-power-of-paws-how-dog-walking-benefits-your-furry-one/": 1,
+      "/ultimate-sarasota-pet-sitter-guide/": 1,
+      "/wedding-pet-attendant/": 16
+    },
+    "low_inbound_pages": [
+      "/are-you-a-pet-mom-heres-why-you-deserve-a-shoutout-this-mothers-day/",
+      "/best-sarasota-neighborhoods-for-dog-owners/",
+      "/dog-sitter-sarasota/",
+      "/how-a-dog-attendant-can-help-you-include-your-pet-in-your-wedding/",
+      "/pricing/",
+      "/snowbird-checklist-managing-your-home-and-pets/",
+      "/the-future-of-pet-care/",
+      "/the-power-of-paws-how-dog-walking-benefits-your-furry-one/",
+      "/ultimate-sarasota-pet-sitter-guide/"
+    ],
+    "critical_underlinked": [
+      "/dog-sitter-sarasota/",
+      "/pricing/"
+    ],
+    "blog_to_service_links": {
+      "/the-power-of-paws-how-dog-walking-benefits-your-furry-one/": [
+        "/dog-walking/"
+      ],
+      "/ultimate-sarasota-pet-sitter-guide/": [
+        "/pet-sitting/"
+      ],
+      "/how-a-dog-attendant-can-help-you-include-your-pet-in-your-wedding/": [
+        "/wedding-pet-attendant/"
+      ],
+      "/mastering-dog-training-from-puppies-to-adults/": [
+        "/dog-trainer-sarasota/"
+      ],
+      "/snowbird-checklist-managing-your-home-and-pets/": [
+        "/snowbird-services/"
+      ]
+    }
+  },
+  "step8_redirects_and_broken_links": {
+    "missing_page": "/data-deletion/",
+    "netlify_redirect_issues": [
+      "/services-rates/",
+      "/how-it-works/",
+      "/pet-taxi/"
+    ],
+    "internal_link_format_issue": "All .html-based pages use relative .html href attributes in nav/footer, exposing .html variant URLs to crawlers",
+    "live_http_check": "BLOCKED \u2014 proxy returned 403 for all external requests"
+  },
+  "step9_image_audit": {
+    "per_page": [
+      {
+        "url": "/",
+        "total_images": 16,
+        "external_unsplash": 3,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/about/",
+        "total_images": 7,
+        "external_unsplash": 5,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/are-you-a-pet-mom-heres-why-you-deserve-a-shoutout-this-mothers-day/",
+        "total_images": 3,
+        "external_unsplash": 0,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/best-sarasota-neighborhoods-for-dog-owners/",
+        "total_images": 3,
+        "external_unsplash": 0,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/best-time-to-walk-your-dog-in-sarasota/",
+        "total_images": 3,
+        "external_unsplash": 0,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/blog/",
+        "total_images": 12,
+        "external_unsplash": 0,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/contact/",
+        "total_images": 2,
+        "external_unsplash": 0,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/dog-sitter-sarasota/",
+        "total_images": 5,
+        "external_unsplash": 3,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/dog-trainer-sarasota/",
+        "total_images": 5,
+        "external_unsplash": 3,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/dog-walking/",
+        "total_images": 5,
+        "external_unsplash": 3,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/faqs/",
+        "total_images": 2,
+        "external_unsplash": 0,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/how-a-dog-attendant-can-help-you-include-your-pet-in-your-wedding/",
+        "total_images": 3,
+        "external_unsplash": 0,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/how-it-works/",
+        "total_images": 3,
+        "external_unsplash": 1,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/mastering-dog-training-from-puppies-to-adults/",
+        "total_images": 2,
+        "external_unsplash": 0,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/paw-paradise-discover-why-sarasota-is-a-dog-lovers-dream/",
+        "total_images": 4,
+        "external_unsplash": 0,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/pet-sitting/",
+        "total_images": 4,
+        "external_unsplash": 2,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/pricing/",
+        "total_images": 2,
+        "external_unsplash": 0,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/privacy-policy/",
+        "total_images": 2,
+        "external_unsplash": 0,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/sarasota-summers-keeping-your-furry-friend-cool-and-happy/",
+        "total_images": 3,
+        "external_unsplash": 0,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/services-rates/",
+        "total_images": 2,
+        "external_unsplash": 0,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/snowbird-checklist-managing-your-home-and-pets/",
+        "total_images": 3,
+        "external_unsplash": 0,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/snowbird-services/",
+        "total_images": 5,
+        "external_unsplash": 3,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/terms-and-conditions/",
+        "total_images": 2,
+        "external_unsplash": 0,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/the-future-of-pet-care/",
+        "total_images": 4,
+        "external_unsplash": 0,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/the-power-of-paws-how-dog-walking-benefits-your-furry-one/",
+        "total_images": 2,
+        "external_unsplash": 0,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/ultimate-sarasota-pet-sitter-guide/",
+        "total_images": 4,
+        "external_unsplash": 0,
+        "missing_alt": 0,
+        "empty_alt": 0
+      },
+      {
+        "url": "/wedding-pet-attendant/",
+        "total_images": 5,
+        "external_unsplash": 0,
+        "missing_alt": 0,
+        "empty_alt": 0
+      }
+    ],
+    "large_images_over_200kb": [
+      {
+        "path": "/assets/images/baninho-dog-7441303.jpg",
+        "size_kb": 4802
+      },
+      {
+        "path": "/assets/images/clarkdonald413-dog-4259565.jpg",
+        "size_kb": 3023
+      },
+      {
+        "path": "/assets/images/clarissabell-beach-3204990.jpg",
+        "size_kb": 2689
+      },
+      {
+        "path": "/assets/images/picsbyfran-dog-2579871.jpg",
+        "size_kb": 2401
+      },
+      {
+        "path": "/assets/images/snowbirds pic.png",
+        "size_kb": 2197
+      },
+      {
+        "path": "/assets/images/florida.snowbirds.png",
+        "size_kb": 2190
+      },
+      {
+        "path": "/assets/images/ultimate pet sitter guide.png",
+        "size_kb": 1977
+      },
+      {
+        "path": "/assets/images/pet.wedding.attendant.jpg",
+        "size_kb": 1901
+      },
+      {
+        "path": "/assets/images/wedding.pet.parent.jpg",
+        "size_kb": 1514
+      },
+      {
+        "path": "/assets/images/dog.wedding.jpg",
+        "size_kb": 1122
+      },
+      {
+        "path": "/assets/images/WhatsApp Image 2026-04-05 at pic 9.jpeg",
+        "size_kb": 804
+      },
+      {
+        "path": "/assets/images/hero-dogs-walk.jpg",
+        "size_kb": 804
+      },
+      {
+        "path": "/assets/images/WhatsApp Image 2026-04-05 at pic7.jpeg",
+        "size_kb": 565
+      },
+      {
+        "path": "/assets/images/hero-frenchie.jpg",
+        "size_kb": 565
+      },
+      {
+        "path": "/assets/images/pic 3.jpeg",
+        "size_kb": 404
+      },
+      {
+        "path": "/assets/images/wiggle your tail rounded.png",
+        "size_kb": 397
+      },
+      {
+        "path": "/assets/images/pet-wedding-attendant.jpg",
+        "size_kb": 323
+      },
+      {
+        "path": "/assets/images/pic 2.jpeg",
+        "size_kb": 305
+      },
+      {
+        "path": "/assets/images/hero-cat.jpg",
+        "size_kb": 305
+      },
+      {
+        "path": "/assets/images/WhatsApp Image 2026-04-05 at pic3.jpeg",
+        "size_kb": 292
+      },
+      {
+        "path": "/assets/images/WhatsApp Image 2026-04-05 at 17.19.22.jpeg",
+        "size_kb": 262
+      },
+      {
+        "path": "/assets/images/wedding pics.jpg",
+        "size_kb": 238
+      }
+    ],
+    "total_large_images": 22,
+    "pages_with_unsplash_images": 8,
+    "no_webp_avif_in_local_assets": true,
+    "filenames_with_spaces": [
+      "/assets/images/snowbirds pic.png",
+      "/assets/images/ultimate pet sitter guide.png",
+      "/assets/images/WhatsApp Image 2026-04-05 at pic 9.jpeg",
+      "/assets/images/WhatsApp Image 2026-04-05 at pic7.jpeg",
+      "/assets/images/pic 3.jpeg",
+      "/assets/images/wiggle your tail rounded.png",
+      "/assets/images/pic 2.jpeg",
+      "/assets/images/WhatsApp Image 2026-04-05 at pic3.jpeg",
+      "/assets/images/WhatsApp Image 2026-04-05 at 17.19.22.jpeg",
+      "/assets/images/wedding pics.jpg"
+    ],
+    "whatsapp_exports": [
+      "/assets/images/WhatsApp Image 2026-04-05 at pic 9.jpeg",
+      "/assets/images/WhatsApp Image 2026-04-05 at pic7.jpeg",
+      "/assets/images/WhatsApp Image 2026-04-05 at pic3.jpeg",
+      "/assets/images/WhatsApp Image 2026-04-05 at 17.19.22.jpeg"
+    ]
+  },
+  "step10_technical": {
+    "robots_txt": {
+      "allow": "/",
+      "disallow": [
+        "/search/"
+      ],
+      "sitemap_referenced": true,
+      "status": "OK"
+    },
+    "security_headers": {
+      "x_frame_options": "DENY",
+      "x_xss_protection": "1; mode=block",
+      "x_content_type_options": "nosniff",
+      "referrer_policy": "strict-origin-when-cross-origin",
+      "content_security_policy": "NOT SET",
+      "permissions_policy": "NOT SET",
+      "hsts": "NOT IN NETLIFY.TOML (may be set by Netlify CDN)"
+    },
+    "caching": {
+      "assets": "public, max-age=31536000, immutable",
+      "html": "public, max-age=3600",
+      "risk": "Immutable caching with non-hashed filenames means static-named assets (e.g. hero-dogs-walk.jpg) won't refresh for 1 year after update"
+    },
+    "external_dependencies": {
+      "google_fonts": "All pages load Fraunces and Plus Jakarta Sans from fonts.googleapis.com \u2014 render-blocking external request",
+      "unsplash": "8 pages load images from images.unsplash.com"
+    },
+    "live_checks": "BLOCKED \u2014 proxy returned 403 for all HTTPS connections to wiggleyourtail.com"
+  }
+}
