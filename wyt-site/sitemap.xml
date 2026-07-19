@@ -159,4 +159,39 @@
     <priority>0.6</priority>
   </url>
 
+  <url>
+    <loc>https://wiggleyourtail.com/faqs/</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://wiggleyourtail.com/pricing/</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://wiggleyourtail.com/best-sarasota-neighborhoods-for-dog-owners/</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://wiggleyourtail.com/snowbird-checklist-managing-your-home-and-pets/</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://wiggleyourtail.com/ultimate-sarasota-pet-sitter-guide/</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
