@@ -82,7 +82,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const animSelectors = [
     '.price-card', '.rc', '.faq-item', '.area-tag',
     '.proc-card', '.wp-row', '.av-row', '.how-step',
-    '.service-card', '.svc', '.info-card', '.feat-row'
+    '.service-card', '.svc', '.info-card', '.feat-row',
+    '.partner-card'
   ];
 
   document.querySelectorAll(animSelectors.join(',')).forEach((el, i) => {
