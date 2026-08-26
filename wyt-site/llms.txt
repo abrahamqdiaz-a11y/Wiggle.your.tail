@@ -14,6 +14,7 @@
 
 - [How It Works](https://wiggleyourtail.com/how-it-works/): Step-by-step process from meet-and-greet to booking and ongoing care.
 - [About](https://wiggleyourtail.com/who-we-are/): Background on Christa and the Wiggle Your Tail team.
+- [Partners](https://wiggleyourtail.com/partners/): Local vets, groomers, trainers and brands Wiggle Your Tail partners with, plus how to become a partner.
 - [Contact](https://wiggleyourtail.com/contactus/): Phone, email, and booking portal link.
 
 ## Optional

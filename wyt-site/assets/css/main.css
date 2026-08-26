@@ -280,6 +280,21 @@ nav.site-nav.scrolled { box-shadow:var(--shadow-md); }
 .footer-credit a { color:rgba(255,255,255,.28); text-decoration:none; transition:color .3s, opacity .3s; }
 .footer-credit a:hover { color:rgba(255,255,255,.65); }
 
+/* ── PARTNERS ── */
+.partner-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:1.5rem; }
+.partner-card { background:var(--white); border:1.5px solid var(--border); border-radius:24px; padding:1.6rem; display:flex; flex-direction:column; gap:.75rem; transition:all .3s; color:var(--ink); }
+.partner-card:hover { border-color:var(--purple-soft); box-shadow:var(--shadow-md); transform:translateY(-4px); }
+.partner-logo { position:relative; height:118px; border-radius:16px; background:var(--cream); border:1px solid var(--border); display:flex; align-items:center; justify-content:center; padding:1.3rem; overflow:hidden; margin-bottom:.35rem; }
+.partner-logo img { width:auto; height:auto; max-width:100%; max-height:100%; object-fit:contain; }
+.partner-monogram { display:none; position:absolute; inset:0; align-items:center; justify-content:center; font-family:var(--serif); font-size:2rem; font-weight:900; letter-spacing:.06em; color:var(--purple); background:linear-gradient(135deg,var(--purple-pale),rgba(107,63,160,.16)); }
+/* No logo file yet (or it failed to load) → show the initials tile instead */
+.partner-logo.logo-missing .partner-monogram { display:flex; }
+.partner-cat { font-size:.68rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--gold); }
+.partner-name { font-family:var(--serif); font-size:1.15rem; font-weight:700; color:var(--dark); line-height:1.25; }
+.partner-desc { font-size:.84rem; line-height:1.7; color:var(--muted); flex-grow:1; }
+.partner-link { font-size:.8rem; font-weight:600; color:var(--purple); margin-top:.3rem; }
+.partner-card:hover .partner-link { color:var(--purple-deep); }
+
 /* ── FAQ ACCORDION ── */
 .faq-list { display:flex; flex-direction:column; gap:.75rem; }
 .faq-item { background:var(--cream); border:1.5px solid var(--border); border-radius:14px; overflow:hidden; transition:border-color .2s; }
@@ -368,6 +383,11 @@ nav.site-nav.scrolled { box-shadow:var(--shadow-md); }
 }
 
 /* ── RESPONSIVE ── */
+/* Narrow desktop: tighten the nav so 7 links stay on one row */
+@media(max-width:1250px){
+  nav.site-nav { padding:0 2.5rem; }
+  .nav-links { gap:1.15rem; }
+}
 @media(max-width:1100px){
   nav.site-nav { padding:0 2rem; }
   .nav-links { display:none; }
@@ -413,6 +433,7 @@ nav.site-nav.scrolled { box-shadow:var(--shadow-md); }
   .cta-band { padding:4rem 1.4rem; }
   /* Responsive utility grids */
   .grid-3up, .grid-4up { grid-template-columns:1fr; }
+  .partner-grid { grid-template-columns:1fr; }
   /* Hero actions stack vertically on very small phones */
   .hero-actions, .cta-btns { flex-direction:column; align-items:stretch; }
   .hero-actions .btn, .cta-btns .btn { justify-content:center; }
