@@ -89,7 +89,7 @@
   <!-- ═══ BLOG ═══ -->
   <url>
     <loc>https://wiggleyourtail.com/blog/</loc>
-    <lastmod>2026-06-01</lastmod>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -117,6 +117,13 @@
   </url>
 
   <!-- ═══ BLOG ARTICLES ═══ -->
+  <url>
+    <loc>https://wiggleyourtail.com/summer-heat-safety-sarasota-dogs/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <url>
     <loc>https://wiggleyourtail.com/sarasota-summers-keeping-your-furry-friend-cool-and-happy/</loc>
     <lastmod>2026-06-01</lastmod>
