@@ -209,6 +209,21 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# main.css and main.js have no fingerprint in their filenames, so they must
+# never inherit the "immutable" rule above — a returning browser would hold a
+# year-old copy and silently miss every style or script change we ship. These
+# revalidate on each visit instead; the ?v= query on every page's <link> and
+# <script> forces browsers that already cached the old files to refetch now.
+[[headers]]
+  for = "/assets/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/assets/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
 [[headers]]
   for = "/*.html"
   [headers.values]
